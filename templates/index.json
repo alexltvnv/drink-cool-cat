@@ -117,6 +117,59 @@
         "padding_bottom": 36
       }
     },
+    "1658833094612a825d": {
+      "type": "running-line",
+      "blocks": {
+        "165883309499e3e2e2-0": {
+          "type": "item",
+          "settings": {
+            "text": "6.9% ALC\/VOL"
+          }
+        },
+        "165883309499e3e2e2-1": {
+          "type": "item",
+          "settings": {
+            "text": "NATURALLY FLAVORED"
+          }
+        },
+        "165883309499e3e2e2-2": {
+          "type": "item",
+          "settings": {
+            "text": "CALIFORNIA WHITE WINE"
+          }
+        },
+        "c8aee1db-3419-4689-9ab5-9aa60bcd0d58": {
+          "type": "item",
+          "settings": {
+            "text": "GLUTEN FREE"
+          }
+        },
+        "75e6c4ae-4231-40bd-a3fc-7c1a8c64d9d9": {
+          "type": "item",
+          "settings": {
+            "text": "1 CAN = 2 GLASSES OF WINE"
+          }
+        }
+      },
+      "block_order": [
+        "165883309499e3e2e2-0",
+        "165883309499e3e2e2-1",
+        "165883309499e3e2e2-2",
+        "c8aee1db-3419-4689-9ab5-9aa60bcd0d58",
+        "75e6c4ae-4231-40bd-a3fc-7c1a8c64d9d9"
+      ],
+      "settings": {
+        "speed": 20
+      }
+    },
+    "16588330371a5a8c76": {
+      "type": "instagram-title",
+      "settings": {
+        "title": "Follow us",
+        "subtitle": "@drinkcoolcat",
+        "insta_url": "https:\/\/www.instagram.com\/drinkcoolcat\/?hl=en"
+      }
+    },
     "16588307082394c861": {
       "type": "instafeed",
       "settings": {
@@ -154,6 +207,8 @@
     "featured_collection",
     "video",
     "multicolumn",
+    "1658833094612a825d",
+    "16588330371a5a8c76",
     "16588307082394c861",
     "1658830746e0cffc6c"
   ]
