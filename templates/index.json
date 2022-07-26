@@ -150,7 +150,7 @@
             "btn_url": "shopify:\/\/blogs\/news",
             "text_color": "light",
             "position": "bottom",
-            "bg_type": "bg_img",
+            "bg_type": "bg_video",
             "image": "shopify:\/\/shop_images\/Cool-Cat-Sky-High-Freedom_af52007e-de11-4c44-84de-339bbb10e84f_1.jpg",
             "video_url": "https:\/\/www.youtube.com\/watch?v=VMvPEhgWy04",
             "overlay": true
@@ -162,6 +162,8 @@
         "1658833259fffcf140-1"
       ],
       "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "1658833094612a825d": {
