@@ -218,6 +218,7 @@
     },
     "16588307082394c861": {
       "type": "instafeed",
+      "disabled": true,
       "settings": {
         "heading_size": 20,
         "feed_width": 100,
