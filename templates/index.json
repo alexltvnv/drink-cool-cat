@@ -50,6 +50,11 @@
         "padding_bottom": 36
       }
     },
+    "165883319446115b6a": {
+      "type": "awards",
+      "settings": {
+      }
+    },
     "video": {
       "type": "video",
       "settings": {
@@ -115,6 +120,46 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "16588332595ed60108": {
+      "type": "tiles",
+      "blocks": {
+        "1658833259fffcf140-0": {
+          "type": "tile_item",
+          "settings": {
+            "title": "WE DON'T JUST SPRITZ, WE MIX!",
+            "text": "Check out the Recipes section for some of our signature Cool Cat Wine Spritzer cocktail recipes.",
+            "btn_title": "Get Recipes",
+            "btn_url": "",
+            "text_color": "dark",
+            "position": "top",
+            "bg_type": "bg_img",
+            "image": "shopify:\/\/shop_images\/Cool-Cat-Wine-Spritzer-Citrus-Summer-Cocktail-Recipe_1.jpg",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=VMvPEhgWy04",
+            "overlay": false
+          }
+        },
+        "1658833259fffcf140-1": {
+          "type": "tile_item",
+          "settings": {
+            "title": "",
+            "text": "",
+            "btn_title": "",
+            "btn_url": "",
+            "text_color": "dark",
+            "position": "top",
+            "bg_type": "bg_img",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=VMvPEhgWy04",
+            "overlay": false
+          }
+        }
+      },
+      "block_order": [
+        "1658833259fffcf140-0",
+        "1658833259fffcf140-1"
+      ],
+      "settings": {
       }
     },
     "1658833094612a825d": {
@@ -205,8 +250,10 @@
   "order": [
     "rich_text",
     "featured_collection",
+    "165883319446115b6a",
     "video",
     "multicolumn",
+    "16588332595ed60108",
     "1658833094612a825d",
     "16588330371a5a8c76",
     "16588307082394c861",
