@@ -739,7 +739,8 @@
 .list-social.footer__list-social {
     justify-content: flex-start;
 }
-.footer__copyright {
+.footer-copy {
     background: #fff;
     color: #000;
+    padding: 20px;
 }
