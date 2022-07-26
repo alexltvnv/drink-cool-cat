@@ -21,7 +21,6 @@
 
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
   @media screen and (min-width: 750px) {
@@ -31,7 +30,6 @@
 
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
 {%- endstyle -%}
@@ -357,15 +355,22 @@
           </div>
         {%- endif -%}
 
-        {%- if section.settings.copyright -%}
-          <div class="footer__copyright caption uppercase">
-            <small class="copyright__content">&copy; {{ 'now' | date: "%Y" }} {{ section.settings.copyright }}</small>
-          </div>
-        {%- endif -%}
       </div>
     </div>
   </div>
 </footer>
+
+{%- if section.settings.copyright -%}
+  <footer class="footer-copy text-center">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer__copyright caption uppercase">
+          <small class="copyright__content">&copy; {{ 'now' | date: "%Y" }} {{ section.settings.copyright }}</small>
+        </div>      
+      </div>
+    </div>
+  </footer>
+{%- endif -%}
 
 {% javascript %}
   class LocalizationForm extends HTMLElement {
@@ -649,16 +654,6 @@
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_top",
-      "default": 36
-    },
-    {
-      "type": "range",
-      "id": "padding_bottom",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_bottom",
       "default": 36
     }
   ],
