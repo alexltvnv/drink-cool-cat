@@ -26,7 +26,7 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
+        "title": "",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -48,6 +48,11 @@
         "swipe_on_mobile": false,
         "padding_top": 28,
         "padding_bottom": 36
+      }
+    },
+    "165883319446115b6a": {
+      "type": "awards",
+      "settings": {
       }
     },
     "video": {
@@ -117,6 +122,100 @@
         "padding_bottom": 36
       }
     },
+    "16588332595ed60108": {
+      "type": "tiles",
+      "blocks": {
+        "1658833259fffcf140-0": {
+          "type": "tile_item",
+          "settings": {
+            "title": "WE DON'T JUST SPRITZ, WE MIX!",
+            "text": "Check out the Recipes section for some of our signature Cool Cat Wine Spritzer cocktail recipes.",
+            "btn_title": "Get Recipes",
+            "btn_url": "",
+            "text_color": "dark",
+            "position": "top",
+            "bg_type": "bg_img",
+            "image": "shopify:\/\/shop_images\/Cool-Cat-Wine-Spritzer-Citrus-Summer-Cocktail-Recipe_1.jpg",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=VMvPEhgWy04",
+            "overlay": false
+          }
+        },
+        "1658833259fffcf140-1": {
+          "type": "tile_item",
+          "settings": {
+            "title": "SKY-HIGH FREEDOM",
+            "text": "Remember when life was less hectic? When we had few responsibilities and our friends were everything? This is the feeling we hope to get back to—this summer and beyond.",
+            "btn_title": "Read More",
+            "btn_url": "shopify:\/\/blogs\/news",
+            "text_color": "light",
+            "position": "bottom",
+            "bg_type": "bg_img",
+            "image": "shopify:\/\/shop_images\/Cool-Cat-Sky-High-Freedom_af52007e-de11-4c44-84de-339bbb10e84f_1.jpg",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=VMvPEhgWy04",
+            "overlay": true
+          }
+        }
+      },
+      "block_order": [
+        "1658833259fffcf140-0",
+        "1658833259fffcf140-1"
+      ],
+      "settings": {
+      }
+    },
+    "1658833094612a825d": {
+      "type": "running-line",
+      "blocks": {
+        "165883309499e3e2e2-0": {
+          "type": "item",
+          "settings": {
+            "text": "6.9% ALC\/VOL"
+          }
+        },
+        "165883309499e3e2e2-1": {
+          "type": "item",
+          "settings": {
+            "text": "NATURALLY FLAVORED"
+          }
+        },
+        "165883309499e3e2e2-2": {
+          "type": "item",
+          "settings": {
+            "text": "CALIFORNIA WHITE WINE"
+          }
+        },
+        "c8aee1db-3419-4689-9ab5-9aa60bcd0d58": {
+          "type": "item",
+          "settings": {
+            "text": "GLUTEN FREE"
+          }
+        },
+        "75e6c4ae-4231-40bd-a3fc-7c1a8c64d9d9": {
+          "type": "item",
+          "settings": {
+            "text": "1 CAN = 2 GLASSES OF WINE"
+          }
+        }
+      },
+      "block_order": [
+        "165883309499e3e2e2-0",
+        "165883309499e3e2e2-1",
+        "165883309499e3e2e2-2",
+        "c8aee1db-3419-4689-9ab5-9aa60bcd0d58",
+        "75e6c4ae-4231-40bd-a3fc-7c1a8c64d9d9"
+      ],
+      "settings": {
+        "speed": 20
+      }
+    },
+    "16588330371a5a8c76": {
+      "type": "instagram-title",
+      "settings": {
+        "title": "Follow us",
+        "subtitle": "@drinkcoolcat",
+        "insta_url": "https:\/\/www.instagram.com\/drinkcoolcat\/?hl=en"
+      }
+    },
     "16588307082394c861": {
       "type": "instafeed",
       "settings": {
@@ -152,8 +251,12 @@
   "order": [
     "rich_text",
     "featured_collection",
+    "165883319446115b6a",
     "video",
     "multicolumn",
+    "16588332595ed60108",
+    "1658833094612a825d",
+    "16588330371a5a8c76",
     "16588307082394c861",
     "1658830746e0cffc6c"
   ]
