@@ -50,6 +50,16 @@
           endif
         -%}
         <div class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}">
+          {%- if section.settings.footer_logo_enable -%}
+            <div class="footer-block grid__item">
+              <a href="/" class="footer-logo-link" itemprop="url">
+                <img src="{{ 'footer-logo.svg' | asset_url }}"
+                  class="footer-logo" 
+                  alt="footer logo"
+                  itemprop="logo"/>
+              </a>
+            </div>
+          {%- endif -%}
           {%- for block in section.blocks -%}
             <div class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.heading != blank -%}
@@ -509,6 +519,17 @@
       ],
       "default": "background-1",
       "label": "t:sections.all.colors.label"
+    },
+    {
+      "type": "header",
+      "content": "Logo",
+      "info": "Upload 'footer-logo.svg' to the Assets folder"
+    },
+    {
+      "type": "checkbox",
+      "id": "footer_logo_enable",
+      "default": true,
+      "label": "Show logo"
     },
     {
       "type": "header",
