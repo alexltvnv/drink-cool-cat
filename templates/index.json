@@ -117,6 +117,14 @@
         "padding_bottom": 36
       }
     },
+    "16588330371a5a8c76": {
+      "type": "instagram-title",
+      "settings": {
+        "title": "Follow us",
+        "subtitle": "@drinkcoolcat",
+        "insta_url": "https:\/\/www.instagram.com\/drinkcoolcat\/?hl=en"
+      }
+    },
     "16588307082394c861": {
       "type": "instafeed",
       "settings": {
@@ -154,6 +162,7 @@
     "featured_collection",
     "video",
     "multicolumn",
+    "16588330371a5a8c76",
     "16588307082394c861",
     "1658830746e0cffc6c"
   ]
