@@ -152,7 +152,7 @@
             "bg_type": "bg_img",
             "image": "shopify:\/\/shop_images\/Cool-Cat-Sky-High-Freedom_af52007e-de11-4c44-84de-339bbb10e84f_1.jpg",
             "video_url": "https:\/\/www.youtube.com\/watch?v=VMvPEhgWy04",
-            "overlay": false
+            "overlay": true
           }
         }
       },
