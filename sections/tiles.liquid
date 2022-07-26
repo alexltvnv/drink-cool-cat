@@ -1,0 +1,165 @@
+{%- if section.blocks -%}
+  <div class="container" id="tiles-section">
+    <div class="row">
+      {%- for block in section.blocks -%}
+        <div class="col-12 col-sm-6 tile-item-col">
+          <div class="bg-wrap{% if block.settings.overlay == true %} overlay{% endif %}">
+            <div class="tile-item {{ block.settings.text_color }}-text text-{{ block.settings.position }}">
+
+                <div class="bg-mobile-wrap">                  
+                  {%- if block.settings.image != blank and block.settings.bg_type == 'bg_img' -%}
+                    <img class="bg-img bg-position" src="{{ block.settings.image | image_url }}">
+                  {%- else -%}
+                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                  {%- endif -%}
+
+                  {%- if block.settings.video_url and block.settings.bg_type == 'bg_video' -%}
+                    <iframe class="bg-video bg-position" src="https://www.youtube.com/embed/{{ section.settings.video_url.id }}?enablejsapi=1" class="js-youtube" allow="autoplay; encrypted-media" allowfullscreen muted autoplay="1"></iframe>
+                  {%- endif -%}
+                </div>
+
+                <div class="content-wrap">
+                  {%- if block.settings.title != blank -%}
+                    <h2 class="tile-title">
+                      {{ block.settings.title | escape }}   
+                    </h2>
+                  {%- endif -%}
+
+                  {%- if block.settings.text != blank -%}
+                    <p class="tile-text">
+                      {{ block.settings.text | escape }}   
+                    </p>
+                  {%- endif -%}
+
+                  {%- if block.settings.btn_title != blank and block.settings.btn_url != blank -%}
+                    <a{% if block.settings.btn_url == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.btn_url }}"{% endif %} class="button">
+                      {{ block.settings.btn_title | escape }}
+                    </a>
+                  {%- endif -%}
+                </div>
+
+            </div>
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+{%- endif -%}
+
+
+{% schema %}
+{
+  "name": "Tiles",
+  "max_blocks": 2,
+  "class": "tiles-section section-width",
+  "blocks": [
+    {
+      "type": "tile_item",
+      "name": "Tile",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "text",
+          "id": "btn_title",
+          "label": "Button Title"
+        },
+        {
+          "type": "url",
+          "id": "btn_url",
+          "label": "Button URL"
+        },
+        {
+          "type": "select",
+          "id": "text_color",
+          "options": [
+            {
+              "value": "dark",
+              "label": "Dark"
+            },
+            {
+              "value": "light",
+              "label": "Light"
+            }
+          ],
+          "default": "dark",
+          "label": "Text Color"
+        },
+        {
+          "type": "select",
+          "id": "position",
+          "options": [
+            {
+              "value": "top",
+              "label": "Top"
+            },
+            {
+              "value": "bottom",
+              "label": "Bottom"
+            }
+          ],
+          "default": "top",
+          "label": "Text Position"
+        },  
+        {
+          "type": "select",
+          "id": "bg_type",
+          "options": [
+            {
+              "value": "bg_img",
+              "label": "Image"
+            },
+            {
+              "value": "bg_video",
+              "label": "Video"
+            }
+          ],
+          "default": "bg_img",
+          "label": "Background Type"
+        },       
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }, 
+        {
+          "type": "video_url",
+          "id": "video_url",
+          "accept": [
+            "youtube"
+          ],
+          "default": "https://www.youtube.com/watch?v=VMvPEhgWy04",
+          "label": "URL"
+        },
+        {
+          "type": "checkbox",
+          "id": "overlay",
+          "default": false,
+          "label": "Overlay"
+        }     
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tiles",
+      "blocks": [
+        {
+          "type": "tile_item"
+        },
+        {
+          "type": "tile_item"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

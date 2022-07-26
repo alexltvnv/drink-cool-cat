@@ -1,0 +1,69 @@
+<div class="container" id="instagram-title-section">
+  <div class="row">
+    <div class="col-12 text-center">
+      <div class="title-wrap">
+        
+        {%- if section.settings.title -%}
+          <h2 class="insta-title">
+            {%- if section.settings.insta_url -%}
+              <a href="{{ section.settings.insta_url }}" target="_blank">
+            {%- endif -%}
+
+            {{ section.settings.title }}
+
+            {%- if section.settings.insta_url -%}
+              </a>
+            {%- endif -%}
+          </h2>
+        {%- endif -%}
+
+        {%- if section.settings.subtitle -%}
+          <h5 class="insta-subtitle">
+            {%- if section.settings.insta_url -%}
+              <a href="{{ section.settings.insta_url }}" target="_blank">
+            {%- endif -%}
+
+            {{ section.settings.subtitle }}
+
+            {%- if section.settings.insta_url -%}
+              </a>
+            {%- endif -%}
+          </h5>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div> 
+
+
+{% schema %}
+{
+  "name": "Instagram Title",
+  "tag": "section",
+  "class": "instagram-title-section",  
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",      
+      "default": "Follow us",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",      
+      "default": "@drinkcoolcat",
+      "label": "Subtitle"
+    },
+    {
+      "type": "url",
+      "id": "insta_url",
+      "label": "Instagram URL"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Instagram Title"
+    }
+  ]
+}
+{% endschema %}
