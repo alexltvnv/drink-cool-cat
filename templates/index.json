@@ -143,13 +143,14 @@
         "1658833259fffcf140-1": {
           "type": "tile_item",
           "settings": {
-            "title": "",
-            "text": "",
-            "btn_title": "",
-            "btn_url": "",
-            "text_color": "dark",
-            "position": "top",
+            "title": "SKY-HIGH FREEDOM",
+            "text": "Remember when life was less hectic? When we had few responsibilities and our friends were everything? This is the feeling we hope to get back to—this summer and beyond.",
+            "btn_title": "Read More",
+            "btn_url": "shopify:\/\/blogs\/news",
+            "text_color": "light",
+            "position": "bottom",
             "bg_type": "bg_img",
+            "image": "shopify:\/\/shop_images\/Cool-Cat-Sky-High-Freedom_af52007e-de11-4c44-84de-339bbb10e84f_1.jpg",
             "video_url": "https:\/\/www.youtube.com\/watch?v=VMvPEhgWy04",
             "overlay": false
           }
