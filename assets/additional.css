@@ -251,6 +251,9 @@
 .text-center {
     text-align: center;
 }
+.uppercase {
+    text-transform: uppercase;
+}
 
 .clip-rating-num {
     position: absolute !important;
@@ -728,4 +731,15 @@
     .footer-column.text-center {
         text-align: left !important;
     }
+}
+
+.footer-logo img {
+    max-width: 100%;
+}
+.list-social.footer__list-social {
+    justify-content: flex-start;
+}
+.footer__copyright {
+    background: #fff;
+    color: #000;
 }
