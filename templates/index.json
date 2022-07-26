@@ -124,6 +124,29 @@
         "feed_width": 100,
         "html_area": ""
       }
+    },
+    "1658830746e0cffc6c": {
+      "type": "rich-text",
+      "blocks": {
+        "1658830746107203b6-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>WE DON'T SPIKE, WE SPRITZ<\/p>",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "1658830746107203b6-0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -131,6 +154,7 @@
     "featured_collection",
     "video",
     "multicolumn",
-    "16588307082394c861"
+    "16588307082394c861",
+    "1658830746e0cffc6c"
   ]
 }
