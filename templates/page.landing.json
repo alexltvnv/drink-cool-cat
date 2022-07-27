@@ -100,6 +100,70 @@
       "settings": {
         "speed": 20
       }
+    },
+    "1658940184d130fe97": {
+      "type": "rich-text",
+      "blocks": {
+        "1658940184e4783193-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>COOL CAT COCKTAIL RECIPES<\/p>",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "1658940184e4783193-0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 28,
+        "padding_bottom": 12
+      }
+    },
+    "1658940215a7cbb7cd": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "recipes",
+        "products_to_show": 6,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1658940412c1c375e2": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "cover_image": "shopify:\/\/shop_images\/Screen_Shot_2022-06-28_at_9.53_1.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=VMvPEhgWy04",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -107,6 +171,9 @@
     "16589397086f844d19",
     "165893995923766ecb",
     "16589399669bac701e",
-    "1658940083b3a7c45b"
+    "1658940083b3a7c45b",
+    "1658940184d130fe97",
+    "1658940215a7cbb7cd",
+    "1658940412c1c375e2"
   ]
 }
