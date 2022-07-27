@@ -159,7 +159,7 @@
         "cover_image": "shopify:\/\/shop_images\/Screen_Shot_2022-06-28_at_9.53_1.jpg",
         "video_url": "https:\/\/www.youtube.com\/watch?v=VMvPEhgWy04",
         "description": "",
-        "full_width": false,
+        "full_width": true,
         "color_scheme": "background-1",
         "padding_top": 0,
         "padding_bottom": 0
