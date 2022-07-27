@@ -15,11 +15,11 @@
     "heading_scale": 100,
     "type_body_font": "montserrat_n4",
     "body_scale": 100,
-    "page_width": 1200,
+    "page_width": 1300,
     "spacing_sections": 0,
     "spacing_grid_horizontal": 8,
     "spacing_grid_vertical": 8,
-    "buttons_border_thickness": 1,
+    "buttons_border_thickness": 2,
     "buttons_border_opacity": 100,
     "buttons_radius": 0,
     "buttons_shadow_opacity": 0,
@@ -83,14 +83,15 @@
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
     "accent_icons": "text",
-    "social_twitter_link": "",
-    "social_facebook_link": "",
+    "social_twitter_link": "https:\/\/twitter.com\/drinkcoolcat",
+    "social_facebook_link": "https:\/\/www.facebook.com\/drinkcoolcat",
     "social_pinterest_link": "",
-    "social_instagram_link": "",
-    "social_tiktok_link": "",
+    "social_instagram_link": "https:\/\/www.instagram.com\/drinkcoolcat",
+    "social_tiktok_link": "https:\/\/www.tiktok.com\/@drinkcoolcat",
     "social_tumblr_link": "",
     "social_snapchat_link": "",
-    "social_youtube_link": "",
+    "social_spotify_link": "https:\/\/open.spotify.com\/user\/l54cknla6yeu6xrmfgggcnu2k",
+    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCSYcj7InyaAiBO-e5248IQg",
     "social_vimeo_link": "",
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
@@ -134,44 +135,43 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "footer-0": {
-            "type": "link_list",
+          "d6c512ac-c930-4279-afda-fd6ea1804040": {
+            "type": "text",
             "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
-            }
-          },
-          "footer-1": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Info",
-              "menu": "footer"
+              "heading": "CONTACT",
+              "subtext": "<p>429 Lenox AveMiami Beach, FL 33139<\/p><p><a href=\"mailto:info@drinkcoolcat.com\" target=\"_blank\" title=\"mailto:info@drinkcoolcat.com\">info@drinkcoolcat.com<\/a><\/p>"
             }
           },
           "footer-2": {
             "type": "text",
             "settings": {
-              "heading": "Our mission",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              "heading": "RETAIL PARTNERS",
+              "subtext": "<p>If you are a retailer or restaurant who wants to sell Cool Cat, please contact us via email.<\/p>"
+            }
+          },
+          "footer-1": {
+            "type": "link_list",
+            "settings": {
+              "heading": "LEGAL",
+              "menu": "footer"
             }
           }
         },
         "block_order": [
-          "footer-0",
-          "footer-1",
-          "footer-2"
+          "d6c512ac-c930-4279-afda-fd6ea1804040",
+          "footer-2",
+          "footer-1"
         ],
         "settings": {
-          "color_scheme": "background-1",
+          "color_scheme": "inverse",
           "newsletter_enable": true,
-          "newsletter_heading": "Subscribe to our emails",
+          "newsletter_heading": "Stay Cool & Connected",
           "show_social": true,
           "enable_country_selector": false,
           "enable_language_selector": false,
           "payment_enable": true,
           "margin_top": 48,
-          "padding_top": 36,
-          "padding_bottom": 36
+          "padding_top": 36
         }
       },
       "main-password-header": {

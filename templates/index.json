@@ -1,74 +1,22 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
-      "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Talk about your brand</p>",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "heading": "<p>BEST CANNED COCKTAIL<\/p>",
+            "heading_size": "hxl"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text"
+        "heading"
       ],
       "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 40,
@@ -78,67 +26,42 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
+        "title": "",
         "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
         "collection": "all",
-        "products_to_show": 8,
+        "products_to_show": 4,
         "columns_desktop": 4,
-        "color_scheme": "background-1",
+        "full_width": false,
         "show_view_all": false,
-        "swipe_on_mobile": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
         "image_ratio": "adapt",
         "show_secondary_image": true,
         "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
+        "show_rating": true,
+        "enable_quick_add": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 28,
         "padding_bottom": 36
       }
     },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
+    "165883319446115b6a": {
+      "type": "awards",
       "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "video": {
       "type": "video",
       "settings": {
         "heading": "",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "heading_size": "h1",
+        "cover_image": "shopify:\/\/shop_images\/Screen_Shot_2022-06-28_at_9.53_1.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=VMvPEhgWy04",
         "description": "",
         "full_width": false,
         "color_scheme": "background-1",
@@ -146,66 +69,143 @@
         "padding_bottom": 36
       }
     },
-    "multicolumn": {
-      "type": "multicolumn",
+    "16588332595ed60108": {
+      "type": "tiles",
       "blocks": {
-        "column1": {
-          "type": "column",
+        "1658833259fffcf140-0": {
+          "type": "tile_item",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "title": "WE DON'T JUST SPRITZ, WE MIX!",
+            "text": "Check out the Recipes section for some of our signature Cool Cat Wine Spritzer cocktail recipes.",
+            "btn_title": "Get Recipes",
+            "btn_url": "",
+            "text_color": "dark",
+            "position": "top",
+            "bg_type": "bg_img",
+            "image": "shopify:\/\/shop_images\/Cool-Cat-Wine-Spritzer-Citrus-Summer-Cocktail-Recipe_1.jpg",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=VMvPEhgWy04",
+            "overlay": false
           }
         },
-        "column2": {
-          "type": "column",
+        "1658833259fffcf140-1": {
+          "type": "tile_item",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "title": "SKY-HIGH FREEDOM",
+            "text": "Remember when life was less hectic? When we had few responsibilities and our friends were everything? This is the feeling we hope to get back to—this summer and beyond.",
+            "btn_title": "Read More",
+            "btn_url": "shopify:\/\/blogs\/news",
+            "text_color": "light",
+            "position": "bottom",
+            "bg_type": "bg_img",
+            "image": "shopify:\/\/shop_images\/Cool-Cat-Sky-High-Freedom_af52007e-de11-4c44-84de-339bbb10e84f_1.jpg",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=VMvPEhgWy04",
+            "overlay": true
           }
         }
       },
       "block_order": [
-        "column1",
-        "column2",
-        "column3"
+        "1658833259fffcf140-0",
+        "1658833259fffcf140-1"
       ],
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "1658833094612a825d": {
+      "type": "running-line",
+      "blocks": {
+        "165883309499e3e2e2-0": {
+          "type": "item",
+          "settings": {
+            "text": "6.9% ALC\/VOL"
+          }
+        },
+        "165883309499e3e2e2-1": {
+          "type": "item",
+          "settings": {
+            "text": "NATURALLY FLAVORED"
+          }
+        },
+        "165883309499e3e2e2-2": {
+          "type": "item",
+          "settings": {
+            "text": "CALIFORNIA WHITE WINE"
+          }
+        },
+        "c8aee1db-3419-4689-9ab5-9aa60bcd0d58": {
+          "type": "item",
+          "settings": {
+            "text": "GLUTEN FREE"
+          }
+        },
+        "75e6c4ae-4231-40bd-a3fc-7c1a8c64d9d9": {
+          "type": "item",
+          "settings": {
+            "text": "1 CAN = 2 GLASSES OF WINE"
+          }
+        }
+      },
+      "block_order": [
+        "165883309499e3e2e2-0",
+        "165883309499e3e2e2-1",
+        "165883309499e3e2e2-2",
+        "c8aee1db-3419-4689-9ab5-9aa60bcd0d58",
+        "75e6c4ae-4231-40bd-a3fc-7c1a8c64d9d9"
+      ],
+      "settings": {
+        "speed": 20
+      }
+    },
+    "16588330371a5a8c76": {
+      "type": "instagram-title",
+      "settings": {
+        "title": "Follow us",
+        "subtitle": "@drinkcoolcat",
+        "insta_url": "https:\/\/www.instagram.com\/drinkcoolcat\/?hl=en"
+      }
+    },
+    "16588307082394c861": {
+      "type": "instafeed",
+      "settings": {
+        "heading_size": 20,
+        "feed_width": 100,
+        "html_area": ""
+      }
+    },
+    "1658830746e0cffc6c": {
+      "type": "rich-text",
+      "blocks": {
+        "1658830746107203b6-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>WE DON'T SPIKE, WE SPRITZ<\/p>",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "1658830746107203b6-0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
-    "image_banner",
     "rich_text",
     "featured_collection",
-    "collage",
+    "165883319446115b6a",
     "video",
-    "multicolumn"
+    "16588332595ed60108",
+    "1658833094612a825d",
+    "16588330371a5a8c76",
+    "16588307082394c861",
+    "1658830746e0cffc6c"
   ]
 }
