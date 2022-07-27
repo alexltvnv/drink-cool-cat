@@ -173,7 +173,7 @@
           "payment_enable": true,
           "bottom_text": "<p>AVAILABLE IN STORE: CA, FL, NY, NC, SC, VA. SHIPPING TO ALL STATES IN THE CONTINENTAL US EXCEPT FOR AL, AR, KY, MI, MS, SD AND UT.<\/p>",
           "copyright": "Cool Cat Wine Spritzer, 6.9 % Alc.\/Vol., Produced by 3 Cool Cats, LLC, Sonoma, CA. Be Cool. Please Drink Responsibly. All rights reserved.",
-          "margin_top": 0,
+          "margin_top": 48,
           "padding_top": 36
         }
       },
