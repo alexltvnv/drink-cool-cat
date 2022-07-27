@@ -120,6 +120,7 @@
     },
     "image-with-text": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "image-with-text-0": {
           "type": "heading",
@@ -155,6 +156,7 @@
     },
     "multicolumn": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "column-0": {
           "type": "column",
@@ -199,9 +201,10 @@
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
-        "heading": "You may also like",
+        "heading": "OTHER COOL CAT RECIPES",
         "heading_size": "h2",
-        "columns_desktop": 4,
+        "products_to_show": 5,
+        "columns_desktop": 5,
         "color_scheme": "background-1",
         "image_ratio": "square",
         "show_secondary_image": true,
