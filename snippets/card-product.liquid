@@ -9,6 +9,7 @@
     - show_rating: {Boolean} Show the product rating. Default: false
     - extend_height: {Boolean} Card height extends to available container space. Default: true (optional)
     - lazy_load: {Boolean} Image should be lazy loaded. Default: true (optional)
+    - show_shop_now: {Boolean} Show the shop now button.
     - show_quick_add: {Boolean} Show the quick add button.
     - section_id: {String} The ID of the section that contains this card.
 
@@ -153,9 +154,11 @@
             {% render 'price', product: card_product, price_class: '' %}
           </div>
         </div>
-        <a class="button card-button button--full-width button--secondary" href="{{ card_product.url | within: collection }}" style="grid-row-start: 3;">
-          {{ settings.card_shop_btn_text }}
-        </a>
+        {%- if show_shop_now -%}
+          <a class="button card-button button--full-width button--secondary" href="{{ card_product.url | within: collection }}" style="grid-row-start: 3;">
+            {{ settings.card_shop_btn_text }}
+          </a>
+        {%- endif -%}
         {%- if show_quick_add -%}
           <div class="quick-add">
             {%- assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id -%}
