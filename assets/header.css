@@ -1,0 +1,8 @@
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #000;
+  max-width: 100%;
+}
+header.page-width {
+  max-width: 100%;
+}

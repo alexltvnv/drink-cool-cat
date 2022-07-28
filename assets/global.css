@@ -1,3 +1,242 @@
 body {
   background-color: #fff !important;
 }
+
+.page-width {
+  padding: 0 75px;
+}
+
+.page-width-full-screen {
+  max-width: 100% !important;
+  width: 100%;
+}
+
+.card-button {
+  box-sizing: border-box;
+  border: 2px solid #000;
+  font-size: 18px;
+  line-height: 35px;
+  height: 35px;
+}
+
+.quick-add__submit {
+  color: #000;
+  font-size: 12px;
+  padding: 0 !important;
+  text-transform: uppercase;
+}
+
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #000;
+  align-items: center;
+  max-width: 100%;
+}
+header.page-width {
+  max-width: 100%;
+}
+header.header {
+  display: flex;
+}
+
+.header__inline-menu {
+  margin-left: auto !important;
+}
+
+.list-menu--inline li {
+  margin-left: 35px;
+}
+.list-menu--inline li:first-child {
+  margin-left: 0;
+}
+
+.header__menu-item {
+  font-size: 16px;
+  font-family: "Neutra", sans-serif;
+  font-weight: 700;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+footer.footer {
+  background-color: #000;
+  padding-top: 60px;
+}
+
+@font-face {
+  font-family: "Neutra";
+  src: url("NeutrDisMedAlt.eot");
+  src: url("NeutrDisMedAlt.eot?#iefix") format("embedded-opentype"), url("NeutrDisMedAlt.woff2") format("woff2"), url("NeutrDisMedAlt.woff") format("woff"), url("NeutrDisMedAlt.svg#NeutraDisp-MediumAlt") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neutra";
+  src: url("NeutraDisplayBoldAlt.eot");
+  src: url("NeutraDisplayBoldAlt.eot?#iefix") format("embedded-opentype"), url("NeutraDisplayBoldAlt.woff2") format("woff2"), url("NeutraDisplayBoldAlt.woff") format("woff"), url("NeutraDisplayBoldAlt.svg#NeutraDisp-BoldAlt") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+h1 {
+  font-family: "Neutra", sans-serif;
+  font-size: 80px;
+}
+h1 span {
+  font-size: 80px;
+}
+
+h2 {
+  font-family: "Neutra", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+}
+h2 span {
+  font-size: 80px;
+}
+
+.video-section {
+  padding: 0;
+  padding-bottom: 50px;
+}
+
+.header__icon--cart {
+  height: 40px;
+  width: 40px;
+}
+.header__icon--cart .icon {
+  height: 20px;
+  width: 20px;
+}
+
+.rich-text__blocks {
+  max-width: 100% !important;
+}
+
+#instagram-title-section a {
+  color: #000;
+  text-decoration: none !important;
+}
+
+#instagram-title-section {
+  position: relative;
+  top: 140px;
+  z-index: 2;
+}
+
+#instagram-title-section .insta-title {
+  padding-bottom: 0;
+  margin-bottom: 16px;
+  font-size: 60px;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+#instagram-title-section .insta-title a:hover,
+#instagram-title-section .insta-subtitle a:hover {
+  color: #000;
+}
+
+#instagram-title-section .insta-subtitle {
+  font-family: "Neutra", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+@media (max-width: 790px) {
+  #instagram-title-section .insta-title {
+    font-size: 40px;
+  }
+  #instagram-title-section .insta-subtitle {
+    font-size: 16px;
+  }
+}
+@media (max-width: 575px) {
+  .instagram-title-section {
+    position: relative;
+  }
+  #instagram-title-section {
+    position: absolute;
+    top: calc(50vw - 20px);
+    transform: translateY(-50%);
+  }
+  #instagram-title-section .insta-title,
+#instagram-title-section .insta-subtitle,
+#instagram-title-section .insta-title a,
+#instagram-title-section .insta-subtitle a {
+    color: #fff !important;
+  }
+}
+@media (min-width: 576px) {
+  #instagram-title-section {
+    margin-top: -100px;
+  }
+  #instagram-title-section .title-wrap {
+    display: inline-block;
+    max-width: 33.33%;
+  }
+}
+#insta-feed {
+  margin-top: 0 !important;
+  padding-left: 105px;
+  padding-right: 105px;
+}
+
+#insta-feed .instafeed-container {
+  clip-path: polygon(5% 0, 95% 0, 95% 90%, 5% 90%);
+}
+
+#insta-feed img {
+  transform-origin: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 790px) {
+  #insta-feed {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (max-width: 575px) {
+  #insta-feed a:nth-child(2) .instafeed-container {
+    width: 100% !important;
+    padding-top: 100% !important;
+  }
+  #insta-feed a:not(:nth-child(2)) {
+    display: none;
+  }
+  #insta-feed .instafeed-overlay,
+.instafeed-shopify .instafeed-overlay {
+    opacity: 0.2 !important;
+    background-color: #000;
+  }
+  #insta-feed .instafeed-overlay:before,
+.instafeed-shopify .instafeed-overlay:before {
+    display: none !important;
+  }
+}
+@media (min-width: 576px) {
+  #insta-feed a:hover img {
+    transform: scale(1.07);
+  }
+  body #insta-feed {
+    margin-bottom: 170px;
+  }
+  #insta-feed a:nth-child(2) {
+    font-size: 0;
+  }
+  #insta-feed a:nth-child(2) .instafeed-container {
+    top: 140px;
+  }
+  .products_home .container-fluid-custom_ {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+#insta-feed .instafeed-overlay::before,
+.instafeed-shopify .instafeed-overlay::before,
+#insta-feed .instafeed-overlay::after,
+.instafeed-shopify .instafeed-overlay::after {
+  display: none;
+}
