@@ -1,0 +1,50 @@
+@keyframes runningLine {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.running-line-section {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    overflow: hidden;
+
+    .inner-wrap {
+        box-sizing: border-box;
+        background-color: #000;
+        color: #fff;
+        font-family: 'Neutra', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 16px 0;
+        white-space: nowrap;
+    }
+
+    .text-wrap {
+        display: flex;
+        justify-content: space-around;
+        animation-name: runningLine;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    .text-item {
+        padding-left: 50px;
+    }
+}
+
+.running-line {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+@media (max-width: 575px) {
+    .running-line-section {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
