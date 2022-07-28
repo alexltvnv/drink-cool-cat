@@ -66,7 +66,7 @@
               show_secondary_image: section.settings.show_secondary_image,
               show_vendor: section.settings.show_vendor,
               show_rating: section.settings.show_rating,
-              show_price: section.settings.show_price,
+              hide_price: section.settings.hide_price,
               show_shop_now: section.settings.enable_shop_now,
               show_quick_add: section.settings.enable_quick_add,
               section_id: section.id
@@ -305,9 +305,9 @@
     },
     {
       "type": "checkbox",
-      "id": "show_price",
-      "default": true,
-      "label": "t:sections.featured-collection.settings.show_price.label"
+      "id": "hide_price",
+      "default": false,
+      "label": "t:sections.featured-collection.settings.hide_price.label"
     },
     {
       "type": "checkbox",

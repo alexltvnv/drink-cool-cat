@@ -9,6 +9,7 @@
     - show_rating: {Boolean} Show the product rating. Default: false
     - extend_height: {Boolean} Card height extends to available container space. Default: true (optional)
     - lazy_load: {Boolean} Image should be lazy loaded. Default: true (optional)
+    - hide_price: {Boolean} Hide the price.
     - show_shop_now: {Boolean} Show the shop now button.
     - show_quick_add: {Boolean} Show the quick add button.
     - section_id: {String} The ID of the section that contains this card.
@@ -152,7 +153,7 @@
               </p>
             {%- endif -%}
 
-            {%- if show_price -%}
+            {%- if not hide_price -%}
               {% render 'price', product: card_product, price_class: '' %}
             {%- endif -%}
           </div>
