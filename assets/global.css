@@ -3,6 +3,7 @@ body {
 }
 
 .page-width {
+  box-sizing: border-box;
   padding: 0 75px;
 }
 
@@ -15,13 +16,17 @@ body {
   box-sizing: border-box;
   border: 2px solid #000;
   font-size: 18px;
+  font-family: "Montserrat", sans-serif;
   line-height: 35px;
   height: 35px;
 }
 
 .quick-add__submit {
   color: #000;
+  display: block;
   font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 15px;
   padding: 0 !important;
   text-transform: uppercase;
 }
@@ -94,11 +99,183 @@ h2 span {
   font-size: 80px;
 }
 
+.awards-section {
+  padding: 65px 0 85px;
+}
+
+.awards-section .wrap {
+  display: flex;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 575px) {
+  .awards-section {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  .awards-section .wrap {
+    max-width: 100%;
+    max-width: 350px;
+  }
+  .awards-section .award {
+    margin-left: 3%;
+    margin-right: 3%;
+    max-width: 14%;
+  }
+}
+@media (min-width: 901px) {
+  .awards-section .wrap {
+    max-width: 800px;
+  }
+}
+.award {
+  transition: transform 0.2s ease;
+}
+.award img {
+  max-height: 71px;
+  max-width: 100%;
+}
+
+.award:hover {
+  transform: scale(1.3);
+}
+
+.home-featured-collection {
+  box-sizing: border-box;
+  margin: 0 -40px;
+}
+.home-featured-collection .media.media--hover-effect > img + img {
+  opacity: 0;
+}
+.home-featured-collection li {
+  box-sizing: border-box;
+  padding: 0 40px;
+  width: 25%;
+}
+
 .video-section {
   padding: 0;
   padding-bottom: 50px;
 }
 
+.tiles-section img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.tiles-section .tile-item-col {
+  margin-bottom: 50px;
+}
+.tiles-section .bg-wrap {
+  position: relative;
+  min-height: 100%;
+}
+.tiles-section h2 {
+  max-width: 340px;
+}
+.tiles-section p {
+  font-size: 14px;
+  line-height: 140%;
+  margin-top: 0;
+  max-width: 320px;
+}
+.tiles-section .button:not(:hover) {
+  background-color: #fff;
+}
+.tiles-section .bg-position {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#tiles-section .tile-title {
+  font-size: 44px;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-bottom: 0 !important;
+}
+
+@media (min-width: 576px) {
+  .tiles-section .tile-item {
+    padding: 36px 45px;
+    min-height: calc((50vw - 50px) / 4 * 5);
+  }
+  .tiles-section .overlay {
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+  .tiles-section .light-text {
+    color: #fff;
+  }
+  .tiles-section .light-text .tile-title {
+    color: #fff;
+  }
+  .tiles-section .text-bottom {
+    display: flex;
+    align-items: flex-end;
+  }
+  .tiles-section .button {
+    color: #000;
+    line-height: 35px;
+    height: 35px;
+  }
+}
+@media (min-width: 800px) {
+  .tiles-section .tile-item {
+    min-height: calc((50vw - 125px - 20px) / 4 * 5);
+  }
+}
+@media (min-width: 1025px) {
+  .tiles-section .tile-item {
+    min-height: 575px;
+  }
+  .tiles-section .tile-item-col:first-child {
+    padding-right: 25px;
+  }
+  .tiles-section .tile-item-col:last-child {
+    padding-left: 25px;
+  }
+}
+@media (min-width: 1230px) {
+  .tiles-section .tile-item {
+    min-height: 700px;
+  }
+}
+@media (max-width: 575px) {
+  .tiles-section .tile-item {
+    min-height: calc((100vw - 40px) / 4 * 5);
+  }
+  .tiles-section .button {
+    margin-top: 16px;
+  }
+  .bg-mobile-wrap {
+    padding-bottom: 100%;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  #tiles-section .tile-text {
+    color: #000;
+  }
+  #tiles-section .button {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+  .button.card-button {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+}
+@media (max-width: 790px) {
+  #tiles-section .tile-title {
+    font-size: 44px;
+  }
+}
 .header__icon--cart {
   height: 40px;
   width: 40px;
@@ -239,4 +416,12 @@ h2 span {
 #insta-feed .instafeed-overlay::after,
 .instafeed-shopify .instafeed-overlay::after {
   display: none;
+}
+
+.announcement-bar__message {
+  box-sizing: border-box;
+  font-family: "Neutra", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 16px 0;
 }

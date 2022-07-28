@@ -3,6 +3,7 @@ body {
 }
 // Grid
 .page-width {
+    box-sizing: border-box;
     padding: 0 75px;
 }
 .page-width-full-screen {
@@ -12,17 +13,23 @@ body {
 // Colors
 $black: #000;
 
+
+
 // Buttons
 .card-button {
     box-sizing: border-box;
     border: 2px solid $black;
     font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
     line-height: 35px;
     height: 35px;
 }
 .quick-add__submit {
     color: $black;
+    display: block;
     font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 15px;
     padding: 0!important;
     text-transform: uppercase;
 }
@@ -32,8 +39,12 @@ $black: #000;
 // Typography
 @import '_typography';
 // Sections
+@import 'sections/_awards-section';
+@import 'sections/_home-featured-collection';
 @import 'sections/_video-section';
+@import 'sections/_info-two-blocks';
 // Components
 @import 'components/_cart';
 @import 'components/_rich-text';
 @import 'components/_instafeed';
+@import 'components/_announcement-bar';
