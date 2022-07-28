@@ -19,9 +19,11 @@
 {%- endstyle -%}
 
 <div class="page-width page-width--narrow section-{{ section.id }}-padding">
-  <h1 class="main-page-title page-title h0">
-    {{ page.title | escape }}
-  </h1>
+  {%- if hide_title == blank -%}
+    <h1 class="main-page-title page-title h0">
+      {{ page.title | escape }}
+    </h1>
+  {%- endif -%}
   <div class="rte">
     {{ page.content }}
   </div>
@@ -33,6 +35,15 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.page.settings.hide_title"
+    },
+    {
+      "id": "hide_title",
+      "default": false,
+      "label": "t:sections.page.settings.hide_title"
+    },
     {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"
