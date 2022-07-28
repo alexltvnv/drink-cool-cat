@@ -852,6 +852,9 @@
         }
       },
       "settings": {
+        "footer_logo_enable": {
+          "label": "Show footer logo"
+        },
         "newsletter_enable": {
           "label": "Show email signup"
         },
