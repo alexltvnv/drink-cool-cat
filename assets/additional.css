@@ -269,6 +269,7 @@
 
 }
 .card-title-info {
+    position: relative;
     overflow: hidden;
     text-align: left;
     padding-right: 40px;

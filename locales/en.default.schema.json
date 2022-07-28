@@ -363,6 +363,9 @@
         "label": "Color scheme",
         "has_cards_info": "To change the card color scheme, update your theme settings."
       },
+      "shop_btn": {
+        "label": "Shop button text"
+      },
       "heading_size": {
         "label": "Heading size",
         "options__1": {
@@ -688,6 +691,9 @@
         "show_rating": {
           "label": "Show product rating",
           "info": "To display a rating, add a product rating app. [Learn more](https:\/\/help.shopify.com\/manual\/online-store\/themes\/theme-structure\/theme-features#featured-collection-show-product-rating)"
+        },
+        "enable_shop_now": {
+          "label": "Enable Shop Now button"
         },
         "enable_quick_buy": {
           "label": "Enable quick add button",

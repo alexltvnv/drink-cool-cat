@@ -9,12 +9,19 @@
     - show_rating: {Boolean} Show the product rating. Default: false
     - extend_height: {Boolean} Card height extends to available container space. Default: true (optional)
     - lazy_load: {Boolean} Image should be lazy loaded. Default: true (optional)
+    - show_shop_now: {Boolean} Show the shop now button.
     - show_quick_add: {Boolean} Show the quick add button.
     - section_id: {String} The ID of the section that contains this card.
 
     Usage:
     {% render 'card-product', show_vendor: section.settings.show_vendor %}
 {% endcomment %}
+
+{%- style -%}
+  .card-title-info {
+      background-image: url("{{ 'star.svg' | asset_url }}");
+  }
+{%- endstyle -%}
 
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 
@@ -102,10 +109,17 @@
       </div>
       <div class="card__content">
         <div class="card__information">
-          <h3 class="card__heading{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"{% if card_product.featured_media or settings.card_style == 'card' %} id="title-{{ section_id }}-{{ card_product.id }}"{% endif %}>
+          <h3 class="card__heading card-title-info{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"{% if card_product.featured_media or settings.card_style == 'card' %} id="title-{{ section_id }}-{{ card_product.id }}"{% endif %}>
             <a href="{{ card_product.url }}" id="CardLink-{{ section_id }}-{{ card_product.id }}" class="full-unstyled-link" aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}">
               {{ card_product.title | escape }}
             </a>
+            {%- if show_rating and card_product.metafields.reviews.rating.value == blank -%}
+              {% assign current_variant = card_product.selected_or_first_available_variant %}
+              <!-- TrustBox widget - Product Reviews Carousel -->
+              <div class="trustpilot-widget clip-rating-num" data-locale="en-US" data-template-id="60f537b5b0f1639de1fe048c" data-businessunit-id="608191716c05e7000118e9b8" data-style-height="20px" data-style-width="185px" data-theme="light" data-stars="1" data-sku="{{ current_variant.sku }}" data-review-languages="en" data-reviewnumber="0" data-no-reviews="hide">
+              </div>
+              <!-- End TrustBox widget -->
+            {%- endif -%}
           </h3>
           <div class="card-information">
             {%- if show_vendor -%}
@@ -140,7 +154,11 @@
             {% render 'price', product: card_product, price_class: '' %}
           </div>
         </div>
-        <a class="button card-button button--full-width button--secondary" href="{{ product.url | within: collection }}" style="grid-row-start: 3;">Shop Now</a>
+        {%- if show_shop_now -%}
+          <a class="button card-button button--full-width button--secondary" href="{{ card_product.url | within: collection }}" style="grid-row-start: 3;">
+            {{ settings.card_shop_btn_text }}
+          </a>
+        {%- endif -%}
         {%- if show_quick_add -%}
           <div class="quick-add">
             {%- assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id -%}

@@ -517,6 +517,12 @@
         "label": "t:sections.all.colors.label"
       },
       {
+        "type": "text",
+        "id": "card_shop_btn_text",
+        "default": "Shop Now",
+        "label": "t:sections.all.shop_btn.label"
+      },
+      {
         "type": "header",
         "content": "t:settings_schema.global.settings.header__border.content"
       },
