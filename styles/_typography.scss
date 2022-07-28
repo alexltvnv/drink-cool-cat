@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Neutra';
+    src: url('NeutrDisMedAlt.eot');
+    src: url('NeutrDisMedAlt.eot?#iefix') format('embedded-opentype'),
+        url('NeutrDisMedAlt.woff2') format('woff2'),
+        url('NeutrDisMedAlt.woff') format('woff'),
+        url('NeutrDisMedAlt.svg#NeutraDisp-MediumAlt') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Neutra';
+    src: url('NeutraDisplayBoldAlt.eot');
+    src: url('NeutraDisplayBoldAlt.eot?#iefix') format('embedded-opentype'),
+        url('NeutraDisplayBoldAlt.woff2') format('woff2'),
+        url('NeutraDisplayBoldAlt.woff') format('woff'),
+        url('NeutraDisplayBoldAlt.svg#NeutraDisp-BoldAlt') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'Neutra', sans-serif;
+    font-size: 80px;
+    span {
+        font-size: 80px;
+    }
+}
+h2 {
+    font-family: 'Neutra', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    span {
+        font-size: 80px;
+    }
+}

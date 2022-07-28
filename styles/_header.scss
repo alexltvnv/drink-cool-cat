@@ -1,0 +1,31 @@
+header {
+    background-color: #fff;
+    border-bottom: 1px solid $black;
+    align-items: center;
+    max-width: 100%;
+    &.page-width {
+        max-width: 100%;
+    }
+    &.header {
+        display: flex;
+    }
+}
+// Navigations
+.header__inline-menu {
+    margin-left: auto!important;
+}
+.list-menu--inline {
+    li {
+        margin-left: 35px;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}
+.header__menu-item {
+    font-size: 16px;
+    font-family: 'Neutra', sans-serif;
+    font-weight: 700;
+    padding: 0;
+    text-transform: uppercase;
+}

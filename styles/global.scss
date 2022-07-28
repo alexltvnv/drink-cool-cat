@@ -1,3 +1,39 @@
 body {
     background-color: #fff!important;
 }
+// Grid
+.page-width {
+    padding: 0 75px;
+}
+.page-width-full-screen {
+    max-width: 100%!important;
+    width: 100%;
+}
+// Colors
+$black: #000;
+
+// Buttons
+.card-button {
+    box-sizing: border-box;
+    border: 2px solid $black;
+    font-size: 18px;
+    line-height: 35px;
+    height: 35px;
+}
+.quick-add__submit {
+    color: $black;
+    font-size: 12px;
+    padding: 0!important;
+    text-transform: uppercase;
+}
+// Imports
+@import '_header';
+@import '_footer';
+// Typography
+@import '_typography';
+// Sections
+@import 'sections/_video-section';
+// Components
+@import 'components/_cart';
+@import 'components/_rich-text';
+@import 'components/_instafeed';
