@@ -204,6 +204,7 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "heading": "OTHER COOL CAT RECIPES",
         "heading_size": "h2",
@@ -221,7 +222,6 @@
     },
     "1659026106d5020aca": {
       "type": "featured-collection",
-      "disabled": true,
       "settings": {
         "title": "OTHER COOL CAT RECIPES",
         "heading_size": "h2",
@@ -236,7 +236,7 @@
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "background-1",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
