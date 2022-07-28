@@ -1,0 +1,67 @@
+{
+  "sections": {
+    "165893688053c3df74": {
+      "type": "rich-text",
+      "blocks": {
+        "16589368809777b414-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>COOL CAT COCKTAIL RECIPES<\/p>",
+            "heading_size": "hxl"
+          }
+        }
+      },
+      "block_order": [
+        "16589368809777b414-0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 20
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "1658929356d578b3c7": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "recipes",
+        "products_to_show": 6,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 84
+      }
+    }
+  },
+  "order": [
+    "165893688053c3df74",
+    "main",
+    "1658929356d578b3c7"
+  ]
+}
