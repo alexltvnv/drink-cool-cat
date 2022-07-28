@@ -180,8 +180,21 @@ h2 span {
   margin-top: 0;
   max-width: 320px;
 }
+.tiles-section .button {
+  box-sizing: border-box;
+  color: #000;
+  line-height: 35px;
+  font-size: 16px;
+  height: 35px;
+  min-height: auto;
+  padding: 0 35px;
+  transition: 0.2s ease;
+}
 .tiles-section .button:not(:hover) {
   background-color: #fff;
+}
+.tiles-section .button:hover {
+  color: #fff;
 }
 .tiles-section .bg-position {
   position: absolute;
@@ -219,11 +232,6 @@ h2 span {
   .tiles-section .text-bottom {
     display: flex;
     align-items: flex-end;
-  }
-  .tiles-section .button {
-    color: #000;
-    line-height: 35px;
-    height: 35px;
   }
 }
 @media (min-width: 800px) {
@@ -424,4 +432,50 @@ h2 span {
   font-size: 16px;
   font-weight: 700;
   padding: 16px 0;
+}
+
+@keyframes runningLine {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.running-line-section {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+.running-line-section .inner-wrap {
+  box-sizing: border-box;
+  background-color: #000;
+  color: #fff;
+  font-family: "Neutra", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 16px 0;
+  white-space: nowrap;
+}
+.running-line-section .text-wrap {
+  display: flex;
+  justify-content: space-around;
+  animation-name: runningLine;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.running-line-section .text-item {
+  padding-left: 50px;
+}
+
+.running-line {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 575px) {
+  .running-line-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }
