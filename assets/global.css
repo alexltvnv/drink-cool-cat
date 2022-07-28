@@ -68,6 +68,25 @@ footer.footer {
   padding-top: 60px;
 }
 
+.footer-block__heading {
+  display: block;
+  font-family: "Neutra", sans-serif;
+  font-size: 20px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.footer-block__details-content {
+  color: #fff;
+  font-size: 14px;
+  max-width: 160px;
+  width: 100%;
+}
+
+.footer-block__details-content a {
+  color: #fff;
+}
+
 @font-face {
   font-family: "Neutra";
   src: url("NeutrDisMedAlt.eot");
@@ -97,6 +116,16 @@ h2 {
 }
 h2 span {
   font-size: 80px;
+}
+h2.h2 {
+  font-family: "Neutra", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+h2.h2 span {
+  font-family: "Neutra", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .awards-section {
@@ -478,4 +507,16 @@ h2 span {
     margin-top: 40px;
     margin-bottom: 40px;
   }
+}
+.newsletter-form__field-wrapper .field__input {
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #808080;
+  padding: 16px 13px;
+}
+.newsletter-form__field-wrapper::placeholder {
+  color: #808080;
+}
+.newsletter-form__field-wrapper .field__label {
+  color: #808080 !important;
 }

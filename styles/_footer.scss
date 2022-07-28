@@ -4,3 +4,20 @@ footer {
         padding-top: 60px;
     }
 }
+.footer-block__heading {
+    display: block;
+    font-family: 'Neutra', sans-serif;
+    font-size: 20px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+.footer-block__details-content {
+    color: #fff;
+    font-size: 14px;
+    max-width: 160px;
+    width: 100%;
+}
+.footer-block__details-content a {
+    color: #fff;
+}

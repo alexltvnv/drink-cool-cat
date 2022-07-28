@@ -1,0 +1,14 @@
+.newsletter-form__field-wrapper {
+    .field__input {
+        box-sizing: border-box;
+        background-color: #fff;
+        color: #808080;
+        padding: 16px 13px;
+    }
+    &::placeholder {
+        color: #808080;
+    }
+    .field__label {
+        color: #808080!important;
+    }
+}
