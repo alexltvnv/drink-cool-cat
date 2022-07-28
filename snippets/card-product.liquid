@@ -140,7 +140,9 @@
             {% render 'price', product: card_product, price_class: '' %}
           </div>
         </div>
-        <a class="button card-button button--full-width button--secondary" href="{{ product.url | within: collection }}" style="grid-row-start: 3;">Shop Now</a>
+        <a class="button card-button button--full-width button--secondary" href="{{ product.url | within: collection }}" style="grid-row-start: 3;">
+          {{ settings.card_shop_btn_text }}
+        </a>
         {%- if show_quick_add -%}
           <div class="quick-add">
             {%- assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id -%}
