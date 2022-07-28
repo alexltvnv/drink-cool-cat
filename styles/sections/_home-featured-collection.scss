@@ -1,0 +1,12 @@
+.home-featured-collection {
+    box-sizing: border-box;
+    margin: 0 -40px;
+    .media.media--hover-effect>img+img {
+        opacity: 0;
+    }
+    li {
+        box-sizing: border-box;
+        padding: 0 40px;
+        width: 25%;
+    }
+}
