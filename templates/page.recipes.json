@@ -51,6 +51,7 @@
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": true,
+        "hide_price": false,
         "enable_shop_now": false,
         "enable_quick_add": false,
         "columns_mobile": "2",
