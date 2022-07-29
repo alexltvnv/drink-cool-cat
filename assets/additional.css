@@ -450,3 +450,7 @@
     object-position: center;
     z-index: -1;
 }
+.video-bg-wrap {
+    position: relative;
+    overflow: hidden;
+}
