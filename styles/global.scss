@@ -14,7 +14,9 @@ body {
 $black: #000;
 
 
-
+.card-wrapper:hover {
+    text-decoration: none!important;
+}
 // Buttons
 .card-button {
     box-sizing: border-box;
@@ -23,15 +25,33 @@ $black: #000;
     font-family: 'Montserrat', sans-serif;
     line-height: 35px;
     height: 35px;
+    text-decoration: none;
+    &:hover {
+        background: #000;
+        color: #fff;
+        text-decoration: none!important;
+    }
 }
 .quick-add__submit {
+    background-color: transparent;
+    border: 0;
     color: $black;
     display: block;
     font-size: 12px;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 18px;
     margin-top: 15px;
     padding: 0!important;
+    padding-bottom: 5px;
+    position: relative;
     text-transform: uppercase;
+    span {
+        padding-bottom: 5px;
+    }
+    &:before {
+        content: '+';
+    }
 }
 // Imports
 @import '_header';
