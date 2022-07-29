@@ -10,8 +10,6 @@
                 <div class="bg-mobile-wrap">                  
                   {%- if block.settings.image != blank and block.settings.bg_type == 'bg_img' -%}
                     <img class="bg-img bg-position" src="{{ block.settings.image | image_url }}">
-                  {%- else -%}
-                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                   {%- endif -%}
 
                   {%- if block.settings.video_url and block.settings.bg_type == 'bg_video' -%}
