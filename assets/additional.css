@@ -463,3 +463,10 @@
   padding: 30px;
   background-color: #fff;
 } 
+
+.template-product .tt-collapse-content [style*="font-size: 44px"] {
+    margin-top: 30px;
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    text-transform: uppercase !important;
+}
