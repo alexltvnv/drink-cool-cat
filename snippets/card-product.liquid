@@ -171,8 +171,7 @@
                 {%- form 'product', card_product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   <input type="hidden" name="id" value="{{ card_product.selected_or_first_available_variant.id }}" disabled>
                   <div class="text-center">
-                    <a
-                      href="#"
+                    <button
                       id="{{ product_form_id }}-submit"
                       type="submit"
                       name="add"
@@ -198,7 +197,7 @@
                           <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
                         </svg>
                       </div>
-                    </a>
+                    </button>
                   </div>
                 {%- endform -%}
               </product-form>
