@@ -12,6 +12,10 @@ body {
   width: 100%;
 }
 
+.card-wrapper:hover {
+  text-decoration: none !important;
+}
+
 .card-button {
   box-sizing: border-box;
   border: 2px solid #000;
@@ -19,16 +23,34 @@ body {
   font-family: "Montserrat", sans-serif;
   line-height: 35px;
   height: 35px;
+  text-decoration: none;
+}
+.card-button:hover {
+  background: #000;
+  color: #fff;
+  text-decoration: none !important;
 }
 
 .quick-add__submit {
+  background-color: transparent;
+  border: 0;
   color: #000;
   display: block;
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 18px;
   margin-top: 15px;
   padding: 0 !important;
+  padding-bottom: 5px;
+  position: relative;
   text-transform: uppercase;
+}
+.quick-add__submit span {
+  padding-bottom: 5px;
+}
+.quick-add__submit:before {
+  content: "+";
 }
 
 header {
