@@ -1,23 +1,23 @@
 <section class="testimonials video-bg-wrap">
-  {%- if settings.video_url -%}
+  {%- if section.settings.video_url -%}
     <video class="video-bg" loop autoplay preload="none" muted playsinline>
-      <source src="{{ settings.video_url }}" type="video/mp4">
+      <source src="{{ section.settings.video_url }}" type="video/mp4">
     </video>
   {%- endif -%}
   <div class="row">
-    {%- if settings.title != blank -%}
+    {%- if section.settings.title != blank -%}
       <div class="col-12 text-center">
         <h2 class="section-title">
-          {{ settings.title | escape }}   
+          {{ section.settings.title | escape }}   
         </h2>
       </div>
     {%- endif -%}
-    {%- if settings.title != blank -%}
+    {%- if section.settings.title != blank -%}
       <!-- TrustBox script -->
       <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
       <!-- End TrustBox script -->
       <div class="col-12">
-        {{ settings.widget_code }}   
+        {{ section.settings.widget_code }}   
       </div>
     {%- endif -%}
   </div>
