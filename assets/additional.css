@@ -454,3 +454,8 @@
     position: relative;
     overflow: hidden;
 }
+
+.testimonials .section-title {
+  color: #fff;
+  text-transform: uppercase;
+}
