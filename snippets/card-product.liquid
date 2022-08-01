@@ -280,8 +280,10 @@
     </div>
   </div>
 {%- endif -%}
-<ul>
-    <li>{{ card_product.options.size }}</li>
-  
-</ul>
+
+  {% for variant in card_product.variants %}
+    {% if variant == size %}
+      {{ variant.title }}
+    {% endif %}>
+  {% endfor %}
 
