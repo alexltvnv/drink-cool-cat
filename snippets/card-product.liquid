@@ -282,7 +282,7 @@
 {%- endif -%}
 
   {% for variant in card_product.variants %}
-    {{ variant.title }}- {{ variant.selected }}
+    {{ variant.title }}- {{ variant.available }}
     {% if variant == 'size' %}
       {{ variant.size }}
     {% endif %}>
