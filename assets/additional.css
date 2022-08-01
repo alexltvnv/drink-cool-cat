@@ -474,3 +474,28 @@
 .cart-count-bubble {    
     box-shadow: 0 0 1px 2px #fff;    
 }
+
+
+@media (min-width: 990px) {
+    .header__menu-item span {
+        position: relative;
+        text-decoration: none;        
+    }
+    .header__menu-item span:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -5px;
+        width: 0%;
+        height: 2px;
+        background: #000;
+        transition: width .3s ease-out;
+    }
+    .header__menu-item:hover .header__active-menu-item:before,
+    .header__menu-item:hover span:before,
+    .header__menu-item:focus span:before {
+        width: 100%
+    }
+}
