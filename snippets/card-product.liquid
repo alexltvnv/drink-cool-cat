@@ -19,7 +19,7 @@
 {% endcomment %}
 
 {%- style -%}
-  .card-title-info {
+  .card__information {
       background-image: url("{{ 'star.svg' | asset_url }}");
   }
 {%- endstyle -%}
@@ -96,7 +96,12 @@
             <h3 class="card__heading"{% if card_product.featured_media == nil and settings.card_style == 'standard' %} id="title-{{ section_id }}-{{ card_product.id }}"{% endif %}>
               <a href="{{ card_product.url }}" id="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }}" class="full-unstyled-link" aria-labelledby="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}">
                 {{ card_product.title | escape }}
-              </a>              
+                {% for variant in card_product.variants %}    
+                  {% if variant.title != 'Default Title' %}
+                    <br>{{ variant.title }}
+                  {% endif %}
+                {% endfor %}
+              </a>
             </h3>
           </div>
           <div class="card__badge {{ settings.badge_position }}">
@@ -116,17 +121,11 @@
             <a href="{{ card_product.url }}" id="CardLink-{{ section_id }}-{{ card_product.id }}" class="full-unstyled-link" aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}">
               {{ card_product.title | escape }}
               {% for variant in card_product.variants %}    
-                  {% if variant.title != 'Default Title' %}
-                    <br>{{ variant.title }}
-                  {% endif %}
-                {% endfor %}
+                {% if variant.title != 'Default Title' %}
+                  <br>{{ variant.title }}
+                {% endif %}
+              {% endfor %}
             </a>
-            {%- if show_rating and card_product.metafields.reviews.rating.value == blank -%}
-              <!-- TrustBox widget - Product Reviews Carousel -->
-              <div class="trustpilot-widget clip-rating-num" data-locale="en-US" data-template-id="60f537b5b0f1639de1fe048c" data-businessunit-id="608191716c05e7000118e9b8" data-style-height="20px" data-style-width="185px" data-theme="light" data-stars="1" data-sku="{{ current_variant_sku }}" data-review-languages="en" data-reviewnumber="0" data-no-reviews="hide">
-              </div>
-              <!-- End TrustBox widget -->
-            {%- endif -%}
           </h3>
           <div class="card-information">
             {%- if show_vendor -%}
@@ -162,6 +161,12 @@
               {% render 'price', product: card_product, price_class: '' %}
             {%- endif -%}
           </div>
+          {%- if show_rating and card_product.metafields.reviews.rating.value == blank -%}
+            <!-- TrustBox widget - Product Reviews Carousel -->
+            <div class="trustpilot-widget clip-rating-num" data-locale="en-US" data-template-id="60f537b5b0f1639de1fe048c" data-businessunit-id="608191716c05e7000118e9b8" data-style-height="20px" data-style-width="185px" data-theme="light" data-stars="1" data-sku="{{ current_variant_sku }}" data-review-languages="en" data-reviewnumber="0" data-no-reviews="hide">
+            </div>
+            <!-- End TrustBox widget -->
+          {%- endif -%}
         </div>
         {%- if show_shop_now -%}
           <a class="button card-button button--full-width button--secondary" href="{{ card_product.url | within: collection }}" style="grid-row-start: 3;">

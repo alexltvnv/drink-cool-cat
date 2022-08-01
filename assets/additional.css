@@ -258,7 +258,7 @@
 .clip-rating-num {
     position: absolute !important;
     top: 1px;
-    right: -12px;
+    left: -137px;
     background-color: transparent !important;
 }
 .clip-rating-num iframe {
@@ -268,14 +268,21 @@
     backface-visibility: hidden;
 
 }
-.card-title-info {
-    position: relative;
-    overflow: hidden;
-    text-align: left;
-    padding-right: 40px;
+.card__information {
+    position: relative; 
+    padding-bottom: 24px;
+    margin-bottom: 12px;
     background-repeat: no-repeat;
     background-size: 15px;
-    background-position: 100% 2px;
+    background-position: 20px calc(100% - 4px);
+    overflow: hidden;
+}
+.card__information a {
+   padding-bottom: 2px;
+}
+.card-title-info {
+    position: relative;
+    text-align: left;
     text-transform: uppercase;
 }
 .card-title-info a {
