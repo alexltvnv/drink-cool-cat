@@ -281,8 +281,6 @@
   </div>
 {%- endif -%}
 <ul>
-    <li>{{ card_product.size }}</li>
+    <li>{{ card_product.selected_variant }}</li>
 </ul>
-{% for option in card_product.options %}
-  - {{ option }}
-{% endfor %}
+
