@@ -283,3 +283,6 @@
 <ul>
     <li>{{ card_product.size }}</li>
 </ul>
+{% for option in variant.options %}
+  - {{ option }}
+{% endfor %}
