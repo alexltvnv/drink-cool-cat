@@ -493,7 +493,10 @@
         background: #000;
         transition: width .3s ease-out;
     }
-    .header__menu-item:hover .header__active-menu-item:before,
+    .header .header__menu-item span {
+        text-decoration: none;        
+    }
+    .header__active-menu-item:before,
     .header__menu-item:hover span:before,
     .header__menu-item:focus span:before {
         width: 100%
