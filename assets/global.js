@@ -915,8 +915,10 @@ window.addEventListener('load', function() {
       const widget = element.previousElementSibling;
       console.log(widget);
       setTimeout(() => {
-        const iframe = widget.querySelector('iframe');
-        console.log(iframe.contentWindow);
+        const iFrame = widget.querySelector('iframe');
+        const iWindow = iFrame.contentWindow;
+        const iDocument = iWindow.document;
+        console.log(iDocument);
       }, 1000);     
     },
     setReview(rating) {
