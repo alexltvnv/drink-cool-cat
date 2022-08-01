@@ -914,6 +914,7 @@ window.addEventListener('load', function() {
     setReview(element) {
       const widget = element.previousElementSibling;
       const rating = widget.querySelector('.tp-rating');
+      console.log(widget);
       console.log(rating);
     }
   };
