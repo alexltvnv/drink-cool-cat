@@ -281,10 +281,9 @@
   </div>
 {%- endif -%}
 
-  {% for variant in card_product.variants %}
-    {{ variant.title }}- {{ variant }}
-    {% if variant == 'size' %}
-      {{ variant.size }}
+  {% for variant in card_product.variants %}    
+    {% if variant.title != 'Default Title' %}
+      {{ variant.title }}
     {% endif %}>
   {% endfor %}
 
