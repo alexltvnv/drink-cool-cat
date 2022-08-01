@@ -906,13 +906,14 @@ window.addEventListener('load', function() {
       const productElements = document.querySelectorAll('[data-module="trustpilot"]');
     
       if (null !== productElements && productElements.length > 0) {
-        productElements.forEach( ( element ) => {
-          this.setReview();
+        productElements.forEach((element) => {
+          this.setReview(element);
         });
       }
     },
-    setReview() {
-      console.log('INIT CDW');
+    setReview(element) {
+      const widget = element.previousElementSibling;
+      console.log(widget);
     }
   };
 
