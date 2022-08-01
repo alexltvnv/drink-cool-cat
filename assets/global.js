@@ -916,7 +916,7 @@ window.addEventListener('load', function() {
       console.log(widget);
       setTimeout(() => {
         const iframe = widget.querySelector('iframe');
-        console.log(iframe.document.querySelector('.tp-rating'));
+        console.log(iframe.contentWindow);
       }, 1000);     
     },
     setReview(rating) {
