@@ -907,15 +907,20 @@ window.addEventListener('load', function() {
     
       if (null !== productElements && productElements.length > 0) {
         productElements.forEach((element) => {
-          this.setReview(element);
+          this.getReview(element);
         });
       }
     },
-    setReview(element) {
+    getReview(element) {
       const widget = element.previousElementSibling;
-      const rating = widget.querySelector('.tp-rating');
       console.log(widget);
-      console.log(rating);
+      widget.querySelector('iframe').addEventListener('load', () => {
+        const rating = widget.querySelector('.tp-rating');
+        console.log(rating);
+      });      
+    },
+    setReview(rating) {
+      
     }
   };
 
