@@ -915,12 +915,9 @@ window.addEventListener('load', function() {
       const widget = element.previousElementSibling;
       console.log(widget);
       setTimeout(() => {
-        console.log(widget.querySelector('iframe'));
-        //widget.querySelector('iframe').addEventListener('load', () => {
-          const rating = widget.querySelector('.tp-rating');
-          console.log(rating);
-        //});
-      }, 3000);     
+        const iframe = widget.querySelector('iframe');
+        console.log(iframe);
+      }, 1000);     
     },
     setReview(rating) {
       
