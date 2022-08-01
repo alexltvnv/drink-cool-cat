@@ -282,5 +282,10 @@
 {%- endif -%}
 <ul>
     <li>{{ card_product.options.size }}</li>
+  {% for variant in card_product.variants %}
+           <li value="{{ variant.id }}" {% if variant == current_variant %}selected="selected"{% endif %}>
+             {{ variant.title }} - {{ variant.price | money }}
+           </li>
+         {% endfor %}
 </ul>
 
