@@ -97,6 +97,11 @@
               <a href="{{ card_product.url }}" id="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }}" class="full-unstyled-link" aria-labelledby="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}">
                 {{ card_product.title | escape }}
               </a>
+              <ul>
+  {% for product_option in product.options_with_values %}
+    <li>{{ product_option.name }}</li>
+  {% endfor %}
+</ul>
             </h3>
           </div>
           <div class="card__badge {{ settings.badge_position }}">
