@@ -899,32 +899,3 @@ class VariantRadios extends VariantSelects {
 }
 
 customElements.define('variant-radios', VariantRadios);
-
-window.addEventListener('load', function() {
-  const productAverageReviews = {
-    init() {
-      const productElements = document.querySelectorAll('[data-module="trustpilot"]');
-    
-      if (null !== productElements && productElements.length > 0) {
-        productElements.forEach((element) => {
-          this.getReview(element);
-        });
-      }
-    },
-    getReview(element) {
-      const widget = element.previousElementSibling;
-      console.log(widget);
-      setTimeout(() => {
-        const iFrame = widget.querySelector('iframe');
-        const iWindow = iFrame.contentWindow;
-        const iDocument = iWindow.document;
-        console.log(iDocument);
-      }, 1000);     
-    },
-    setReview(rating) {
-      
-    }
-  };
-
-  productAverageReviews.init();
-});
