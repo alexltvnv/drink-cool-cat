@@ -924,5 +924,5 @@ window.addEventListener('load', function() {
     }
   };
 
-  //setTimeout(productAverageReviews.init(), 10000);
+  setTimeout(productAverageReviews.init(), 10000);
 });
