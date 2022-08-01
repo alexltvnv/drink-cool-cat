@@ -916,7 +916,7 @@ window.addEventListener('load', function() {
       console.log(widget);
       setTimeout(() => {
         const iframe = widget.querySelector('iframe');
-        console.log(iframe.contentWindow.document);
+        console.log(iframe.contentWindow);
       }, 1000);     
     },
     setReview(rating) {
