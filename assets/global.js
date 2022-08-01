@@ -913,7 +913,7 @@ window.addEventListener('load', function() {
     },
     setReview(element) {
       const widget = element.previousElementSibling;
-      const rating = widget.document.querySelector('.tp-rating').textContent;
+      const rating = widget.document.querySelector('.tp-rating');
       console.log(rating);
     }
   };
