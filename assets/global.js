@@ -914,6 +914,7 @@ window.addEventListener('load', function() {
     getReview(element) {
       const widget = element.previousElementSibling;
       console.log(widget);
+      console.log(widget.querySelector('iframe'));
       //widget.querySelector('iframe').addEventListener('load', () => {
         const rating = widget.querySelector('.tp-rating');
         console.log(rating);
@@ -924,5 +925,5 @@ window.addEventListener('load', function() {
     }
   };
 
-  setTimeout(productAverageReviews.init(), 10000);
+  productAverageReviews.init();
 });
