@@ -914,11 +914,13 @@ window.addEventListener('load', function() {
     getReview(element) {
       const widget = element.previousElementSibling;
       console.log(widget);
-      console.log(widget.querySelector('iframe'));
-      //widget.querySelector('iframe').addEventListener('load', () => {
-        const rating = widget.querySelector('.tp-rating');
-        console.log(rating);
-      //});      
+      setTimeout(() => {
+        console.log(widget.querySelector('iframe'));
+        //widget.querySelector('iframe').addEventListener('load', () => {
+          const rating = widget.querySelector('.tp-rating');
+          console.log(rating);
+        //});
+      }, 3000);     
     },
     setReview(rating) {
       
