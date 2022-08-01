@@ -914,10 +914,7 @@ window.addEventListener('load', function() {
     getReview(element) {
       const widget = element.previousElementSibling;
       console.log(widget);
-      widget.querySelector('iframe').addEventListener('load', () => {
-        const rating = widget.querySelector('.tp-rating');
-        console.log(rating);
-      });      
+           
     },
     setReview(rating) {
       
