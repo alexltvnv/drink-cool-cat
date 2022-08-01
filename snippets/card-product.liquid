@@ -256,6 +256,11 @@
             <h3 class="card__heading">
               <a role="link" aria-disabled="true" class="full-unstyled-link">
                 {{ 'onboarding.product_title' | t }}
+                {% for variant in card_product.variants %}    
+                  {% if variant.title != 'Default Title' %}
+                    <br>{{ variant.title }}
+                  {% endif %}
+                {% endfor %}
               </a>
             </h3>
           </div>
@@ -280,10 +285,4 @@
     </div>
   </div>
 {%- endif -%}
-
-  {% for variant in card_product.variants %}    
-    {% if variant.title != 'Default Title' %}
-      {{ variant.title }}
-    {% endif %}>
-  {% endfor %}
 
