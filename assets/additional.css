@@ -502,3 +502,7 @@
         width: 100%
     }
 }
+
+.banner__box.color-accent-2 {
+    background: transparent;
+}
