@@ -11,6 +11,18 @@
     },
     "16589397086f844d19": {
       "type": "image-banner",
+      "blocks": {
+        "48366dcb-3970-4b51-9778-75a68aee25b3": {
+          "type": "heading",
+          "settings": {
+            "heading": "COOL CAT WINE SPRITZER  IS A Proud Partner  of the NY Mets",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "48366dcb-3970-4b51-9778-75a68aee25b3"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Landing-hero.jpg",
         "image_overlay_opacity": 0,
