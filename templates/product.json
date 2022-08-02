@@ -15,13 +15,6 @@
           "settings": {
           }
         },
-        "f6b05448-6cbd-4d2a-800c-fe239a296ba3": {
-          "type": "text",
-          "settings": {
-            "text": "We Make Wine Cool™",
-            "text_style": "title"
-          }
-        },
         "caption": {
           "type": "text",
           "settings": {
@@ -54,6 +47,13 @@
         "description": {
           "type": "description",
           "settings": {
+          }
+        },
+        "f6b05448-6cbd-4d2a-800c-fe239a296ba3": {
+          "type": "text",
+          "settings": {
+            "text": "We Make Wine Cool™",
+            "text_style": "title"
           }
         },
         "collapsible-row-0": {
@@ -107,13 +107,13 @@
       "block_order": [
         "vendor",
         "title",
-        "f6b05448-6cbd-4d2a-800c-fe239a296ba3",
         "caption",
         "price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
         "description",
+        "f6b05448-6cbd-4d2a-800c-fe239a296ba3",
         "collapsible-row-0",
         "collapsible-row-1",
         "collapsible-row-2",
