@@ -6,20 +6,14 @@
         "featured_image": {
           "type": "featured_image",
           "settings": {
-            "image_height": "adapt"
+            "image_height": "medium"
           }
         },
         "title": {
           "type": "title",
           "settings": {
-            "blog_show_date": true,
+            "blog_show_date": false,
             "blog_show_author": false
-          }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
           }
         },
         "content": {
@@ -31,14 +25,42 @@
       "block_order": [
         "featured_image",
         "title",
-        "share",
         "content"
       ],
       "settings": {
       }
+    },
+    "1659556587c2842a18": {
+      "type": "image-with-text",
+      "blocks": {
+        "1659556587e2366dc7-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>LIVE PROUD<\/strong>every day! Understand that being your authentic self and embracing your unique qualities is what makes you special. To celebrate this Pride Month, we want to help you celebrate with our limited edition Pride-themed, gluten-free, naturally-flavored California white wine seltzers. The rainbow-adorned cans and 4-packs are available for purchase at select venues and retailers in New York, California, and Florida and online at drinkcoolcat.com.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "1659556587e2366dc7-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Gay_Pride_0819_1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1659556587c2842a18"
   ]
 }
