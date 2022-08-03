@@ -86,11 +86,55 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1659557679393dcfa7": {
+      "type": "video",
+      "settings": {
+        "heading": "Video",
+        "heading_size": "h1",
+        "cover_image": "shopify:\/\/shop_images\/Screen_Shot_2022-06-28_at_9.53_1.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=VMvPEhgWy04",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16595577804ae9a968": {
+      "type": "image-with-text",
+      "blocks": {
+        "1659557780ae2fbda3-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We see you, and you deserve to see yourself. LIVE PROUD, this month, and every month.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "1659557780ae2fbda3-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/SkyHigh_Gay-Pride-_026_1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "1659556587c2842a18",
-    "1659556936f490b57f"
+    "1659556936f490b57f",
+    "1659557679393dcfa7",
+    "16595577804ae9a968"
   ]
 }
