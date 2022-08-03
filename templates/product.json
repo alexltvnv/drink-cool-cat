@@ -49,6 +49,13 @@
           "settings": {
           }
         },
+        "f6b05448-6cbd-4d2a-800c-fe239a296ba3": {
+          "type": "text",
+          "settings": {
+            "text": "We Make Wine Cool™",
+            "text_style": "title"
+          }
+        },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "disabled": true,
@@ -91,6 +98,7 @@
         },
         "share": {
           "type": "share",
+          "disabled": true,
           "settings": {
             "share_label": "Share"
           }
@@ -105,6 +113,7 @@
         "quantity_selector",
         "buy_buttons",
         "description",
+        "f6b05448-6cbd-4d2a-800c-fe239a296ba3",
         "collapsible-row-0",
         "collapsible-row-1",
         "collapsible-row-2",
@@ -240,6 +249,7 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": true,
+        "hide_price": false,
         "enable_shop_now": true,
         "enable_quick_add": false,
         "columns_mobile": "2",

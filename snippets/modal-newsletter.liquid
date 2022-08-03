@@ -1,0 +1,75 @@
+<div class="modal fade ModalnewsletterSimple" id="Modalnewsletter" tabindex="-1" role="dialog" aria-label="myModalLabel" aria-hidden="true" data-pause="150">
+  <div class="modal-dialog modal-discount">
+    <div class="modal-content ">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="icon icon-clear"></span></button>
+      </div>
+      <div class="form-default">
+        <div class="tt-layout-center">
+          <div class="tt-promo-title">
+            <img src="{{ 'footer-logo.svg' | asset_url }}" alt="popup-logo">
+            
+            <div class="text-simple-03">MUST BE 21+ TO CHILL</div>
+
+            <a href="#" class="btn btn-popup-simple ttmodalbtn">ENTER</a>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" id="checkBox1">
+            <label for="checkBox1">
+              <span class="check"></span>
+              <span class="box"></span>
+              Don’t Show this Pop-up Again
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+
+    var obj = {
+      init: function() {
+        try
+        {
+          if ($.cookie('popupNewsletter') != 'disable') {
+            this.checkboxEvent();
+            var pause = $('#Modalnewsletter').attr('data-pause');
+            setTimeout(function() {
+              $('#Modalnewsletter')
+              					.modal('show')
+								.on('hidden.bs.modal', function(){
+                                  $('body').removeClass('modal-newsletter');
+                                });
+              $('body').addClass('modal-newsletter');
+              var date = new Date();
+              var minutes = {{ settings.popup_newsletter_delay }};
+              date.setTime(date.getTime() + (minutes * 60 * 1000));
+              $.cookie('popupNewsletter', 'disable', {expires:date, path:'/'});
+            }, pause);
+          }
+        }
+        catch (err) {} // ignore errors reading cookies
+      },
+      checkboxEvent: function() {
+        $('#checkBox1').change(function(){
+          if ($(this).is(':checked')) {
+            $.cookie('popupNewsletter', 'disable', {expires:1, path:'/'});
+          } else {
+            $.cookie("popupNewsletter", null, { path: '/' });
+          }
+        });
+      }
+    };
+
+    $(document).ready(function() {
+      if(location.pathname.indexOf('/challenge') > -1 || location.search.indexOf('customer_posted=true') > -1) return false;
+      obj.init();
+    });
+
+  })
+</script>

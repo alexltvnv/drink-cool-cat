@@ -10,12 +10,12 @@
                 <div class="bg-mobile-wrap">                  
                   {%- if block.settings.image != blank and block.settings.bg_type == 'bg_img' -%}
                     <img class="bg-img bg-position" src="{{ block.settings.image | image_url }}">
-                  {%- else -%}
-                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                   {%- endif -%}
 
                   {%- if block.settings.video_url and block.settings.bg_type == 'bg_video' -%}
-                    <iframe class="bg-video bg-position" src="https://www.youtube.com/embed/{{ section.settings.video_url.id }}?enablejsapi=1" class="js-youtube" allow="autoplay; encrypted-media" allowfullscreen muted autoplay="1"></iframe>
+                    <video class="video-bg" loop autoplay preload="none" muted playsinline>
+                      <source src="{{ block.settings.video_url }}" type="video/mp4">
+                    </video>
                   {%- endif -%}
                 </div>
 
@@ -147,13 +147,9 @@
           "label": "Image"
         }, 
         {
-          "type": "video_url",
+          "type": "url",
           "id": "video_url",
-          "accept": [
-            "youtube"
-          ],
-          "default": "https://www.youtube.com/watch?v=VMvPEhgWy04",
-          "label": "URL"
+          "label": "Video File URL"
         },
         {
           "type": "checkbox",

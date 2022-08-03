@@ -49,6 +49,13 @@
           "settings": {
           }
         },
+        "6d678735-68a1-4f05-b5fd-16fb5ba1114e": {
+          "type": "text",
+          "settings": {
+            "text": "We Make Wine Cool™",
+            "text_style": "title"
+          }
+        },
         "share": {
           "type": "share",
           "disabled": true,
@@ -66,6 +73,7 @@
         "quantity_selector",
         "buy_buttons",
         "description",
+        "6d678735-68a1-4f05-b5fd-16fb5ba1114e",
         "share"
       ],
       "settings": {

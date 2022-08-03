@@ -27,6 +27,7 @@
       "type": "main-page",
       "disabled": true,
       "settings": {
+        "hide_title": false,
         "padding_top": 28,
         "padding_bottom": 28
       }
@@ -59,11 +60,35 @@
         "padding_top": 36,
         "padding_bottom": 84
       }
+    },
+    "1659037686bef51aa9": {
+      "type": "rich-text",
+      "blocks": {
+        "1659037686c893777d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>WE DON'T JUST SPRITZ, WE MIX!<\/p>",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "1659037686c893777d-0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "165893688053c3df74",
     "main",
-    "1658929356d578b3c7"
+    "1658929356d578b3c7",
+    "1659037686bef51aa9"
   ]
 }

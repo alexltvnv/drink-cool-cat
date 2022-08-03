@@ -1,0 +1,7 @@
+.quick-add__submit {
+    text-decoration: underline;
+    &:focus,
+    &:hover {
+        font-weight: bold;
+    }
+}

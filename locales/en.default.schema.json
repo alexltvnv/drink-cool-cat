@@ -1592,6 +1592,9 @@
               },
               "options__3": {
                 "label": "Uppercase"
+              },
+              "options__4": {
+                "label": "Title"
               }
             }
           }
@@ -2212,6 +2215,9 @@
       "settings": {
         "page": {
           "label": "Page"
+        },
+        "hide_title": {
+          "label": "Hide title"
         }
       },
       "presets": {

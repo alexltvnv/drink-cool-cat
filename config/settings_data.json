@@ -97,6 +97,7 @@
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
+    "favicon": "shopify:\/\/shop_images\/cool-cat-badge-sqr.png",
     "currency_code_enabled": true,
     "sections": {
       "announcement-bar": {
@@ -105,7 +106,7 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "FREE SHIPPING ON 24-PACKS OF COOL CAT",
+              "text": "FREE SHIPPING ON ALL ORDERS",
               "text_alignment": "center",
               "color_scheme": "inverse",
               "link": ""

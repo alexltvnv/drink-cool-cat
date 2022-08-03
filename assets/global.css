@@ -230,6 +230,13 @@ h2.h2 span {
   box-shadow: none;
 }
 
+.button {
+  text-decoration: none;
+}
+.button:after {
+  box-shadow: none;
+}
+
 .awards-section {
   padding: 65px 0 85px;
 }
@@ -979,4 +986,10 @@ details[open].menu-opening > .menu-drawer__submenu {
   .no-js .menu-drawer {
     height: auto;
   }
+
+.quick-add__submit {
+  text-decoration: underline;
+}
+.quick-add__submit:focus, .quick-add__submit:hover {
+  font-weight: bold;
 }
