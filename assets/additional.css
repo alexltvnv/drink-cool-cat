@@ -508,7 +508,158 @@
 }
 
 
+/*
+    modal custom
+*/
+.modal{
+  text-align: center;
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 30;
+  -webkit-overflow-scrolling: touch;
+  outline: none;
+}
 
+.modal .modal-dialog{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media (min-width: 576px){
+  .modal .modal-dialog{
+    max-width: inherit;
+  }
+}
+
+.modal .modal-header{
+  height: 0;
+  padding: 0 !important;
+  position: relative;
+}
+
+.modal .modal-header .close{
+  width: 32px;
+  height: 32px;
+  top: -2px;
+  line-height: 54px;
+  position: absolute;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'wokiee_icons';
+  transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  background-image: url('//cdn.shopify.com/s/files/1/0493/9366/4160/t/7/assets/close.svg?v=91394793402068221541658399309');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+@media (min-width: 1025px){
+  .modal .modal-header .close{
+    right: -52px;
+  }
+}
+
+@media (max-width: 1024px){
+  .modal .modal-header .close{
+    right: -20px;
+  }
+}
+
+.modal .modal-header .close:before{
+  /*content: "\ea0f";*/
+  font-size: 20px;
+  line-height: 1;
+}
+
+.modal .modal-header .close:hover{
+  color:#2ab9d0;
+}
+
+.modal .modal-body:not(.no-background){
+  background: #ffffff;
+}
+#modalVideoProduct.modal .modal-body:not(.no-background){
+  background: none;
+}
+@media (min-width: 1025px){
+	#modalVideoProduct .modal-body{
+	    padding: 0px;
+	}
+}
+@media (max-width: 1024px){
+	#modalVideoProduct .modal-body{
+	    padding: 0px;
+	}
+}
+@media (max-width: 789px){
+	#modalVideoProduct .modal-body{
+	    padding: 0px;
+	}
+}
+@media (max-width: 500px){
+	#modalVideoProduct .modal-body{
+	    padding: 0px;
+	}
+}
+.modal .modal-body{
+  overflow: hidden;
+}
+
+@media (min-width: 1025px){
+  .modal .modal-body{
+    padding: 40px 40px 40px 40px;
+  }
+}
+
+@media (max-width: 1024px){
+  .modal .modal-body{
+    padding: 30px 30px 50px 30px;
+  }
+}
+
+@media (max-width: 789px){
+  .modal .modal-body{
+    padding: 25px 25px 45px 25px;
+  }
+}
+
+@media (max-width: 500px){
+  .modal .modal-body{
+    padding: 20px 20px 40px 20px;
+  }
+}
+
+@media (max-width: 270px){
+  .modal .modal-body{
+    padding: 15px 15px 35px 15px;
+  }
+}
+
+@media (min-width: 320px){
+  .modal:before{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+  }
+}
+
+.modal-backdrop{
+  background: #000000;
+}
 
 .modal-newsletter .modal-backdrop{  
   background: linear-gradient(0deg, #1db5db 0%, #1db5db 100%);
