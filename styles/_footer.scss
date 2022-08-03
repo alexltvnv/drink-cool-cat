@@ -25,6 +25,8 @@ footer {
 .footer-logo-link {
     img {
         display: block;
+        margin: auto;
+        max-width: 230px;
         width: 100%;
     }
     @media screen and (max-width: 991px) {
@@ -32,4 +34,8 @@ footer {
         margin: auto;
         max-width: 160px;
     }
+}
+
+.footer__content-bottom {
+    border-top: 0!important;
 }
