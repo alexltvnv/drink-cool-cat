@@ -268,7 +268,7 @@
     backface-visibility: hidden;
 
 }
-.card__information {
+.card__information.card-title-info {
     position: relative; 
     padding-bottom: 24px !important;
     margin-bottom: 12px;
