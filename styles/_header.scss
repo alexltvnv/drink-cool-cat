@@ -8,6 +8,9 @@ header {
     }
     &.header {
         display: flex;
+        @media screen and (max-width: 991px) {
+            justify-content: space-between;
+        }
     }
 }
 // Navigations
@@ -28,4 +31,10 @@ header {
     font-weight: 700;
     padding: 0;
     text-transform: uppercase;
+}
+// Mobile Menu
+.header__icon--menu[aria-expanded="true"]::before {
+    background-color: #fff;
+    opacity: .5;
+    backdrop-filter: blur(15px);
 }

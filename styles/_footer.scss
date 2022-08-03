@@ -21,3 +21,15 @@ footer {
 .footer-block__details-content a {
     color: #fff;
 }
+
+.footer-logo-link {
+    img {
+        display: block;
+        width: 100%;
+    }
+    @media screen and (max-width: 991px) {
+        display: block;
+        margin: auto;
+        max-width: 160px;
+    }
+}

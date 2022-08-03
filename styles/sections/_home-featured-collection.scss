@@ -1,6 +1,9 @@
 .home-featured-collection {
     box-sizing: border-box;
     margin: 0 -40px;
+    @media screen and (max-width: 991px) {
+        margin: 0;
+    }
     .media.media--hover-effect>img+img {
         opacity: 0;
     }
@@ -8,5 +11,14 @@
         box-sizing: border-box;
         padding: 0 40px;
         width: 25%;
+        @media screen and (max-width: 991px) {
+            padding: 0 20px;
+        }
+    }
+}
+
+slider-component.page-width {
+    @media screen and (max-width: 991px) {
+        padding: 0!important;
     }
 }

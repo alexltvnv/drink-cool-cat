@@ -5,10 +5,19 @@ body {
 .page-width {
     box-sizing: border-box;
     padding: 0 75px;
+    @media screen and (max-width: 991px) {
+        padding: 0 20px;
+    }
 }
 .page-width-full-screen {
     max-width: 100%!important;
     width: 100%;
+}
+
+.rich-text__wrapper {
+    @media screen and (max-width: 991px) {
+        padding: 0 20px;
+    }
 }
 // Colors
 $black: #000;
@@ -31,6 +40,19 @@ $black: #000;
         color: #fff;
         text-decoration: none!important;
     }
+    @media screen and (max-width: 768px) {
+        display: inline-block;
+        margin-right: -4px;
+        width: 50%;
+    }
+}
+.quick-add {
+    @media screen and (max-width: 768px) {
+        grid-row-start: 3!important;
+        display: inline-block;
+        margin-right: -4px;
+        width: 50%;
+    }
 }
 .quick-add__submit {
     background-color: transparent;
@@ -52,6 +74,11 @@ $black: #000;
     &:before {
         content: '+';
     }
+    @media screen and (max-width: 768px) {
+        display: inline-block;
+        min-width: 100px!important;
+        width: 100%;
+    }
 }
 // Imports
 @import '_header';
@@ -70,4 +97,5 @@ $black: #000;
 @import 'components/_announcement-bar';
 @import 'components/_running-line';
 @import 'components/_newsletter';
+@import 'components/_menu';
 @import 'components/_featured-collection';
