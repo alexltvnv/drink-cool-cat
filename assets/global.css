@@ -17,12 +17,6 @@ body {
   width: 100%;
 }
 
-@media screen and (max-width: 991px) {
-  .rich-text__wrapper {
-    padding: 0 20px;
-  }
-}
-
 .card-wrapper:hover {
   text-decoration: none !important;
 }
@@ -221,13 +215,6 @@ h2.h2 span {
   h2 span {
     font-size: 28px;
   }
-}
-
-.button {
-  text-decoration: none;
-}
-.button:after {
-  box-shadow: none;
 }
 
 .button {
@@ -513,14 +500,6 @@ h2.h2 span {
   }
   .rich-text__wrapper--right {
     justify-content: flex-end;
-  }
-  .rich-text__blocks {
-    max-width: 50rem;
-  }
-}
-@media screen and (min-width: 990px) {
-  .rich-text__blocks {
-    max-width: 78rem;
   }
 }
 #instagram-title-section a {
@@ -986,7 +965,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   .no-js .menu-drawer {
     height: auto;
   }
-
+}
 .quick-add__submit {
   text-decoration: underline;
 }
