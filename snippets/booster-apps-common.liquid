@@ -8,7 +8,6 @@
     money_format: {{ shop.money_format | json }},
     id: 65493238008
   };
-  console.log(window.BoosterApps);
   {% if customer %}
   window.BoosterApps.common.customer = {
     id: {{ customer.id | json }},
