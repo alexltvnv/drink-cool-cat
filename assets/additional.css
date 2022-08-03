@@ -502,3 +502,141 @@
         width: 100%
     }
 }
+
+.banner__box.color-accent-2 {
+    background: transparent;
+}
+
+
+
+
+.modal-newsletter .modal-backdrop{  
+  background: linear-gradient(0deg, #1db5db 0%, #1db5db 100%);
+}
+#Modalnewsletter{
+  padding-right: 0 !important;
+}
+@media (min-width: 576px){
+  .ModalnewsletterSimple .modal-dialog {
+    max-width: none;
+    margin: -30px auto 30px;
+  }
+}
+@media (max-width: 575px){
+  .ModalnewsletterSimple .modal-dialog {
+    max-width: none;
+    margin: -30px auto 30px;
+  }
+}
+@media (min-width: 1025px){
+  .ModalnewsletterSimple .modal-content{
+    align-items: center;
+  }
+  .ModalnewsletterSimple .modal-header{
+    width: 100%;
+  }
+  .ModalnewsletterSimple .form-default{
+    width: calc(100% + 300px);
+  }
+}
+.ModalnewsletterSimple .checkbox-group{
+  margin-top: 30px;
+}
+#Modalnewsletter.ModalnewsletterSimple .checkbox-group label{
+  color: #ffffff;
+}
+#Modalnewsletter .text-simple-01{
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  color: #2ab9d0;
+  margin-top: 35px;
+  letter-spacing: 0em;
+}
+#Modalnewsletter .text-simple-02{
+  font-family: 'Chivo';
+    font-weight: 700;
+  font-size: 60px;
+  line-height: 80px;
+  color: #ffffff;
+  margin-top: 12px;
+  letter-spacing: 0em;
+  
+}
+#Modalnewsletter .text-simple-03{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 31px;
+  color: #ffffff;
+  letter-spacing: 0em;
+  margin-top: 24px;
+}
+#Modalnewsletter .text-simple-04{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 76px;
+  color: #191919;
+  margin-top: 27px;
+  letter-spacing: 0em;
+}
+#Modalnewsletter .text-simple-05{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 29px;
+  color: #ffffff;
+  margin-top: 30px;
+  letter-spacing: 0em;
+}
+#Modalnewsletter .btn-popup-simple{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0;
+  height: 35px;/*50px;*/
+  padding: px 37px 4px;
+  margin-top: 31px;
+  color: #ffffff;
+  background: #191919;
+  box-shadow: 0px 0px 0px rgba(36, 41, 83, 0.2);
+}
+#Modalnewsletter .btn-popup-simple:hover{
+  color: #191919;
+  background: #ffffff;
+  box-shadow: unset;
+  border: 2px solid black;
+}
+@media (max-width: 1024px){
+  #Modalnewsletter .text-simple-01{
+    font-size: 20px;
+    line-height: 23px;
+    margin-top: 20px;
+  }
+  #Modalnewsletter .text-simple-02{
+    font-size: 43px;
+    line-height: 40px;
+    margin-top: 8px;
+  }
+  #Modalnewsletter .text-simple-03{
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 13px;
+  }
+  #Modalnewsletter .text-simple-04{
+    font-size: 52px;
+    line-height: 46px;
+    margin-top: 7px;
+  }
+  #Modalnewsletter .text-simple-05{
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 0px;
+  }
+  #Modalnewsletter .btn-popup-simple{
+    margin-top: 23px;
+    height: 35px;
+    line-height: 21px;
+    font-size: 18px;
+    padding: px 35px 4px;
+  }
+  
+}
