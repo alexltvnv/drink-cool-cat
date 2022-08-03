@@ -2,15 +2,18 @@
   "sections": {
     "main": {
       "type": "main-article",
+      "disabled": true,
       "blocks": {
         "featured_image": {
           "type": "featured_image",
+          "disabled": true,
           "settings": {
             "image_height": "medium"
           }
         },
         "title": {
           "type": "title",
+          "disabled": true,
           "settings": {
             "blog_show_date": false,
             "blog_show_author": false
@@ -29,6 +32,42 @@
         "content"
       ],
       "settings": {
+      }
+    },
+    "16595578920e90062c": {
+      "type": "image-banner",
+      "blocks": {
+        "1659557892d483aab3-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Live Proud",
+            "heading_size": "h1"
+          }
+        },
+        "1659557892d483aab3-1": {
+          "type": "text",
+          "settings": {
+            "text": "At Cool Cat, we have two words for our LGBTQ+ community this Pride Month: “LIVE PROUD.”",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "1659557892d483aab3-0",
+        "1659557892d483aab3-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Gay_Pride_07461_1.jpg",
+        "image_overlay_opacity": 30,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "1659556587c2842a18": {
@@ -90,7 +129,7 @@
     "1659557679393dcfa7": {
       "type": "video",
       "settings": {
-        "heading": "Video",
+        "heading": "",
         "heading_size": "h1",
         "cover_image": "shopify:\/\/shop_images\/Screen_Shot_2022-06-28_at_9.53_1.jpg",
         "video_url": "https:\/\/www.youtube.com\/watch?v=VMvPEhgWy04",
@@ -132,6 +171,7 @@
   },
   "order": [
     "main",
+    "16595578920e90062c",
     "1659556587c2842a18",
     "1659556936f490b57f",
     "1659557679393dcfa7",
