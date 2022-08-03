@@ -100,7 +100,7 @@
             </div>
           {%- when 'image_picker' -%}
             <div class="logo-wrapper text-center">
-              <img src="{{ block.settings.image_picker | img_url: 'large' }}" alt="Logo">
+              <img src="{{ block.settings.logo_image | img_url: 'large' }}" alt="Logo">
             </div>
           {%- when 'buttons' -%}
             <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>

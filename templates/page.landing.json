@@ -12,6 +12,12 @@
     "16589397086f844d19": {
       "type": "image-banner",
       "blocks": {
+        "73a08b61-789c-4d08-9372-23872f41041d": {
+          "type": "image_picker",
+          "settings": {
+            "logo_image": "shopify:\/\/shop_images\/New_York_Mets_1.png"
+          }
+        },
         "48366dcb-3970-4b51-9778-75a68aee25b3": {
           "type": "heading",
           "settings": {
@@ -21,17 +27,18 @@
         }
       },
       "block_order": [
+        "73a08b61-789c-4d08-9372-23872f41041d",
         "48366dcb-3970-4b51-9778-75a68aee25b3"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Landing-hero.jpg",
+        "image": "shopify:\/\/shop_images\/Group_251_1_1.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
+        "color_scheme": "accent-2",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
