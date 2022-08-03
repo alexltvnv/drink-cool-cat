@@ -277,6 +277,9 @@
     background-position: 20px calc(100% - 4px);
     overflow: hidden;
 }
+.card__heading {
+    text-transform: uppercase;
+}
 .card__information a {
    padding-bottom: 2px;
 }
