@@ -18,6 +18,7 @@
         },
         "content": {
           "type": "content",
+          "disabled": true,
           "settings": {
           }
         }
@@ -57,10 +58,39 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1659556936f490b57f": {
+      "type": "image-with-text",
+      "blocks": {
+        "1659556936debef358-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A word from our founder:<br\/>“As a proud, openly gay minority, I created Cool Cat with diversity, equity, and inclusion in mind, which guides our brand every single day,” {{ shop.brand.short_description }}<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "1659556936debef358-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Cool-Cat-Rocco-Venneri-Founder_1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "1659556587c2842a18"
+    "1659556587c2842a18",
+    "1659556936f490b57f"
   ]
 }
