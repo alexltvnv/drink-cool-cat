@@ -35,23 +35,6 @@ body {
   color: #fff;
   text-decoration: none !important;
 }
-@media screen and (max-width: 768px) {
-  .card-button {
-    display: inline-block;
-    margin-right: -4px;
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .quick-add {
-    grid-row-start: 3 !important;
-    display: inline-block;
-    margin-right: -4px;
-    width: 50%;
-  }
-}
-
 .quick-add__submit {
   background-color: transparent;
   border: 0;
@@ -286,6 +269,7 @@ h2.h2 span {
 }
 @media screen and (max-width: 991px) {
   .home-featured-collection li {
+    margin-bottom: 54px;
     padding: 0 20px;
   }
 }
@@ -300,7 +284,17 @@ h2.h2 span {
   padding: 0;
   padding-bottom: 50px;
 }
+@media screen and (max-width: 768px) {
+  .video-section {
+    padding: 0 10px;
+  }
+}
 
+@media screen and (max-width: 768px) {
+  .tiles-section {
+    padding: 0 20px;
+  }
+}
 .tiles-section img {
   max-width: 100%;
   max-height: 100%;
@@ -792,7 +786,7 @@ menu-drawer > details[open] > summary::before {
   z-index: 3;
   left: 0;
   top: 100%;
-  width: calc(100vw - 4rem);
+  width: calc(100vw - 80px);
   padding: 0;
   border-width: 0 var(--drawer-border-width) 0 0;
   background-color: rgb(var(--color-background));
