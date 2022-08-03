@@ -791,3 +791,7 @@
   }
   
 }
+
+.card .card__inner .card__media {
+  z-index: 1;
+}
