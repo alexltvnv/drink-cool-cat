@@ -6,10 +6,21 @@ body {
   box-sizing: border-box;
   padding: 0 75px;
 }
+@media screen and (max-width: 768px) {
+  .page-width {
+    padding: 0 20px;
+  }
+}
 
 .page-width-full-screen {
   max-width: 100% !important;
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .rich-text__wrapper {
+    padding: 0;
+  }
 }
 
 .card-wrapper:hover {
@@ -64,6 +75,11 @@ header.page-width {
 }
 header.header {
   display: flex;
+}
+@media screen and (max-width: 768px) {
+  header.header {
+    justify-content: space-between;
+  }
 }
 
 .header__inline-menu {
@@ -128,7 +144,15 @@ h1 {
   font-size: 80px;
 }
 h1 span {
-  font-size: 80px;
+  font-size: 28px;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+  h1 span {
+    font-size: 28px;
+  }
 }
 
 h2 {
@@ -148,6 +172,21 @@ h2.h2 span {
   font-family: "Neutra", sans-serif;
   font-size: 20px;
   font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 28px;
+  }
+  h2 span {
+    font-size: 28px;
+  }
+}
+
+.button {
+  text-decoration: none;
+}
+.button:after {
+  box-shadow: none;
 }
 
 .awards-section {
@@ -197,6 +236,11 @@ h2.h2 span {
   box-sizing: border-box;
   margin: 0 -40px;
 }
+@media screen and (max-width: 768px) {
+  .home-featured-collection {
+    margin: 0;
+  }
+}
 .home-featured-collection .media.media--hover-effect > img + img {
   opacity: 0;
 }
@@ -204,6 +248,11 @@ h2.h2 span {
   box-sizing: border-box;
   padding: 0 40px;
   width: 25%;
+}
+@media screen and (max-width: 768px) {
+  .home-featured-collection li {
+    padding: 0;
+  }
 }
 
 .video-section {
