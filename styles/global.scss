@@ -35,17 +35,10 @@ $black: #000;
         text-decoration: none!important;
     }
     @media screen and (max-width: 768px) {
-        display: inline-block;
-        margin-right: -4px;
-        width: 50%;
     }
 }
 .quick-add {
     @media screen and (max-width: 768px) {
-        grid-row-start: 3!important;
-        display: inline-block;
-        margin-right: -4px;
-        width: 50%;
     }
 }
 .quick-add__submit {
