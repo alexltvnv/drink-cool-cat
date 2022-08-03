@@ -62,7 +62,7 @@
       "settings": {
         "heading": "",
         "heading_size": "h1",
-        "cover_image": "shopify:\/\/shop_images\/Cool_Cat_Wine_Spritzer_Sky-High_Freedom_-_YouTube_2022-07-28_16-50-14.jpg",
+        "cover_image": "shopify:\/\/shop_images\/Cool_Cat_Wine_Spritzer_Sky-High_Freedom_-_YouTube_2022-07-28_16-50-14.webp",
         "video_url": "https:\/\/www.youtube.com\/watch?v=VMvPEhgWy04",
         "description": "",
         "full_width": false,
@@ -84,7 +84,7 @@
             "text_color": "dark",
             "position": "top",
             "bg_type": "bg_img",
-            "image": "shopify:\/\/shop_images\/Cool-Cat-Wine-Spritzer-Citrus-Summer-Cocktail-Recipe_1.jpg",
+            "image": "shopify:\/\/shop_images\/Cool-Cat-Wine-Spritzer-Citrus-Summer-Cocktail-Recipe_1_1.jpg",
             "video_url": "https:\/\/www.youtube.com\/watch?v=VMvPEhgWy04",
             "overlay": false
           }
@@ -99,7 +99,7 @@
             "text_color": "light",
             "position": "bottom",
             "bg_type": "bg_img",
-            "image": "shopify:\/\/shop_images\/Cool-Cat-Sky-High-Freedom_af52007e-de11-4c44-84de-339bbb10e84f_1.jpg",
+            "image": "shopify:\/\/shop_images\/Cool-Cat-Sky-High-Freedom.jpg",
             "video_url": "https:\/\/rr2---sn-4g5e6nsr.googlevideo.com\/videoplayback?expire=1659109252&ei=JKvjYuuDGbrYx_APj8we&ip=172.94.125.2&id=o-AHPWep21o-0knqSq6kEJzLMRkMZmtS-4zjWQJzM04iyG&itag=136&aitags=133%2C134%2C135%2C136%2C137%2C160%2C242%2C243%2C244%2C247%2C248%2C278&source=youtube&requiressl=yes&spc=lT-Khko0flvAB0BpI8nh7ZuDjmn7DGM&vprv=1&mime=video%2Fmp4&ns=HgmvDVqP7ZVG_dgp90dMLjUH&gir=yes&clen=5980002&otfp=1&dur=30.029&lmt=1656524380556995&keepalive=yes&fexp=24001373,24007246&c=WEB&rbqsm=fr&txp=6216224&n=FHffg_WL0ccZwg&sparams=expire%2Cei%2Cip%2Cid%2Caitags%2Csource%2Crequiressl%2Cspc%2Cvprv%2Cmime%2Cns%2Cgir%2Cclen%2Cotfp%2Cdur%2Clmt&sig=AOq0QJ8wRQIgVtVu4dgqXPUKzq_qFtJ-Nu2RAyxme72TLJhf9oJV51UCIQDrsfnrsvtWC0rgL7YpMqkTmgUDPQrI0fBK9pl602FdhA%3D%3D&redirect_counter=1&cm2rm=sn-4g5e6s76&req_id=5cb9d9387183a3ee&cms_redirect=yes&cmsv=e&mh=JI&mip=93.78.241.139&mm=34&mn=sn-4g5e6nsr&ms=ltu&mt=1659087402&mv=m&mvi=2&pl=21&lsparams=mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRQIgSk_BD0j4LtZqQVmiSOnrRWvPyNEoIcpaOYXKyZ-_M7ECIQCiAW_SeBVeQuLyI_Ww42guMPCIirxL8ezXZdi4p4az1g%3D%3D",
             "overlay": true
           }
