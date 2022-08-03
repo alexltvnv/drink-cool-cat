@@ -150,6 +150,13 @@ h2.h2 span {
   font-weight: 700;
 }
 
+.button {
+  text-decoration: none;
+}
+.button:after {
+  box-shadow: none;
+}
+
 .awards-section {
   padding: 65px 0 85px;
 }
@@ -541,4 +548,11 @@ h2.h2 span {
 }
 .newsletter-form__field-wrapper .field__label {
   color: #808080 !important;
+}
+
+.quick-add__submit {
+  text-decoration: underline;
+}
+.quick-add__submit:focus, .quick-add__submit:hover {
+  font-weight: bold;
 }
