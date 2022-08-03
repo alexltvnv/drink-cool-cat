@@ -252,7 +252,7 @@
         "hide_price": false,
         "enable_shop_now": true,
         "enable_quick_add": false,
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
