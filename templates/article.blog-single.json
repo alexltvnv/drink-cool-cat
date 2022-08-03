@@ -65,7 +65,7 @@
         "1659556936debef358-1": {
           "type": "text",
           "settings": {
-            "text": "<p>A word from our founder:<br\/>“As a proud, openly gay minority, I created Cool Cat with diversity, equity, and inclusion in mind, which guides our brand every single day,” {{ shop.brand.short_description }}<\/p>",
+            "text": "<p>A word from our founder:<\/p><p><em><strong>“As a proud, openly gay minority, I created Cool Cat with diversity, equity, and inclusion in mind, which guides our brand every single day,”<\/strong><\/em> <\/p><p>said co-founder and CEO Rocco Venneri. <\/p><p><em><strong>“But, National Pride Month offers us a special and timely opportunity to launch a campaign that celebrates life and encourages individuality within the LGBTQ+ community.”<\/strong><\/em><\/p><p>Cool Cat is a gay-founded, led, and operated business. We care about our community and, as part of our “LIVE PROUD” Pride campaign, will contribute $10,000 to<a href=\"https:\/\/gaycenter.org\/\" target=\"_blank\">The Center in New York,<\/a>which provides vital programs and services for the local LGBTQ+ community, including advocacy, health and wellness programs, arts and entertainment and cultural events, recovery, parenthood, and family support. Not only is the LGBTQ+ community close to our heart, it is our heart.<\/p>",
             "text_style": "body"
           }
         }
