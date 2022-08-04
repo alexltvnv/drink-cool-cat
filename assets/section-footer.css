@@ -497,10 +497,12 @@ noscript .localization-selector.link {
   color: rgba(var(--color-foreground), 0.75);
 }
 
+.footer a.
 .footer .disclosure__link:hover {
   color: rgb(var(--color-foreground));
 }
 
+.footer a:hover,
 .footer .disclosure__link--active {
   text-decoration: underline;
 }
