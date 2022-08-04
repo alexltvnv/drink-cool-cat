@@ -798,3 +798,9 @@
 div .card .card__inner .card__media {
   z-index: 1;
 }
+
+@media (min-width: 750px){
+    .product__info-container .product__title h1 {
+        font-size: min(max(((min(100vw, 1300px) - 150px) * 0.35) / 6, 30px), 80px);
+    }
+}
