@@ -21,6 +21,20 @@ body {
   text-decoration: none !important;
 }
 
+.button {
+  background-color: transparent;
+  border: 2px solid #000;
+  color: #000;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 35px;
+  height: 35px;
+  text-decoration: none;
+}
+.button:hover {
+  text-decoration: none;
+}
+
 .card-button {
   box-sizing: border-box;
   border: 2px solid #000;
