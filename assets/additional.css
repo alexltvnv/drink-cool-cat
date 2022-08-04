@@ -268,7 +268,7 @@
     backface-visibility: hidden;
 
 }
-.card__information {
+.card__information.card-title-info {
     position: relative; 
     padding-bottom: 24px !important;
     margin-bottom: 12px;
@@ -276,6 +276,9 @@
     background-size: 15px;
     background-position: 20px calc(100% - 4px);
     overflow: hidden;
+}
+.card__heading {
+    text-transform: uppercase;
 }
 .card__information a {
    padding-bottom: 2px;
@@ -790,4 +793,18 @@
     padding: px 35px 4px;
   }
   
+}
+
+div .card .card__inner .card__media {
+  z-index: 1;
+}
+
+@media (min-width: 750px){
+    .product__info-container .product__title h1 {
+        font-size: min(max(((min(100vw, 1300px) - 150px) * 0.35) / 6, 30px), 80px);
+    }
+}
+
+.blog-articles__article {
+  margin-bottom: 50px;
 }

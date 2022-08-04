@@ -207,9 +207,13 @@
           {%- when '@app' -%}
             {% render block %}
           {%- when 'text' -%}
-            <p class=" test-2 product__text{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% elsif block.settings.text_style == 'title' %} product-text-title{% endif %}" {{ block.shopify_attributes }}>
-              {{- block.settings.text -}}
-            </p>
+            {% if block.settings.text_style == 'title' %}
+              <h2 class="h2 product__text product-text-title uppercase"><span>{{- block.settings.text -}}</span></h2>
+            {% else %}
+              <p class=" test-2 product__text{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}" {{ block.shopify_attributes }}>
+                {{- block.settings.text -}}
+              </p>
+            {% endif %}
           {%- when 'title' -%}
             <div class="product__title" {{ block.shopify_attributes }}>
               <h1>{{ product.title | escape }}</h1>

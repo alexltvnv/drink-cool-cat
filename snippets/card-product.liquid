@@ -19,7 +19,7 @@
 {% endcomment %}
 
 {%- style -%}
-  .card__information {
+  .card__information.card-title-info {
       background-image: url("{{ 'star.svg' | asset_url }}");
   }
 {%- endstyle -%}
@@ -49,7 +49,7 @@
     >
       <div class="card__inner {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}{% if card_product.featured_media or settings.card_style == 'standard' %} ratio{% endif %}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
         {%- if card_product.featured_media -%}
-          <div class="card__media">
+          <a href="{{ card_product.url }}" class="card__media">
             <div class="media media--transparent media--hover-effect">
               {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
               <img
@@ -61,7 +61,7 @@
                   {%- if card_product.featured_media.width >= 1066 -%}{{ card_product.featured_media | image_url: width: 1066 }} 1066w,{%- endif -%}
                   {{ card_product.featured_media | image_url }} {{ card_product.featured_media.width }}w"
                 src="{{ card_product.featured_media | image_url: width: 533 }}"
-                sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+                sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 2 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                 alt="{{ card_product.featured_media.alt | escape }}"
                 class="motion-reduce"
                 {% unless lazy_load == false %}loading="lazy"{% endunless %}
@@ -80,7 +80,7 @@
                     {%- if card_product.media[1].width >= 1066 -%}{{ card_product.media[1] | image_url: width: 1066 }} 1066w,{%- endif -%}
                     {{ card_product.media[1] | image_url }} {{ card_product.media[1].width }}w"
                   src="{{ card_product.media[1] | image_url: width: 533 }}"
-                  sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+                  sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 2 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt=""
                   class="motion-reduce"
                   loading="lazy"
@@ -89,10 +89,12 @@
                 >
               {%- endif -%}
             </div>
-          </div>
+          </a>
         {%- endif -%}
         <div class="card__content">
-          <div class="card__information">
+          {% assign current_variant = card_product.selected_or_first_available_variant %}
+          {% assign current_variant_sku = current_variant.sku | plus:0 %}
+          <div class="card__information{% if show_rating and current_variant_sku > 0 %} card-title-info{% endif %}">
             <h3 class="card__heading"{% if card_product.featured_media == nil and settings.card_style == 'standard' %} id="title-{{ section_id }}-{{ card_product.id }}"{% endif %}>
               <a href="{{ card_product.url }}" id="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }}" class="full-unstyled-link" aria-labelledby="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}">
                 {{ card_product.title | escape }}
@@ -114,10 +116,8 @@
         </div>
       </div>
       <div class="card__content">
-        <div class="card__information">
-          {% assign current_variant = card_product.selected_or_first_available_variant %}
-          {% assign current_variant_sku = current_variant.sku | plus:0 %}
-          <h3 class="card__heading {% if show_rating and current_variant_sku > 0 %} card-title-info{% endif %}{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"{% if card_product.featured_media or settings.card_style == 'card' %} id="title-{{ section_id }}-{{ card_product.id }}"{% endif %}>
+        <div class="card__information{% if show_rating and current_variant_sku > 0 %} card-title-info{% endif %}">          
+          <h3 class="card__heading {% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"{% if card_product.featured_media or settings.card_style == 'card' %} id="title-{{ section_id }}-{{ card_product.id }}"{% endif %}>
             <a href="{{ card_product.url }}" id="CardLink-{{ section_id }}-{{ card_product.id }}" class="full-unstyled-link" aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}">
               {{ card_product.title | escape }}
               {% for variant in card_product.variants %}    
@@ -162,6 +162,9 @@
             {%- endif -%}
           </div>
           {%- if show_rating and card_product.metafields.reviews.rating.value == blank -%}
+            <!-- TrustBox script -->
+            <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+            <!-- End TrustBox script -->
             <!-- TrustBox widget - Product Reviews Carousel -->
             <div class="trustpilot-widget clip-rating-num" data-locale="en-US" data-template-id="60f537b5b0f1639de1fe048c" data-businessunit-id="608191716c05e7000118e9b8" data-style-height="20px" data-style-width="185px" data-theme="light" data-stars="1" data-sku="{{ current_variant_sku }}" data-review-languages="en" data-reviewnumber="0" data-no-reviews="hide">
             </div>
@@ -262,7 +265,7 @@
     >
       <div class="card__inner {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}{% if settings.card_style == 'standard' %} ratio{% endif %}" style="--ratio-percent: 100%;">
         <div class="card__content">
-          <div class="card__information">
+          <div class="card__information{% if show_rating and current_variant_sku > 0 %} card-title-info{% endif %}">
             <h3 class="card__heading">
               <a role="link" aria-disabled="true" class="full-unstyled-link">
                 {{ 'onboarding.product_title' | t }}
@@ -277,7 +280,7 @@
         </div>
       </div>
       <div class="card__content">
-        <div class="card__information">
+        <div class="card__information{% if show_rating and current_variant_sku > 0 %} card-title-info{% endif %}">
           <h3 class="card__heading{% if settings.card_style == 'standard' %} h5{% endif %}">
             <a role="link" aria-disabled="true" class="full-unstyled-link">
               {{ 'onboarding.product_title' | t }}
