@@ -812,7 +812,7 @@ div .card .card__inner .card__media {
 }
 
 .underline-links-hover .button {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 .blog-articles__article {
   margin-bottom: 50px;
