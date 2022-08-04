@@ -213,6 +213,9 @@
   .footer-block__newsletter + .footer__list-social {
     margin-top: 0;
   }
+  .footer__list-social.list-social {
+    margin-left: -1.3rem;
+  }
 }
 
 .footer__localization {
