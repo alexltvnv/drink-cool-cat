@@ -507,6 +507,10 @@ noscript .localization-selector.link {
   text-decoration: underline;
 }
 
+.footer a:not(:hover) {
+  text-decoration: none;
+}
+
 /* check for flexbox gap in older Safari versions */
 @supports not (inset: 10px) {
   @media screen and (max-width: 749px) {
