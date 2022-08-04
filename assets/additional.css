@@ -804,3 +804,7 @@ div .card .card__inner .card__media {
         font-size: min(max(((min(100vw, 1300px) - 150px) * 0.35) / 6, 30px), 80px);
     }
 }
+
+.blog-articles__article {
+  margin-bottom: 50px;
+}
