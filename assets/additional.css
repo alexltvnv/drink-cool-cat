@@ -805,6 +805,15 @@ div .card .card__inner .card__media {
     }
 }
 
+@media (max-width: 500px){
+    .grid--4-col-desktop.grid--2-col-tablet-down .grid__item {
+        width: 100%;
+    }
+}
+
+.underline-links-hover .button {
+    text-decoration: none;
+}
 .blog-articles__article {
   margin-bottom: 50px;
 }
