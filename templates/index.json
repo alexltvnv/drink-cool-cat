@@ -42,7 +42,7 @@
         "image_ratio": "adapt",
         "show_secondary_image": true,
         "show_vendor": false,
-        "show_rating": false,
+        "show_rating": true,
         "hide_price": false,
         "enable_shop_now": true,
         "enable_quick_add": true,
