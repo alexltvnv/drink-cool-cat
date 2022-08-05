@@ -99,6 +99,8 @@
     "predictive_search_show_price": false,
     "favicon": "shopify:\/\/shop_images\/cool-cat-badge-sqr.png",
     "currency_code_enabled": true,
+    "checkout_accent_color": "#121212",
+    "checkout_button_color": "#121212",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
