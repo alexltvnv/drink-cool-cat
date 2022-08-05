@@ -821,3 +821,8 @@ div .card .card__inner .card__media {
 .blog-articles__article {
   margin-bottom: 50px;
 }
+@media (min-width: 1250px){
+    .legend-img {
+        margin-left: 50px;
+    }
+}
