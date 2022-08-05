@@ -485,7 +485,7 @@
         text-decoration: none;        
     }
     .header__menu-item span:before {
-        content: '';
+/*         content: ''; */
         display: block;
         position: absolute;
         left: 50%;
