@@ -11,7 +11,7 @@
     "1658945819ff94b090": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"row\"><div class=\"col-12\">\n<img src\"https:\/\/cdn.shopify.com\/s\/files\/1\/0625\/6259\/9061\/files\/Screenshot_1.png?v=1659723397\">\n<div id=\"storepoint-container\" data-map-id=\"15f3d6acf437ff\" style=\"max-width: 1200px; margin-right: auto; margin-left: auto;\"><\/div><\/div>\n<\/div>\n<script>\/\/ <![CDATA[\n(function(){var a=document.createElement(\"script\");a.type=\"text\/javascript\";a.async=!0;a.src=\"https:\/\/cdn.storepoint.co\/api\/v1\/js\/15f3d6acf437ff.js\";var b=document.getElementsByTagName(\"script\")[0];b.parentNode.insertBefore(a,b);}());\n\/\/ ]]><\/script>",
+        "custom_liquid": "<div class=\"row\"><div class=\"col-12\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0625\/6259\/9061\/files\/Screenshot_1.png?v=1659723397\" alt=\"legend\">\n<div id=\"storepoint-container\" data-map-id=\"15f3d6acf437ff\" style=\"max-width: 1200px; margin-right: auto; margin-left: auto;\"><\/div><\/div>\n<\/div>\n<script>\/\/ <![CDATA[\n(function(){var a=document.createElement(\"script\");a.type=\"text\/javascript\";a.async=!0;a.src=\"https:\/\/cdn.storepoint.co\/api\/v1\/js\/15f3d6acf437ff.js\";var b=document.getElementsByTagName(\"script\")[0];b.parentNode.insertBefore(a,b);}());\n\/\/ ]]><\/script>",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
