@@ -441,7 +441,8 @@
 .list-social.footer__list-social {
     justify-content: flex-start;
 }
-.footer [type="email"] {
+.footer [type="email"],
+.footer [type="email"]:placeholder {
   font-size: 14px;
 }
 .footer-copy {
