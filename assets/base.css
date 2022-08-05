@@ -2592,7 +2592,7 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item:hover {
-  color: rgba(var(--color-foreground), 0.75);
+/*   color: rgba(var(--color-foreground), 0.75); */
 }
 
 .header__menu-item span {
