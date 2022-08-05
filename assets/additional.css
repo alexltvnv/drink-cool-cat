@@ -440,7 +440,6 @@
 }
 .list-social.footer__list-social {
     justify-content: flex-start;
-    margin-top: 12px;
 }
 .footer [type="email"],
 .footer [type="email"] + .field__label {
