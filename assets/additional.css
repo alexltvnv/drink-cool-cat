@@ -441,6 +441,9 @@
 .list-social.footer__list-social {
     justify-content: flex-start;
 }
+.footer [type="email"] {
+  font-size: 14px;
+}
 .footer-copy {
     background: #fff;
     color: #000;
