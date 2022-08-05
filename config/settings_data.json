@@ -1,12 +1,12 @@
 {
   "current": {
     "colors_solid_button_labels": "#ffffff",
-    "colors_accent_1": "#121212",
+    "colors_accent_1": "#000000",
     "gradient_accent_1": "",
-    "colors_accent_2": "#121212",
+    "colors_accent_2": "#000000",
     "gradient_accent_2": "",
-    "colors_text": "#121212",
-    "colors_outline_button_labels": "#121212",
+    "colors_text": "#000000",
+    "colors_outline_button_labels": "#000000",
     "colors_background_1": "#ffffff",
     "gradient_background_1": "",
     "colors_background_2": "#f3f3f3",
@@ -99,8 +99,8 @@
     "predictive_search_show_price": false,
     "favicon": "shopify:\/\/shop_images\/cool-cat-badge-sqr.png",
     "currency_code_enabled": true,
-    "checkout_accent_color": "#121212",
-    "checkout_button_color": "#121212",
+    "checkout_accent_color": "#000000",
+    "checkout_button_color": "#000000",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
