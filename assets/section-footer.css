@@ -201,7 +201,7 @@
   fill: #bfbfbf;
 }
 .footer-block__newsletter + .footer__list-social {
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 
 @media screen and (max-width: 749px) {
