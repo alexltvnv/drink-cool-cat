@@ -80,7 +80,6 @@ body {
 
 header {
   background-color: #fff;
-/*   border-bottom: 1px solid #000; */
   align-items: center;
   max-width: 100%;
 }
@@ -137,7 +136,7 @@ footer.footer {
 .footer-block__details-content {
   color: #fff;
   font-size: 14px;
-  max-width: 160px;
+  max-width: 172px;
   width: 100%;
 }
 
