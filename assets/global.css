@@ -171,6 +171,13 @@ footer.footer {
 }
 @font-face {
   font-family: "Neutra";
+  src: url("NeutraDisplayBold.eot");
+  src: url("NeutraDisplayBold.eot?#iefix") format("embedded-opentype"), url("NeutraDisplayBold.woff2") format("woff2"), url("NeutraDisplayBold.woff") format("woff"), url("NeutraDisplayBold.svg#NeutraDisp-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neutra Alt";
   src: url("NeutraDisplayBoldAlt.eot");
   src: url("NeutraDisplayBoldAlt.eot?#iefix") format("embedded-opentype"), url("NeutraDisplayBoldAlt.woff2") format("woff2"), url("NeutraDisplayBoldAlt.woff") format("woff"), url("NeutraDisplayBoldAlt.svg#NeutraDisp-BoldAlt") format("svg");
   font-weight: 700;
