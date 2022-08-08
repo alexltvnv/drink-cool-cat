@@ -1301,7 +1301,7 @@ button.shopify-payment-button__button--unbranded {
   justify-content: center;
   align-items: center;
   border: 0;
-  padding: 0 3rem;
+  padding: 0 1.2rem;
   cursor: pointer;
   font: inherit;
   font-size: 1.5rem;
@@ -2588,11 +2588,11 @@ details[open] > .header__submenu {
 .header__menu-item {
   padding: 1.2rem;
   text-decoration: none;
-  color: rgba(var(--color-foreground), 0.75);
+  color: rgb(var(--color-foreground));
 }
 
 .header__menu-item:hover {
-  color: rgb(var(--color-foreground));
+/*   color: rgba(var(--color-foreground), 0.75); */
 }
 
 .header__menu-item span {

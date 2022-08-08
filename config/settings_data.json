@@ -1,12 +1,12 @@
 {
   "current": {
     "colors_solid_button_labels": "#ffffff",
-    "colors_accent_1": "#121212",
+    "colors_accent_1": "#000000",
     "gradient_accent_1": "",
-    "colors_accent_2": "#334fb4",
+    "colors_accent_2": "#000000",
     "gradient_accent_2": "",
-    "colors_text": "#121212",
-    "colors_outline_button_labels": "#121212",
+    "colors_text": "#000000",
+    "colors_outline_button_labels": "#000000",
     "colors_background_1": "#ffffff",
     "gradient_background_1": "",
     "colors_background_2": "#f3f3f3",
@@ -17,8 +17,8 @@
     "body_scale": 100,
     "page_width": 1300,
     "spacing_sections": 0,
-    "spacing_grid_horizontal": 8,
-    "spacing_grid_vertical": 8,
+    "spacing_grid_horizontal": 28,
+    "spacing_grid_vertical": 28,
     "buttons_border_thickness": 2,
     "buttons_border_opacity": 100,
     "buttons_radius": 0,
@@ -99,6 +99,8 @@
     "predictive_search_show_price": false,
     "favicon": "shopify:\/\/shop_images\/cool-cat-badge-sqr.png",
     "currency_code_enabled": true,
+    "checkout_accent_color": "#000000",
+    "checkout_button_color": "#000000",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -127,7 +129,7 @@
           "logo_position": "middle-left",
           "menu": "main-menu",
           "menu_type_desktop": "dropdown",
-          "show_line_separator": true,
+          "show_line_separator": false,
           "enable_sticky_header": true,
           "margin_bottom": 0,
           "padding_top": 20,
@@ -141,7 +143,7 @@
             "type": "text",
             "settings": {
               "heading": "CONTACT",
-              "subtext": "<p>429 Lenox AveMiami Beach, FL 33139<\/p><p><a href=\"mailto:info@drinkcoolcat.com\" target=\"_blank\" title=\"mailto:info@drinkcoolcat.com\">info@drinkcoolcat.com<\/a><\/p>"
+              "subtext": "<p>429 Lenox Ave<br\/>Miami Beach, FL&nbsp;33139<\/p><p><a href=\"mailto:info@drinkcoolcat.com\" target=\"_blank\" title=\"mailto:info@drinkcoolcat.com\">info@drinkcoolcat.com<\/a><\/p>"
             }
           },
           "footer-2": {
@@ -365,8 +367,7 @@
             "enable_language_selector": false,
             "payment_enable": true,
             "margin_top": 48,
-            "padding_top": 36,
-            "padding_bottom": 36
+            "padding_top": 36
           }
         },
         "main-password-header": {
