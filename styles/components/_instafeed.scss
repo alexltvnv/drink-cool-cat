@@ -48,6 +48,7 @@
         position: absolute;
         top: calc(50vw - 20px);
         transform: translateY(-50%);
+        width: 100%;
     }
 
     #instagram-title-section .insta-title,
@@ -65,7 +66,7 @@
 
     #instagram-title-section .title-wrap {
         display: inline-block;
-        max-width: 33.33%;
+        max-width: 100%;
     }
 }
 
