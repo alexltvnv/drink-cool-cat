@@ -4,8 +4,14 @@
     margin-left: auto;
     margin-right: auto;
 }
+.row .row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
 .col, .col-12 {
-    width: 100%;    
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;   
 }
 .col-xs-1,
 .col-1 {
@@ -826,7 +832,7 @@ div .card .card__inner .card__media {
     position: absolute;
     display: inline-block;
     bottom: 100%;
-    left: 0;
+    left: 15px;
     width: 250px;
     height: 70px;
     background-repeat: no-repeat;
