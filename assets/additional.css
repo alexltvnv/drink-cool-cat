@@ -821,8 +821,23 @@ div .card .card__inner .card__media {
 .blog-articles__article {
   margin-bottom: 50px;
 }
+
+.svg-guide-wrap {
+    position: absolute;
+    display: inline-block;
+    bottom: 100%;
+    left: 0;
+    width: 250px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: contain;
+}
 @media (min-width: 1250px){
     .legend-img {
         margin-left: 50px;
+    }
+    .svg-guide-wrap {
+        left: 50px;
     }
 }
