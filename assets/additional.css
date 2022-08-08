@@ -847,3 +847,6 @@ div .card .card__inner .card__media {
         left: 50px;
     }
 }
+.banner__heading.h1 {
+  line-height: 1.1;
+}
