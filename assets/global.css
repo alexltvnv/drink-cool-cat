@@ -876,6 +876,8 @@ h2.h2 span {
 }
 .newsletter-form__field-wrapper .field__label {
   color: #808080 !important;
+  top: 1px;
+  line-height: 44px;
 }
 .newsletter-form__field-wrapper .field__input:focus:focus ~ label {
   opacity: 0;
