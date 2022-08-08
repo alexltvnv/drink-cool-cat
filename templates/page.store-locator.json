@@ -16,10 +16,16 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "1659991132dc7c5f77": {
+      "type": "awards",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "1658945819ff94b090"
+    "1658945819ff94b090",
+    "1659991132dc7c5f77"
   ]
 }
