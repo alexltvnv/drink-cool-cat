@@ -2,13 +2,29 @@
     .field__input {
         box-sizing: border-box;
         background-color: #fff;
+        border: 0;
+        border: none;
         color: #808080;
         padding: 16px 13px;
+        line-height: 44px;
+        height: 44px;
     }
+    
     &::placeholder {
         color: #808080;
     }
     .field__label {
         color: #808080!important;
+    }
+    .field__input:focus:focus~label {
+        opacity: 0;
+    }
+    .newsletter-form__button {
+        background-image: url("data:image/svg+xml,%3Csvg width='20' height='14' viewBox='0 0 20 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 0L11.59 1.41L16.17 6H0V8H16.17L11.58 12.59L13 14L20 7L13 0Z' fill='black'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        background-position: right 15px top 50%;
+        svg {
+            display: none;
+        }
     }
 }
