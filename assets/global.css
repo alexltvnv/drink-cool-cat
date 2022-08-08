@@ -1093,7 +1093,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer__menu-item {
-  padding: 20px;
+  padding: 10px 20px;
   text-decoration: none;
   font-size: 1.8rem;
 }
