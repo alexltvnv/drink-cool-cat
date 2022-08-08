@@ -17,6 +17,10 @@ body {
   width: 100%;
 }
 
+.product-count__text span {
+  font-size: 14px;
+}
+
 .card-wrapper:hover {
   text-decoration: none !important;
 }
@@ -76,6 +80,19 @@ body {
     min-width: 100px !important;
     width: 100%;
   }
+}
+
+.shopify-policy__body h1 {
+  font-size: 32px !important;
+}
+.shopify-policy__body h1 span {
+  font-size: 32px;
+}
+.shopify-policy__body h2 {
+  font-size: 24px;
+}
+.shopify-policy__body h2 span {
+  font-size: 24px;
 }
 
 header {
@@ -160,6 +177,10 @@ footer.footer {
 
 .footer__content-bottom {
   border-top: 0 !important;
+}
+
+.footer__list-social {
+  margin-top: 35px !important;
 }
 
 @font-face {
@@ -727,6 +748,7 @@ h2.h2 span {
     position: absolute;
     top: calc(50vw - 20px);
     transform: translateY(-50%);
+    width: 100%;
   }
   #instagram-title-section .insta-title,
 #instagram-title-section .insta-subtitle,
@@ -741,7 +763,7 @@ h2.h2 span {
   }
   #instagram-title-section .title-wrap {
     display: inline-block;
-    max-width: 33.33%;
+    max-width: 100%;
   }
 }
 #insta-feed {
