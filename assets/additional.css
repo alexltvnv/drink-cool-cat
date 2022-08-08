@@ -850,7 +850,7 @@ div .card .card__inner .card__media {
 .banner__heading.h1 {
   line-height: 1.1;
 }
-.shopify-payment-button__button--unbranded:hover:not([disabled]),
-.shopify-payment-button__button--unbranded {
+div .shopify-payment-button__button--unbranded:hover:not([disabled]),
+div .shopify-payment-button__button--unbranded {
   background-color: #000;
 }
