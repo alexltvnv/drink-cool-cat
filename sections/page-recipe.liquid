@@ -25,6 +25,7 @@
 
 {{image | image_url}}
 {{product.url}}
+{{product.id}}
 
 <div class="page-width page-width--narrow section-{{ section.id }}-padding">
   {%- if section.settings.hide_title == blank -%}
@@ -40,6 +41,10 @@
 </div>
 
 <script>
+document.addEventListener('DOMContentLoaded', function () {
+  // do something here ...
+}, false);
+
 jQuery('.your-add-to-cart').on('click', function(){
   var product_id;
   var product_url = $(this).data('url');
