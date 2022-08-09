@@ -869,6 +869,7 @@ div .shopify-payment-button__button--unbranded:hover:not([disabled]),
 div .shopify-payment-button__button--unbranded {
   background-color: #000;
 }
+div .button:hover,
 [class*="add-to-cart"].button:hover,
 .card__content .button:hover {
   background-color: #000;
