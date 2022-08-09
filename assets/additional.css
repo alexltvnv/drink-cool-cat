@@ -934,3 +934,9 @@ img:not([class]) {
         padding-right: 35px;
     }
 }
+.recipe-related-title {
+    margin-bottom: 30px;
+}
+.recipe-related-row {
+    margin-top: 50px;
+}
