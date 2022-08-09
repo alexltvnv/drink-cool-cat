@@ -254,6 +254,13 @@
     }
 }
 
+@media screen and (min-width: 990px) {
+    .order-large-1 {
+        order: 1;
+    }
+}
+
+
 .text-center {
     text-align: center;
 }
@@ -321,6 +328,14 @@
     }
     .footer-column:nth-child(5) {
         padding-left: 2vw;
+    }
+}
+@media (max-width: 989px) {
+    .footer-block.footer-block-logo {
+        width: 100%;
+    }
+    .footer .footer-block__details-content {
+        max-width: 100%;
     }
 }
 
