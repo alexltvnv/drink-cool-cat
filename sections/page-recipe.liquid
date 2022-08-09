@@ -27,17 +27,56 @@
 {{product.url}}
 {{product.variants[0].id}}
 
-<div class="page-width page-width--narrow section-{{ section.id }}-padding">
-  {%- if section.settings.hide_title == blank -%}
-    <h1 class="main-page-title page-title h0">
-      {{ page.title | escape }}
-    </h1>
-  {%- endif -%}
-  <div class="rte">
-    {{ page.content }}
+<div class="page-width row section-{{ section.id }}-padding">
+  <div class="col col-lg-6">
+    <img src="{{image}}" alt="recipe">
   </div>
+  <div class="col col-lg-6">
+    {%- if section.settings.hide_title == blank -%}
+      <h1 class="main-page-title page-title h0">
+        {{ page.title | escape }}
+      </h1>
+    {%- endif -%}
+    <div class="rte">
+      {{ page.content }}
+    </div>    
+    <div class="your-add-to-cart button"  data-url="{{ page.metafields.custom.product.url }}">Add To Cart</div>
+  </div>
+</div>
+
+<div class="page-width row">
+  <div class="col-12">
+    <ul class="home-featured-collection grid product-grid contains-card contains-card--standard grid--5-col-desktop grid--2-col-tablet-down" role="list">
+
+      <li class="grid__item">
+        <div class="card-wrapper">
+          <div class="card card--standard card--media" style="--ratio-percent: 100%;">
+
+            <div class="card__inner color-background-2 gradient ratio" style="--ratio-percent: 100%;">
+              <a href="/products/citrus-summer" class="card__media">
+                <div class="media media--transparent media--hover-effect">
+              
+                  <img srcset="//cdn.shopify.com/s/files/1/0625/6259/9061/products/Cool-Cat-Wine-Spritzer-Citrus-Summer-Cocktail-Recipe.jpg?v=1659541080&amp;width=165 165w,//cdn.shopify.com/s/files/1/0625/6259/9061/products/Cool-Cat-Wine-Spritzer-Citrus-Summer-Cocktail-Recipe.jpg?v=1659541080&amp;width=360 360w,//cdn.shopify.com/s/files/1/0625/6259/9061/products/Cool-Cat-Wine-Spritzer-Citrus-Summer-Cocktail-Recipe.jpg?v=1659541080&amp;width=533 533w,//cdn.shopify.com/s/files/1/0625/6259/9061/products/Cool-Cat-Wine-Spritzer-Citrus-Summer-Cocktail-Recipe.jpg?v=1659541080&amp;width=720 720w,//cdn.shopify.com/s/files/1/0625/6259/9061/products/Cool-Cat-Wine-Spritzer-Citrus-Summer-Cocktail-Recipe.jpg?v=1659541080&amp;width=940 940w,//cdn.shopify.com/s/files/1/0625/6259/9061/products/Cool-Cat-Wine-Spritzer-Citrus-Summer-Cocktail-Recipe.jpg?v=1659541080&amp;width=1066 1066w,//cdn.shopify.com/s/files/1/0625/6259/9061/products/Cool-Cat-Wine-Spritzer-Citrus-Summer-Cocktail-Recipe.jpg?v=1659541080 1550w" src="//cdn.shopify.com/s/files/1/0625/6259/9061/products/Cool-Cat-Wine-Spritzer-Citrus-Summer-Cocktail-Recipe.jpg?v=1659541080&amp;width=533" sizes="(min-width: 1300px) 585px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)" alt="CITRUS SUMMER" class="motion-reduce" loading="lazy" width="1550" height="1550">
+
+                </div> 
+              </a>              
+            </div>
+
+            <div class="card__content">
+              <div class="card__information">          
+                <h3 class="card__heading  h5">
+                  <a href="/products/citrus-summer">CITRUS SUMMER</a>
+                </h3>
+              </div>
+            </div>
 
   <div class="your-add-to-cart"  data-url="{{ page.metafields.custom.product.url }}">Add To Cart</div>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
 </div>
 
 <script>
