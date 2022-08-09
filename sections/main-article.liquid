@@ -95,7 +95,12 @@
   <div class="article-template__back element-margin-top center">
     <a href="{{ blog.url }}" class="article-template__link link animate-arrow">
       <span class="icon-wrap">{% render 'icon-arrow' %}</span>
-      {{ 'blogs.article.back_to_blog' | t: title: blog.title }}
+      {% assign blogTitle = article.handle | split: '/' %}      
+      {%- if blogTitle[0] == 'blog' -%}
+        {{ 'blogs.article.back_to_blog' | t: title: blog.title }}
+      {%- else -%}
+        {{ 'Back to ' }}{{ blogTitle[0] }}
+      {%- endif -%}
     </a>
   </div>
   {%- if blog.comments_enabled? -%}
