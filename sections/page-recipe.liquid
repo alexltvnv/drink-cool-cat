@@ -40,7 +40,7 @@
     <div class="rte">
       {{ page.content }}
     </div>    
-    <div class="your-add-to-cart button"  data-url="{{ page.metafields.custom.product.url }}">Add To Cart</div>
+    <div class="button" data-module="add-to-cart" data-url="{{ page.metafields.custom.product.url }}">Add To Cart</div>
   </div>
 </div>
 
@@ -69,6 +69,8 @@
                 </h3>
               </div>
             </div>
+
+  <div class="your-add-to-cart"  data-url="{{ page.metafields.custom.product.url }}">Add To Cart</div>
           </div>
         </div>
       </li>
@@ -79,21 +81,23 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  const productId = {{ product.variants[0].id }};
-  const productUrl = {{ product.url }};
-
-  fetch(productUrl + '.js', {
-    method: 'POST',
-    body: JSON.stringify({
-      id: productId,
-      quantity: 1
-    }),
-    headers: {
-      'Content-type': 'application/json; charset=UTF-8',
-    }
-  }).then(function(response) {
-    console.log(response);
-    return response.json();
+  document.querySelector('[data-module="add-to-cart"]').addEventListener('click', function() {
+    const productId = {{ product.variants[0].id }};
+    const productUrl = {{ product.url }};
+  
+    fetch(productUrl + '.js', {
+      method: 'POST',
+      body: JSON.stringify({
+        id: productId,
+        quantity: 1
+      }),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      }
+    }).then(function(response) {
+      console.log(response);
+      return response.json();
+    });
   });
 }, false);
 
