@@ -23,8 +23,9 @@
   assign product = page.metafields.custom.product.value
 -%}
 
-{{image}}
+{{image | image_url}}
 {{product.url}}
+{{product.variants[0].id}}
 
 <div class="page-width row section-{{ section.id }}-padding">
   <div class="col col-lg-6">
@@ -78,6 +79,10 @@
 </div>
 
 <script>
+document.addEventListener('DOMContentLoaded', function () {
+  const productId = product.variants[0].id;
+}, false);
+
 jQuery('.your-add-to-cart').on('click', function(){
   var product_id;
   var product_url = $(this).data('url');
