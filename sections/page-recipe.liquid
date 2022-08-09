@@ -31,7 +31,25 @@
   <div class="rte">
     {{ page.content }}
   </div>
+
+  <div class="your-add-to-cart"  data-url="{{ page.metafields.custom.product.url }}">Add To Cart</div>
 </div>
+
+<script>
+$('.your-add-to-cart').on('click', function(){
+  var product_id;
+  var product_url = $(this).data('url');
+
+  jQuery.getJSON(product_url + ".js", function(product){
+    product_id = product.variants[0].id;
+
+    jQuery.post('/cart/add.js', {
+      id: product_id,
+      quantity: 1
+    });
+  });
+})
+</script>
 
 {% schema %}
 {
