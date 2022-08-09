@@ -432,6 +432,12 @@
   customElements.define('localization-form', LocalizationForm);
 {% endjavascript %}
 
+{% if template == 'landing' %}
+        <h2>Landing</h2>
+{% else %}
+  {{ template }}
+{% endif %}
+
 {% schema %}
 {
   "name": "t:sections.footer.name",
