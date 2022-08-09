@@ -17,7 +17,7 @@
 {%- style -%}
   .footer {
     margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
-    {% if template == 'landing' %}
+    {% if template == 'page.landing' %}
       margin-top: 0;
     {% endif %}
   }
@@ -29,7 +29,7 @@
   @media screen and (min-width: 750px) {
     .footer {
       margin-top: {{ section.settings.margin_top }}px;
-      {% if template == 'landing' %}
+      {% if template == 'page.landing' %}
         margin-top: 0;
       {% endif %}
     }
@@ -38,8 +38,6 @@
       padding-top: {{ section.settings.padding_top }}px;
     }
   }
-  {% if template == 'index' %}
-  {% endif %}
 {%- endstyle -%}
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
@@ -431,12 +429,6 @@
 
   customElements.define('localization-form', LocalizationForm);
 {% endjavascript %}
-
-{% if template == 'page.landing' %}
-        <h2>Landing</h2>
-{% else %}
-  {{ template }}
-{% endif %}
 
 {% schema %}
 {
