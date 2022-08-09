@@ -890,9 +890,23 @@ img:not([class]) {
   margin-bottom: 40px;  
 }
 .recipe-card-title {
-    margin-top: 0;
+    margin-top: 10px;
     font-weight: bold;
 }
 .recipe-card-title a:not(:hover) {
     text-decoration: none;
+}
+.recipe-card-img-wrap {
+    position: relative;
+    display: block;
+    padding-bottom: 100%;
+}
+.recipe-card-img-wrap img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }

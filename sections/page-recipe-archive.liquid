@@ -1,0 +1,44 @@
+{%- liquid
+  assign recipes = page.metafields.custom.related_recipes.value
+  assign slogan = page.metafields.custom.slogan
+-%}
+
+{% if recipes %}
+  <div class="page-width row row-centered">
+    <div class="col-12">
+      <h2 class="h2 text-center">
+        {{ page.title }}
+      </h2>
+    </div>
+    {% for recipe in recipes %}
+      {% assign recipe_img = recipe.metafields.custom.image %}
+      <div class="col col-lg-4 col-md-6 recipe-archive-card">
+        <a href="{{ recipe.url }}">
+          <span class="recipe-card-img-wrap">            
+            <img src="{{ recipe_img | image_url }}" alt="recipe">
+          </span>
+        </a>
+        <h2 class="h2 recipe-card-archive-title text-center">
+          <span>
+            <a href="{{ recipe.url }}">
+              <strong>
+                {{ recipe.title }}
+              </strong>
+            </a>
+          </span>
+        </h2>
+      </div>
+    {% endfor %}
+  </div>
+
+  {% if slogan %}
+    <section class="section-slogan">
+      <div class="page-width row text-center">
+        <div class="col-12">
+          <h2 class="h2"><span>{{ slogan }}</span></h2>
+        </div>
+      </div>
+    </section>
+  {% endif %}
+
+{% endif %}

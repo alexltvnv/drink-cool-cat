@@ -58,9 +58,11 @@
     </div>
     {% for recipe in recipes %}
       {% assign recipe_img = recipe.metafields.custom.image %}
-      <div class="col col-lg-2 col-md-4 col-6">
+      <div class="col col-lg-2 col-md-4 col-6 recipe-card">
         <a href="{{ recipe.url }}">
-          <img src="{{ recipe_img | image_url }}" alt="recipe">
+          <span class="recipe-card-img-wrap">            
+            <img src="{{ recipe_img | image_url }}" alt="recipe">
+          </span>
         </a>
         <h5 class="recipe-card-title text-center">
           <span>
