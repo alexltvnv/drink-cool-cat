@@ -25,7 +25,7 @@
 
 {{image | image_url}}
 {{product.url}}
-{{product.id}}
+{{product.variants[0].id}}
 
 <div class="page-width page-width--narrow section-{{ section.id }}-padding">
   {%- if section.settings.hide_title == blank -%}
@@ -42,7 +42,7 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  // do something here ...
+  const productId = product.variants[0].id;
 }, false);
 
 jQuery('.your-add-to-cart').on('click', function(){
