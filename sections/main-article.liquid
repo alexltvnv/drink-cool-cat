@@ -1,7 +1,7 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 
 <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
-{% assign blogTitle = featuredArticle.handle | split: '/' %}
+{% assign blogTitle = article.handle | split: '/' %}
       <h5 class="gold">{{ blogTitle[0] }}</h5>
   {%- for block in section.blocks -%}
     {%- case block.type -%}
