@@ -893,6 +893,7 @@ img:not([class]) {
     margin-top: 10px;
     font-weight: bold;
 }
+.recipe-card-archive-title a:not(:hover),
 .recipe-card-title a:not(:hover) {
     text-decoration: none;
 }
@@ -900,6 +901,7 @@ img:not([class]) {
     position: relative;
     display: block;
     padding-bottom: 100%;
+    overflow: hidden;
 }
 .recipe-card-img-wrap img {
     position: absolute;
@@ -909,4 +911,26 @@ img:not([class]) {
     height: 100%;
     object-fit: cover;
     object-position: center;
+    transition: transform .5s ease-in-out;
+}
+.recipe-card-img-wrap:hover img {
+    transform:  scale(1.04);
+}
+.recipe-card-archive-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+.section-slogan {
+    margin-top: 50px;
+}
+.recipe-archive-card:not(:last-child) {
+    margin-bottom: 35px;
+}
+@media (min-width: 750px){
+    .row-recipes-archive .col,
+    .row-recipes-archive .col-12,
+    .row-recipes-archive {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
 }
