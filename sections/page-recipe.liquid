@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const productId = '{{ product.variants[0].id }}';
     const productUrl = '{{ product.url }}';
   
-    fetch(productUrl + '.js', {
+    fetch('/cart/add.js', {
       method: 'POST',
       body: JSON.stringify({
         id: productId,
