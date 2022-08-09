@@ -23,7 +23,7 @@
   assign product = page.metafields.custom.product.value
 -%}
 
-{{image}}
+{{image | image_url}}
 {{product.url}}
 
 <div class="page-width page-width--narrow section-{{ section.id }}-padding">
