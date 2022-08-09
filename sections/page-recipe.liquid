@@ -48,42 +48,31 @@
   </div>
 </div>
 
-<div class="page-width row">
-  <div class="col-12">
-    <ul class="home-featured-collection grid product-grid contains-card contains-card--standard grid--5-col-desktop grid--2-col-tablet-down" role="list">
-
-      <li class="grid__item">
-        <div class="card-wrapper">
-          <div class="card card--standard card--media" style="--ratio-percent: 100%;">
-
-            <div class="card__inner color-background-2 gradient ratio" style="--ratio-percent: 100%;">
-              <a href="/products/citrus-summer" class="card__media">
-                <div class="media media--transparent media--hover-effect">
-                  <img 
-                    src="{{ image | image_url }}" 
-                    alt=""
-                    height="{{ card_collection.featured_image.height }}"
-                    width="{{ card_collection.featured_image.width }}"
-                    loading="lazy"
-                  />
-                </div> 
-              </a>              
-            </div>
-
-            <div class="card__content">
-              <div class="card__information">          
-                <h3 class="card__heading  h5">
-                  <a href="/products/citrus-summer">CITRUS SUMMER</a>
-                </h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </li>
-
-    </ul>
+{% assign recipes = page.metafields.custom.related_recipes.value %}
+{% if recipes %}
+  <div class="page-width row row-centered">
+    <div class="col-12">
+      <h2 class="h2 text-center">
+        OTHER COOL CAT RECIPES
+      </h2>
+    </div>
+    {% for recipe in recipes %}
+      {% assign recipe_img = recipe.metafields.custom.image %}
+      <div class="col col-lg-2 col-md-4 col-6">
+        <a href="{{ recipe.url }}">
+          <img src="{{ recipe_img | image_url }}" alt="recipe">
+        </a>
+        <h5 class="recipe-card-title text-center">
+          <span>
+            <a href="{{ recipe.url }}">
+              {{ recipe.title }}
+            </a>
+          </span>
+        </h5>
+      </div>
+    {% endfor %}
   </div>
-</div>
+{% endif %}
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
