@@ -1,8 +1,6 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 
 <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
-{% assign blogTitle = article.handle | split: '/' %}
-      <h5 class="gold">{{ blogTitle[0] }}</h5>
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when '@app' -%}
@@ -97,7 +95,12 @@
   <div class="article-template__back element-margin-top center">
     <a href="{{ blog.url }}" class="article-template__link link animate-arrow">
       <span class="icon-wrap">{% render 'icon-arrow' %}</span>
-      {{ 'blogs.article.back_to_blog' | t: title: blog.title }}
+      {% assign blogTitle = article.handle | split: '/' %}      
+      {%- if blogTitle[0] == 'blog' -%}
+        {{ 'blogs.article.back_to_blog' | t: title: blog.title }}
+      {%- else -%}
+        {{ 'Back to ' }}{{ blogTitle[0] }}
+      {%- endif -%}
     </a>
   </div>
   {%- if blog.comments_enabled? -%}
