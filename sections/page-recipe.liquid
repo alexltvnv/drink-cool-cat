@@ -25,7 +25,13 @@
 
 <div class="page-width row section-{{ section.id }}-padding">
   <div class="col col-lg-6">
-    <img src="{{image | image_url}}" alt="recipe">
+    <img 
+      src="{{ image | image_url }}" 
+      alt="recipe"
+      height="{{ card_collection.featured_image.height }}"
+      width="{{ card_collection.featured_image.width }}"
+      loading="lazy"
+    />
   </div>
   <div class="col col-lg-6">
     {%- if section.settings.hide_title == blank -%}
@@ -49,7 +55,7 @@
           <div class="card card--standard card--media" style="--ratio-percent: 100%;">
 
             <div class="card__inner color-background-2 gradient ratio" style="--ratio-percent: 100%;">
-              <a href="{{ product.url }}" class="card__media">
+              <a href="/products/citrus-summer" class="card__media">
                 <div class="media media--transparent media--hover-effect">
                   <img 
                     src="{{ image | image_url }}" 
@@ -69,8 +75,6 @@
                 </h3>
               </div>
             </div>
-
-  <div class="your-add-to-cart"  data-url="{{ page.metafields.custom.product.url }}">Add To Cart</div>
           </div>
         </div>
       </li>
