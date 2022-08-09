@@ -98,10 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'Content-type': 'application/json; charset=UTF-8',
       }
     }).then(function(response) {
-      console.log(response);
-      return response.json();
-    }).then(function(data){
-      console.log(data);
+      window.location.href = '/cart';
     });
   });
 }, false);
