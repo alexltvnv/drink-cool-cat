@@ -26,14 +26,19 @@
 {{image}}
 {{product.url}}
 
-<div class="page-width page-width--narrow section-{{ section.id }}-padding">
-  {%- if section.settings.hide_title == blank -%}
-    <h1 class="main-page-title page-title h0">
-      {{ page.title | escape }}
-    </h1>
-  {%- endif -%}
-  <div class="rte">
-    {{ page.content }}
+<div class="page-width row section-{{ section.id }}-padding">
+  <div class="col col-lg-6">
+    <img src="{{image}}" alt="recipe">
+  </div>
+  <div class="col col-lg-6">
+    {%- if section.settings.hide_title == blank -%}
+      <h1 class="main-page-title page-title h0">
+        {{ page.title | escape }}
+      </h1>
+    {%- endif -%}
+    <div class="rte">
+      {{ page.content }}
+    </div>    
   </div>
 
   <div class="your-add-to-cart"  data-url="{{ page.metafields.custom.product.url }}">Add To Cart</div>
