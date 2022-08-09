@@ -18,9 +18,13 @@
   }
 {%- endstyle -%}
 
-{{page.metafields.custom.image | img_url}}
-<br />
-{{page.metafields.custom.product.value.url}}
+{%- liquid
+  assign image = page.metafields.custom.image.value
+  assign product = page.metafields.custom.product.value
+-%}
+
+{{image.url}}
+{{product.url}}
 
 <div class="page-width page-width--narrow section-{{ section.id }}-padding">
   {%- if section.settings.hide_title == blank -%}
