@@ -21,6 +21,7 @@
 {%- liquid
   assign image = page.metafields.custom.image
   assign product = page.metafields.custom.product.value
+  assign slogan = page.metafields.custom.slogan
 -%}
 
 <div class="page-width row section-{{ section.id }}-padding">
@@ -43,6 +44,7 @@
       {{ page.content }}
     </div>    
     <div class="button recipe-add-to-cart" data-module="add-to-cart">Add To Cart</div>
+    <h2 class="h2"><span>{{ slogan }}</span></h2>
   </div>
 </div>
 
