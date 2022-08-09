@@ -878,3 +878,7 @@ div .button:hover,
 img:not([class]) {
   max-width: 100%;
 }
+
+.recipe-add-to-cart {
+  margin-top: 40px;
+}
