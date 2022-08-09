@@ -29,6 +29,9 @@
   @media screen and (min-width: 750px) {
     .footer {
       margin-top: {{ section.settings.margin_top }}px;
+      {% if template == 'landing' %}
+        margin-top: 0;
+      {% endif %}
     }
 
     .section-{{ section.id }}-padding {
