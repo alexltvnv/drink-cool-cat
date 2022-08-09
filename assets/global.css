@@ -2312,3 +2312,7 @@ a.product__text {
     width: calc(20% - 0.8rem);
   }
 }
+.template-search__results .article-card__info {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
