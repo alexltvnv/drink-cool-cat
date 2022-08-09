@@ -858,3 +858,6 @@ div .shopify-payment-button__button--unbranded {
   background-color: #000;
   color: #fff;
 }
+img:not[class] {
+  max-width: 100%;
+}
