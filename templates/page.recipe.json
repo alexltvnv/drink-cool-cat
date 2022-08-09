@@ -1,9 +1,8 @@
 {
   "sections": {
     "main": {
-      "type": "main-page",
+      "type": "page-recipe",
       "settings": {
-        "hide_title": false,
         "padding_top": 28,
         "padding_bottom": 28
       }
