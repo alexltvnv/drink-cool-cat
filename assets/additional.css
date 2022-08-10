@@ -969,3 +969,6 @@ img:not([class]) {
 .product__info-container .product__title {
   text-transform: uppercase;
 }
+.global-settings-popup {
+  border: none;
+}
