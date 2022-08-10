@@ -2321,9 +2321,10 @@ a.product__text {
   background-color: #fff;
   border-top-width: 0;
   left: 0;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 43px;
+  padding-right: 43px;
   position: fixed;
+  text-transform: uppercase;
   top: 50%;
   transform: rotate(-90deg) translateX(-50%);
   transform-origin: top left;
