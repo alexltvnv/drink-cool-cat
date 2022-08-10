@@ -944,3 +944,6 @@ img:not([class]) {
 .header header-drawer {
   min-width: 72px;
 }
+.home-featured-collection li:last-child {
+  margin-bottom: 0;
+}
