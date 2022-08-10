@@ -2320,7 +2320,7 @@ a.product__text {
 #show-popup-spin-to-win {
   background-color: #fff;
   border-top-width: 0;
-  display: one;
+  display: none;
   left: 0;
   padding-left: 43px;
   padding-right: 43px;
