@@ -2321,6 +2321,6 @@ a.product__text {
   left: 0;
   position: fixed;
   top: 50%;
-  transform: rotate(-90deg) translateY(-50%);
+  transform: rotate(-90deg) translateX(-50%);
   transform-origin: top left;
 }
