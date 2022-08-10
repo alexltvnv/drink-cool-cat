@@ -147,46 +147,32 @@
       }
     },
     "1658940215a7cbb7cd": {
-      "type": "recipes",
-      "blocks": {
-        "16601683979796b443-1": {
-          "type": "recipe",
-          "settings": {
-            "page": "citrus-summer"
-          }
-        },
-        "16601683979796b443-2": {
-          "type": "recipe",
-          "settings": {
-            "page": "cool-cat-island"
-          }
-        },
-        "16601683979796b443-3": {
-          "type": "recipe",
-          "settings": {
-            "page": "cool-cat-mojito"
-          }
-        },
-        "16601683979796b443-4": {
-          "type": "recipe",
-          "settings": {
-            "page": "cool-cat-mule"
-          }
-        },
-        "16601683979796b443-0": {
-          "type": "recipe",
-          "settings": {
-            "page": "american-spritz"
-          }
-        },
-        "16601683979796b443-5": {
-          "type": "recipe",
-          "settings": {
-            "page": "mini-bar-monster"
-          }
-        }
-      },
+      "type": "featured-collection",
       "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "recipes",
+        "products_to_show": 6,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "hide_price": true,
+        "enable_shop_now": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "16591066812497f236": {
