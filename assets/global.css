@@ -2322,4 +2322,5 @@ a.product__text {
   position: fixed;
   top: 50%;
   transform: rotate(-90deg) translateY(-50%);
+  transform-origin: top left;
 }
