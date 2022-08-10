@@ -1,7 +1,9 @@
 {
   "sections": {
     "main": {
-      "type": "page-recipe-archive"      
+      "type": "page-recipe-archive",
+      "settings": {
+      }
     }
   },
   "order": [
