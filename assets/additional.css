@@ -975,6 +975,7 @@ img:not([class]) {
 .product__description strong span {
   padding-right: 13px;
 }
+.testimonials-bg-img,
 .section .testimonials:before {
   content: "";
   position: absolute;
@@ -984,4 +985,7 @@ img:not([class]) {
   height: 100%;
   z-index: -3;
   background: #000;
+}
+.testimonials-bg-img {
+  z-index: -2;
 }
