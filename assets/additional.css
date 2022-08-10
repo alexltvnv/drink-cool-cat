@@ -895,7 +895,8 @@ img:not([class]) {
 }
 .recipe-card-title span span {
   display: inline-block;
-  padding-top: 10px;
+  padding-top: 7px;
+  padding-bottom: 2px;
 }
 .recipe-card-archive-title a:not(:hover),
 .recipe-card-title a:not(:hover) {
