@@ -947,3 +947,9 @@ img:not([class]) {
 .home-featured-collection li:last-child {
   margin-bottom: 0;
 }
+@media screen and (max-width: 575px) {
+  h2 span {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+}
