@@ -972,3 +972,6 @@ img:not([class]) {
 .global-settings-popup {
   border: none;
 }
+.product__description strong span {
+  padding-right: 12px;
+}

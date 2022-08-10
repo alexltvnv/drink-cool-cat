@@ -2320,6 +2320,7 @@ a.product__text {
 #show-popup-spin-to-win {
   background-color: #fff;
   border-top-width: 0;
+  display: one;
   left: 0;
   padding-left: 43px;
   padding-right: 43px;
@@ -2334,4 +2335,10 @@ a.product__text {
 #show-popup-spin-to-win:hover {
   background-color: #000;
   color: #fff;
+}
+
+@media screen and (min-width: 900px) {
+  #show-popup-spin-to-win {
+    display: block;
+  }
 }
