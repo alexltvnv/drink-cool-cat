@@ -957,3 +957,6 @@ img:not([class]) {
 #menu-drawer {
   border-right: none;
 }
+.footer [href^="mailto:"] {
+  text-decoration: underline;
+}
