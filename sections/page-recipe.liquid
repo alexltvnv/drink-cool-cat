@@ -50,19 +50,17 @@
 
 {% assign recipes = page.metafields.custom.related_recipes.value %}
 {% if recipes %}
-  <div class="page-width row row-centered recipe-related-row">
+  <div class="page-width row row-centered">
     <div class="col-12">
-      <h2 class="h2 text-center recipe-related-title">
+      <h2 class="h2 text-center">
         OTHER COOL CAT RECIPES
       </h2>
     </div>
     {% for recipe in recipes %}
       {% assign recipe_img = recipe.metafields.custom.image %}
-      <div class="col col-lg-2 col-md-4 col-6 recipe-card">
+      <div class="col col-lg-2 col-md-4 col-6">
         <a href="{{ recipe.url }}">
-          <span class="recipe-card-img-wrap">            
-            <img src="{{ recipe_img | image_url }}" alt="recipe">
-          </span>
+          <img src="{{ recipe_img | image_url }}" alt="recipe">
         </a>
         <h5 class="recipe-card-title text-center">
           <span>
@@ -70,6 +68,10 @@
               {{ recipe.title }}
             </a>
           </span>
+          <br>
+          <a href="{{ recipe.url }}">
+            VIEW RECIPE
+          </a>
         </h5>
       </div>
     {% endfor %}
