@@ -957,6 +957,6 @@ img:not([class]) {
 #menu-drawer {
   border-right: none;
 }
-.footer [href^="mailto:"] {
+.footer a[href^="mailto:"]:not(:hover) {
   text-decoration: underline;
 }
