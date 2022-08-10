@@ -985,6 +985,8 @@ img:not([class]) {
   height: 100%;
   z-index: -3;
   background: #000;
+  object-fit: cover;
+  object-position: center;
 }
 .testimonials-bg-img {
   z-index: -2;
