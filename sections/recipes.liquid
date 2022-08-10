@@ -9,7 +9,6 @@
     {%- case block.type -%}
     {%- when 'recipe' -%}
 
-    {% for recipe in recipes %}
       {% assign recipe_img = block.settings.page.metafields.custom.image %}
       <div class="col col-lg-4 col-md-6 recipe-archive-card">
         <a href="{{ block.settings.page.url }}">
@@ -27,7 +26,6 @@
           </span>
         </h2>
       </div>
-    {% endfor %}
 
     {%- endcase -%}
   {%- endfor -%}
