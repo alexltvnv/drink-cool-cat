@@ -2319,7 +2319,10 @@ a.product__text {
 
 #show-popup-spin-to-win {
   background-color: #fff;
+  border-top-width: 0;
   left: 0;
+  padding-left: 20px;
+  padding-right: 20px;
   position: fixed;
   top: 50%;
   transform: rotate(-90deg) translateX(-50%);
