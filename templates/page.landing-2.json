@@ -1,0 +1,200 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "hide_title": false,
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "16589397086f844d19": {
+      "type": "image-banner",
+      "blocks": {
+        "73a08b61-789c-4d08-9372-23872f41041d": {
+          "type": "image_picker",
+          "settings": {
+            "logo_image": "shopify:\/\/shop_images\/New_York_Mets_1.png"
+          }
+        },
+        "48366dcb-3970-4b51-9778-75a68aee25b3": {
+          "type": "heading",
+          "settings": {
+            "heading": "COOL CAT WINE SPRITZER  IS A Proud Partner  of the NY Mets",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "73a08b61-789c-4d08-9372-23872f41041d",
+        "48366dcb-3970-4b51-9778-75a68aee25b3"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Group_251_1_1.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "accent-2",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "165893995923766ecb": {
+      "type": "awards",
+      "settings": {
+      }
+    },
+    "16589399669bac701e": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "frontpage",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "hide_price": false,
+        "enable_shop_now": true,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "1658940083b3a7c45b": {
+      "type": "running-line",
+      "blocks": {
+        "16589400838fb7388a-0": {
+          "type": "item",
+          "settings": {
+            "text": "6.9% ALC\/VOL"
+          }
+        },
+        "16589400838fb7388a-1": {
+          "type": "item",
+          "settings": {
+            "text": "NATURALLY FLAVORED"
+          }
+        },
+        "16589400838fb7388a-2": {
+          "type": "item",
+          "settings": {
+            "text": "CALIFORNIA WHITE WINE"
+          }
+        },
+        "da49e0bf-3075-4970-9a08-94649d0b43bf": {
+          "type": "item",
+          "settings": {
+            "text": "GLUTEN-FREE"
+          }
+        },
+        "6c9395b6-0c92-4cf3-967c-0633a767881c": {
+          "type": "item",
+          "settings": {
+            "text": "1 CAN = 2 GLASSES OF WINE"
+          }
+        }
+      },
+      "block_order": [
+        "16589400838fb7388a-0",
+        "16589400838fb7388a-1",
+        "16589400838fb7388a-2",
+        "da49e0bf-3075-4970-9a08-94649d0b43bf",
+        "6c9395b6-0c92-4cf3-967c-0633a767881c"
+      ],
+      "settings": {
+        "speed": 20
+      }
+    },
+    "1658940184d130fe97": {
+      "type": "rich-text",
+      "blocks": {
+        "1658940184e4783193-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>COOL CAT COCKTAIL RECIPES<\/p>",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "1658940184e4783193-0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 28,
+        "padding_bottom": 12
+      }
+    },
+    "1658940215a7cbb7cd": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "recipes",
+        "products_to_show": 6,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "hide_price": true,
+        "enable_shop_now": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16591066812497f236": {
+      "type": "testimonials",
+      "settings": {
+        "title": "What our customers think",
+        "widget_code": "<!-- TrustBox widget - Product Reviews Carousel -->\n<div class=\"trustpilot-widget\" data-locale=\"en-US\" data-template-id=\"60f537b5b0f1639de1fe048c\" data-businessunit-id=\"608191716c05e7000118e9b8\" data-style-height=\"140px\" data-style-width=\"100%\" data-theme=\"light\" data-sku=\"82530\" data-review-languages=\"en\" data-no-reviews=\"hide\">\n  <a href=\"https:\/\/www.trustpilot.com\/review\/drinkcoolcat.com\" target=\"_blank\" rel=\"noopener\">Trustpilot<\/a>\n<\/div>\n<!-- End TrustBox widget -->",
+        "video_url": "",
+        "bg_image": "shopify:\/\/shop_images\/sunset-on-arizona-canyon.jpg",
+        "padding_top": 20,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16589397086f844d19",
+    "165893995923766ecb",
+    "16589399669bac701e",
+    "1658940083b3a7c45b",
+    "1658940184d130fe97",
+    "1658940215a7cbb7cd",
+    "16591066812497f236"
+  ]
+}
