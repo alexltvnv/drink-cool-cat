@@ -1,0 +1,76 @@
+<div class="row full row-recipes-archive">
+  <div class="col-12">
+    <h2 class="hxl text-center">
+      Title
+    </h2>
+  </div>
+
+  {%- for block in section.blocks -%}
+    {%- case block.type -%}
+    {%- when 'recipe' -%}
+
+    {% for recipe in recipes %}
+      {% assign recipe_img = block.settings.page.metafields.custom.image %}
+      <div class="col col-lg-4 col-md-6 recipe-archive-card">
+        <a href="{{ block.settings.page.url }}">
+          <span class="recipe-card-img-wrap">            
+            <img src="{{ recipe_img | image_url }}" alt="recipe">
+          </span>
+        </a>
+        <h2 class="h2 recipe-card-archive-title text-center">
+          <span>
+            <a href="{{ block.settings.page.url }}">
+              <strong>
+                {{ block.settings.page.title }}
+              </strong>
+            </a>
+          </span>
+        </h2>
+      </div>
+    {% endfor %}
+
+    {%- endcase -%}
+  {%- endfor -%}
+</div>      
+
+{% schema %}
+{
+  "name": "Recipes",
+  "max_blocks": 6,
+  "blocks": [
+    {
+      "type": "recipe",
+      "name": "Recipe",
+      "settings": [
+        {
+          "type": "page",
+          "id": "page",
+          "label": "Recipe page"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "recipe"
+      },
+      {
+        "type": "recipe"
+      },
+      {
+        "type": "recipe"
+      },
+      {
+        "type": "recipe"
+      },
+      {
+        "type": "recipe"
+      },
+      {
+        "type": "recipe"
+      }
+    ]
+  }
+}
+{% endschema %}
