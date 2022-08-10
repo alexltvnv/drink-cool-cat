@@ -2323,4 +2323,5 @@ a.product__text {
   top: 50%;
   transform: rotate(-90deg) translateX(-50%);
   transform-origin: top left;
+  z-index: 9999;
 }
