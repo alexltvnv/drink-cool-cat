@@ -2316,3 +2316,10 @@ a.product__text {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+
+#show-popup-spin-to-win {
+  left: 0;
+  position: fixed;
+  top: 50%;
+  transform: rotate(-90deg) translateY(-50%);
+}
