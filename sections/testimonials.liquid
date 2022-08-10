@@ -5,7 +5,7 @@
     </video>
   {%- endif -%}
   {%- if section.settings.bg_image != blank -%}
-    <img class="testimonials-bg-img" src="{{ section.settings.bg_image | img_url }}" alt="background">
+    <img class="testimonials-bg-img" src="{{ section.settings.bg_image | image_url: width: 1500 }}" alt="background">
   {%- endif -%}
   <div class="row">
     {%- if section.settings.title != blank -%}
