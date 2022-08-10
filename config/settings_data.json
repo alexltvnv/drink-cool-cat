@@ -150,7 +150,7 @@
             "type": "text",
             "settings": {
               "heading": "RETAIL PARTNERS",
-              "subtext": "<p>If you are a retailer or restaurant who wants to sell Cool Cat, please contact us via email.<\/p>"
+              "subtext": "<p>If you are a retailer or restaurant who wants to sell Cool Cat, please contact us via <a href=\"mailto:info@drinkcoolcat.com\" title=\"mailto:info@drinkcoolcat.com\">email<\/a>.<\/p>"
             }
           },
           "footer-1": {
