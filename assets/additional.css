@@ -948,6 +948,7 @@ img:not([class]) {
   margin-bottom: 0;
 }
 @media screen and (max-width: 575px) {
+  .rich-text__blocks h2,
   .rich-text__blocks h2 span {
     font-size: 20px;
     line-height: 1.3;
