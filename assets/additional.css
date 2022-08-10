@@ -991,3 +991,7 @@ img:not([class]) {
 .testimonials-bg-img {
   z-index: -2;
 }
+.section-recipes {
+  padding-top: 30px;
+  padding-bottom: 50px; 
+}
