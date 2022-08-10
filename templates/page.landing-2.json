@@ -189,12 +189,6 @@
     "166016839726533280": {
       "type": "recipes",
       "blocks": {
-        "16601683979796b443-0": {
-          "type": "recipe",
-          "settings": {
-            "page": "american-spritz"
-          }
-        },
         "16601683979796b443-1": {
           "type": "recipe",
           "settings": {
@@ -204,34 +198,40 @@
         "16601683979796b443-2": {
           "type": "recipe",
           "settings": {
-            "page": ""
+            "page": "cool-cat-island"
           }
         },
         "16601683979796b443-3": {
           "type": "recipe",
           "settings": {
-            "page": ""
+            "page": "cool-cat-mojito"
           }
         },
         "16601683979796b443-4": {
           "type": "recipe",
           "settings": {
-            "page": ""
+            "page": "cool-cat-mule"
+          }
+        },
+        "16601683979796b443-0": {
+          "type": "recipe",
+          "settings": {
+            "page": "american-spritz"
           }
         },
         "16601683979796b443-5": {
           "type": "recipe",
           "settings": {
-            "page": ""
+            "page": "mini-bar-monster"
           }
         }
       },
       "block_order": [
-        "16601683979796b443-0",
         "16601683979796b443-1",
         "16601683979796b443-2",
         "16601683979796b443-3",
         "16601683979796b443-4",
+        "16601683979796b443-0",
         "16601683979796b443-5"
       ],
       "settings": {
