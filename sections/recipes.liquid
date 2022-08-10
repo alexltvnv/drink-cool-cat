@@ -1,13 +1,13 @@
 <div class="row full row-recipes-archive">
   <div class="col-12">
     <h2 class="hxl text-center">
-      Title
+      COOL CAT COCKTAIL RECIPES
     </h2>
   </div>
 
   {%- for block in section.blocks -%}
     {%- case block.type -%}
-    {%- when 'recipe' -%}
+      {%- when 'recipe' -%}
 
       {% assign recipe_img = block.settings.page.metafields.custom.image %}
       <div class="col col-lg-4 col-md-6 recipe-archive-card">
