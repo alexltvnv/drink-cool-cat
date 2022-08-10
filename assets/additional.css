@@ -951,7 +951,7 @@ img:not([class]) {
   min-width: 72px;
 }
 .home-featured-collection li:last-child {
-  margin-bottom: 0;
+  margin-bottom: -20px;
 }
 @media screen and (max-width: 575px) {
   .rich-text__blocks h2,
