@@ -2330,3 +2330,8 @@ a.product__text {
   transform-origin: top left;
   z-index: 9999;
 }
+
+#show-popup-spin-to-win:hover {
+  background-color: #000;
+  color: #fff;
+}
