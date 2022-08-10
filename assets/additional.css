@@ -950,14 +950,14 @@ img:not([class]) {
 .header header-drawer {
   min-width: 72px;
 }
-.home-featured-collection li:last-child {
-  margin-bottom: -20px;
-}
 @media screen and (max-width: 575px) {
   .rich-text__blocks h2,
   .rich-text__blocks h2 span {
     font-size: 20px;
     line-height: 1.3;
+  }
+  .home-featured-collection li:last-child {
+    margin-bottom: -20px;
   }
 }
 #menu-drawer {
