@@ -4,6 +4,9 @@
       <source src="{{ section.settings.video_url }}" type="video/mp4">
     </video>
   {%- endif -%}
+  {%- if section.settings.bg_image -%}
+    <img class="testimonials-bg-img" src="{{ section.settings.bg_image }}" alt="background">
+  {%- endif -%}
   <div class="row">
     {%- if section.settings.title != blank -%}
       <div class="col-12 text-center">
@@ -61,6 +64,11 @@
       "type": "url",
       "id": "video_url",
       "label": "Video File URL"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background image"
     },
     {
       "type": "header",
