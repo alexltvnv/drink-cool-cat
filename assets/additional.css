@@ -995,3 +995,6 @@ img:not([class]) {
   padding-top: 30px;
   padding-bottom: 50px; 
 }
+.contact__fields .col {
+  padding-left: 0;
+}
