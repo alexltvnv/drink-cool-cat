@@ -1001,3 +1001,11 @@ img:not([class]) {
 .field__input:not(:placeholder-shown)~.field__label {
   display: none;
 }
+@media screen and (min-width: 990px) and (max-width: 1250px) {
+  .home-featured-collection li {
+    padding: 0 20px;
+  }
+  .home-featured-collection {  
+    margin: 0 -20px;
+  }
+}
