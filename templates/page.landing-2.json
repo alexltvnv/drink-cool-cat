@@ -146,8 +146,60 @@
         "padding_bottom": 12
       }
     },
+    "16601693419f1df2ed": {
+      "type": "recipes",
+      "blocks": {
+        "1660169341927ffe50-0": {
+          "type": "recipe",
+          "settings": {
+            "page": "citrus-summer"
+          }
+        },
+        "1660169341927ffe50-1": {
+          "type": "recipe",
+          "settings": {
+            "page": "cool-cat-island"
+          }
+        },
+        "1660169341927ffe50-2": {
+          "type": "recipe",
+          "settings": {
+            "page": "cool-cat-mojito"
+          }
+        },
+        "1660169341927ffe50-3": {
+          "type": "recipe",
+          "settings": {
+            "page": "cool-cat-mule"
+          }
+        },
+        "1660169341927ffe50-4": {
+          "type": "recipe",
+          "settings": {
+            "page": "american-spritz"
+          }
+        },
+        "1660169341927ffe50-5": {
+          "type": "recipe",
+          "settings": {
+            "page": "mini-bar-monster"
+          }
+        }
+      },
+      "block_order": [
+        "1660169341927ffe50-0",
+        "1660169341927ffe50-1",
+        "1660169341927ffe50-2",
+        "1660169341927ffe50-3",
+        "1660169341927ffe50-4",
+        "1660169341927ffe50-5"
+      ],
+      "settings": {
+      }
+    },
     "1658940215a7cbb7cd": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -185,57 +237,6 @@
         "padding_top": 20,
         "padding_bottom": 36
       }
-    },
-    "166016839726533280": {
-      "type": "recipes",
-      "blocks": {
-        "16601683979796b443-1": {
-          "type": "recipe",
-          "settings": {
-            "page": "citrus-summer"
-          }
-        },
-        "16601683979796b443-2": {
-          "type": "recipe",
-          "settings": {
-            "page": "cool-cat-island"
-          }
-        },
-        "16601683979796b443-3": {
-          "type": "recipe",
-          "settings": {
-            "page": "cool-cat-mojito"
-          }
-        },
-        "16601683979796b443-4": {
-          "type": "recipe",
-          "settings": {
-            "page": "cool-cat-mule"
-          }
-        },
-        "16601683979796b443-0": {
-          "type": "recipe",
-          "settings": {
-            "page": "american-spritz"
-          }
-        },
-        "16601683979796b443-5": {
-          "type": "recipe",
-          "settings": {
-            "page": "mini-bar-monster"
-          }
-        }
-      },
-      "block_order": [
-        "16601683979796b443-1",
-        "16601683979796b443-2",
-        "16601683979796b443-3",
-        "16601683979796b443-4",
-        "16601683979796b443-0",
-        "16601683979796b443-5"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
@@ -245,8 +246,8 @@
     "16589399669bac701e",
     "1658940083b3a7c45b",
     "1658940184d130fe97",
+    "16601693419f1df2ed",
     "1658940215a7cbb7cd",
-    "16591066812497f236",
-    "166016839726533280"
+    "16591066812497f236"
   ]
 }
