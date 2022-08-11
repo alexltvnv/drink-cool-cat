@@ -1013,9 +1013,12 @@ img:not([class]) {
   #instagram-title-section .title-wrap .insta-title {
     font-size: 34px;
   }
+  .container#instagram-title-section {  
+    top: 105px;
+  }
 }
 @media screen and (min-width: 1201px) {
-  #instagram-title-section {  
+  .container#instagram-title-section {  
     top: 125px;
   }
 }
