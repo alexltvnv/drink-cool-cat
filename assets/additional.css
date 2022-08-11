@@ -1002,10 +1002,10 @@ img:not([class]) {
   display: none;
 }
 @media screen and (min-width: 990px) and (max-width: 1250px) {
-  .home-featured-collection li {
+  div .home-featured-collection li {
     padding: 0 20px;
   }
-  .home-featured-collection {  
+  div .home-featured-collection {  
     margin: 0 -20px;
   }
 }
