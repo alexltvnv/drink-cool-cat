@@ -1014,3 +1014,8 @@ img:not([class]) {
     font-size: 34px;
   }
 }
+@media screen and (min-width: 1201px) {
+  #instagram-title-section {  
+    top: 125px;
+  }
+}
