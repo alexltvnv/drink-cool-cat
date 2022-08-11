@@ -1009,3 +1009,8 @@ img:not([class]) {
     margin: 0 -20px;
   }
 }
+@media screen and (min-width: 576px) and (max-width: 1200px) {
+  #instagram-title-section .insta-title {
+    font-size: 34px;
+  }
+}
