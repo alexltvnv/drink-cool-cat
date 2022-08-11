@@ -998,3 +998,6 @@ img:not([class]) {
 .contact__fields .col {
   padding-left: 0;
 }
+.field__input:not(:placeholder-shown)~.field__label {
+  display: none;
+}
