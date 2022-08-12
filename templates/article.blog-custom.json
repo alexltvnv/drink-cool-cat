@@ -1,0 +1,180 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "disabled": true,
+          "settings": {
+            "image_height": "medium"
+          }
+        },
+        "title": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "blog_show_date": false,
+            "blog_show_author": false
+          }
+        },
+        "content": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "featured_image",
+        "title",
+        "content"
+      ],
+      "settings": {
+      }
+    },
+    "16595578920e90062c": {
+      "type": "image-banner",
+      "blocks": {
+        "1659557892d483aab3-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Live Proud",
+            "heading_size": "h1"
+          }
+        },
+        "1659557892d483aab3-1": {
+          "type": "text",
+          "settings": {
+            "text": "At Cool Cat, we have two words for our LGBTQ+ community this Pride Month: “LIVE PROUD.”",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "1659557892d483aab3-0",
+        "1659557892d483aab3-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Gay_Pride_07461_1.jpg",
+        "image_overlay_opacity": 30,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "1659556587c2842a18": {
+      "type": "image-with-text",
+      "blocks": {
+        "1659556587e2366dc7-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>LIVE PROUD<\/strong>every day! Understand that being your authentic self and embracing your unique qualities is what makes you special. To celebrate this Pride Month, we want to help you celebrate with our limited edition Pride-themed, gluten-free, naturally-flavored California white wine seltzers. The rainbow-adorned cans and 4-packs are available for purchase at select venues and retailers in New York, California, and Florida and online at drinkcoolcat.com.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "1659556587e2366dc7-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Gay_Pride_0819_1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1659556936f490b57f": {
+      "type": "image-with-text",
+      "blocks": {
+        "1659556936debef358-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A word from our founder:<\/p><p><em><strong>“As a proud, openly gay minority, I created Cool Cat with diversity, equity, and inclusion in mind, which guides our brand every single day,”<\/strong><\/em> <\/p><p>said co-founder and CEO Rocco Venneri. <\/p><p><em><strong>“But, National Pride Month offers us a special and timely opportunity to launch a campaign that celebrates life and encourages individuality within the LGBTQ+ community.”<\/strong><\/em><\/p><p>Cool Cat is a gay-founded, led, and operated business. We care about our community and, as part of our “LIVE PROUD” Pride campaign, will contribute $10,000 to<a href=\"https:\/\/gaycenter.org\/\" target=\"_blank\">The Center in New York,<\/a>which provides vital programs and services for the local LGBTQ+ community, including advocacy, health and wellness programs, arts and entertainment and cultural events, recovery, parenthood, and family support. Not only is the LGBTQ+ community close to our heart, it is our heart.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "1659556936debef358-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Cool-Cat-Rocco-Venneri-Founder_1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1659557679393dcfa7": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "cover_image": "shopify:\/\/shop_images\/Screen_Shot_2022-06-28_at_9.53_1.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=VMvPEhgWy04",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16595577804ae9a968": {
+      "type": "image-with-text",
+      "blocks": {
+        "1659557780ae2fbda3-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We see you, and you deserve to see yourself. LIVE PROUD, this month, and every month.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "1659557780ae2fbda3-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/SkyHigh_Gay-Pride-_026_1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16595578920e90062c",
+    "1659556587c2842a18",
+    "1659556936f490b57f",
+    "1659557679393dcfa7",
+    "16595577804ae9a968"
+  ]
+}
