@@ -507,6 +507,8 @@
           {% render 'icon-arrow' %}
         </a>
                       {{ variant.sku | json }}
+                      {% assign current_variant = product.selected_or_first_available_variant %}
+        <span class="variant-sku">{{ current_variant.sku }}</span>
         <!-- TrustBox script -->
         <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
         <!-- End TrustBox script -->
