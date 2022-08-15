@@ -1074,3 +1074,6 @@ footer .list-social {
     margin-left: 15px;
     margin-right: 15px;
 }
+.card__content .article-card__info {
+  margin-bottom: 15px;
+}
