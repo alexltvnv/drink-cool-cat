@@ -2,11 +2,11 @@
   <div class="col-12">
     
     <div class="buttons">
-      {%- if settings.button_label_1 != blank -%}
-        <a{% if settings.button_link_1 == blank %} role="link" aria-disabled="true"{% else %} href="{{ settings.button_link_1 }}"{% endif %} class="button{% if settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ settings.button_label_1 | escape }}</a>
+      {%- if section.settings.button_label_1 != blank -%}
+        <a{% if section.settings.button_link_1 == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.button_link_1 }}"{% endif %} class="button{% if section.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ section.settings.button_label_1 | escape }}</a>
       {%- endif -%}
-      {%- if settings.button_label_2 != blank -%}
-        <a{% if settings.button_link_2 == blank %} role="link" aria-disabled="true"{% else %} href="{{ settings.button_link_2 }}"{% endif %} class="button{% if settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ settings.button_label_2 | escape }}</a>
+      {%- if section.settings.button_label_2 != blank -%}
+        <a{% if section.settings.button_link_2 == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.button_link_2 }}"{% endif %} class="button{% if section.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ section.settings.button_label_2 | escape }}</a>
       {%- endif -%}
     </div>        
       
