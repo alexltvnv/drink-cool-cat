@@ -73,13 +73,6 @@
     "1660585183f8074e4a": {
       "type": "rich-text",
       "blocks": {
-        "1660585183cbcc7bef-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "",
-            "heading_size": "h1"
-          }
-        },
         "1660585183cbcc7bef-1": {
           "type": "text",
           "settings": {
@@ -88,7 +81,6 @@
         }
       },
       "block_order": [
-        "1660585183cbcc7bef-0",
         "1660585183cbcc7bef-1"
       ],
       "settings": {
@@ -200,6 +192,34 @@
         "padding_bottom": 52
       }
     },
+    "16605857362193b65f": {
+      "type": "image-with-text",
+      "blocks": {
+        "16605857353149e264-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Spice Up the Set-Up<\/strong><\/p><p><strong>1. Lights<\/strong> - Some simple string lights on the deck and Tiki torches in the yard will ensure that darkness doesn’t put a damper on the day. <\/p><p><strong>2. Floating balloons and disco balls<\/strong> - Who said balloons are just for birthdays? And we dare you to find one person who doesn’t love a disco ball. Your pool will never look sexier. <\/p><p><strong>3. Seating <\/strong>- Make sure there are enough chairs for people to take a load off, eat, drink, or mingle. <\/p><p><strong>4. Throw blankets and pillows <\/strong>- For a more intimate touch, strategically place throw blankets and pillows near trees or in quieter areas. Some of your guests might want to get to know each other better, away from all the noise. <\/p><p><strong>5. Bug spray<\/strong> - No explanation needed. <\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "16605857353149e264-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/295845499_747806272971125_60709637289376048_n.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "1659557679393dcfa7": {
       "type": "video",
       "settings": {
@@ -251,6 +271,7 @@
     "1660585342d03c70b7",
     "1659556936f490b57f",
     "1660585593d3b3fc51",
+    "16605857362193b65f",
     "1659557679393dcfa7",
     "16595577804ae9a968"
   ]
