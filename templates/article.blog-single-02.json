@@ -210,6 +210,42 @@
         "image": "shopify:\/\/shop_images\/295845499_747806272971125_60709637289376048_n.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1660586124317b30be": {
+      "type": "image-with-text",
+      "blocks": {
+        "166058612402f33e78-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>The Music<\/strong><\/p><p>Make sure to mix it up with some newer and older tunes and some remixes of crowd faves. Whether you’re sitting on the deck, splashing around in the pool, or laughing around the fire pit, one of these killer Cool Cat summer mixes is guaranteed to create the perfect vibe. Just hit play and let the music take control.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "a6c9f8c1-dd17-4253-a51f-ecdd7a3d3201": {
+          "type": "button",
+          "settings": {
+            "button_label": "Cool Cat Playlists",
+            "button_link": "\/"
+          }
+        }
+      },
+      "block_order": [
+        "166058612402f33e78-1",
+        "a6c9f8c1-dd17-4253-a51f-ecdd7a3d3201"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/289689238_445636364055010_5072268579847329927_n.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
@@ -272,6 +308,7 @@
     "1659556936f490b57f",
     "1660585593d3b3fc51",
     "16605857362193b65f",
+    "1660586124317b30be",
     "1659557679393dcfa7",
     "16595577804ae9a968"
   ]
