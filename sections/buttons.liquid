@@ -3,7 +3,7 @@
     
     <div class="buttons">
       {%- if section.settings.button_label_1 != blank -%}
-        <a{% if section.settings.button_link_1 == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.button_link_1 }}"{% endif %} class="button{% if section.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ section.settings.button_label_1 | escape }}</a>
+        <a href="{{ blog.next_article }}" class="button">{{ section.settings.button_label_1 | escape }}</a>
       {%- endif -%}
       {%- if section.settings.button_label_2 != blank -%}
         <a{% if section.settings.button_link_2 == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.button_link_2 }}"{% endif %} class="button{% if section.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ section.settings.button_label_2 | escape }}</a>
@@ -25,11 +25,6 @@
       "default": "Button label",
       "label": "t:sections.image-banner.blocks.buttons.settings.button_label_1.label",
       "info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
-    },
-    {
-      "type": "url",
-      "id": "button_link_1",
-      "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
     },
     {
       "type": "text",
