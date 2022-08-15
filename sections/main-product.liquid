@@ -20,6 +20,13 @@
         padding-bottom: {{ section.settings.padding_bottom }}px;
       }
     }
+
+    {% if product.title contains 'ELDERFLOWER/MINT/LIME' %}
+      .product__title h1 {
+        font-size: 40px;
+        word-break: normal;
+      }
+    {% endif  %}
   {%- endstyle -%}
 
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
