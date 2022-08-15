@@ -131,35 +131,15 @@
     "1660585342d03c70b7": {
       "type": "rich-text",
       "blocks": {
-        "1660585342a91a82e4-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Talk about your brand<\/p>",
-            "heading_size": "h1"
-          }
-        },
         "1660585342a91a82e4-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "1660585342a91a82e4-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "text": "<p>Here are some simple recipes that will definitely kick things up a notch:<\/p><p><strong>Citrus Summer<\/strong><\/p><p>1.5 oz Citrus Vodka or Gin<\/p><p>1 oz Orange Juice<\/p><p>1 oz Cranberry Juice or Pomegranate Juice<\/p><p>2 oz Cool Cat Citrus<\/p><p><strong>Cool Cat Mojito<\/strong><\/p><p>Muddle Mint & Lime<\/p><p>1 oz Lime Juice<\/p><p>.75 oz Simple Syrup or Agave Syrup<\/p><p>4 oz Cool Cat Elderflower<\/p><p><strong>Cool Cat Mule<\/strong><\/p><p>Muddle Fresh Ginger, Mint, Lime<\/p><p>2 oz Vodka, Gin or Mezcal<\/p><p>4 oz Cool Cat Elderflower<\/p><p><strong>American Spritz <\/strong><\/p><p>1.5 oz Aperol<\/p><p>3 oz Cool Cat Grapefruit<\/p><p>4 oz Cool Cat Elderflower<\/p><p>Orange Wedge Garnish<\/p><p>Rocks\/Wine Glass<\/p><p>Simple. Clean. Refreshing. People will forget that beer was even invited to the party.<\/p>"
           }
         }
       },
       "block_order": [
-        "1660585342a91a82e4-0",
-        "1660585342a91a82e4-1",
-        "1660585342a91a82e4-2"
+        "1660585342a91a82e4-1"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -176,7 +156,7 @@
         "1659556936debef358-1": {
           "type": "text",
           "settings": {
-            "text": "<p>A word from our founder:<\/p><p><em><strong>“As a proud, openly gay minority, I created Cool Cat with diversity, equity, and inclusion in mind, which guides our brand every single day,”<\/strong><\/em> <\/p><p>said co-founder and CEO Rocco Venneri. <\/p><p><em><strong>“But, National Pride Month offers us a special and timely opportunity to launch a campaign that celebrates life and encourages individuality within the LGBTQ+ community.”<\/strong><\/em><\/p><p>Cool Cat is a gay-founded, led, and operated business. We care about our community and, as part of our “LIVE PROUD” Pride campaign, will contribute $10,000 to<a href=\"https:\/\/gaycenter.org\/\" target=\"_blank\">The Center in New York,<\/a>which provides vital programs and services for the local LGBTQ+ community, including advocacy, health and wellness programs, arts and entertainment and cultural events, recovery, parenthood, and family support. Not only is the LGBTQ+ community close to our heart, it is our heart.<\/p>",
+            "text": "<p><strong>The Food<\/strong><\/p><p>The last thing you want to do at your own BBQ is stress over it. Here are some quick tips on how to stay chill at the grill:<\/p>",
             "text_style": "body"
           }
         }
@@ -185,7 +165,7 @@
         "1659556936debef358-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Cool-Cat-Rocco-Venneri-Founder_1.jpg",
+        "image": "shopify:\/\/shop_images\/294642356_176360281519148_2535649958750587455_n.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -196,6 +176,28 @@
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "1660585593d3b3fc51": {
+      "type": "rich-text",
+      "blocks": {
+        "1660585593ffc28193-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1660585593ffc28193-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "1659557679393dcfa7": {
@@ -248,6 +250,7 @@
     "1659556587c2842a18",
     "1660585342d03c70b7",
     "1659556936f490b57f",
+    "1660585593d3b3fc51",
     "1659557679393dcfa7",
     "16595577804ae9a968"
   ]
