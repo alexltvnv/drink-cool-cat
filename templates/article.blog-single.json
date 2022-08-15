@@ -172,7 +172,7 @@
       "type": "buttons",
       "settings": {
         "button_label_1": "Read Next",
-        "button_label_2": "Button label",
+        "button_label_2": "",
         "button_link_2": ""
       }
     }
