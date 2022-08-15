@@ -1043,7 +1043,7 @@ img:not([class]) {
     margin: auto;
     max-width: 160px;    
   }
-  .footer-block.grid__item.footer-block-logo + .footer-block {
+  .footer-block.grid__item.footer-block-logo ~ .footer-block {
     min-width: 50%;
     width: 50%;
     order: 0;
