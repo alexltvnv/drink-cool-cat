@@ -1038,8 +1038,12 @@ img:not([class]) {
   .footer-block.grid__item.footer-block-logo {
     min-width: 100%;    
   }
-  .footer-logo-link {    
+  .footer-logo-link {
+    display: block;
     margin: auto;
     max-width: 160px;    
+  }
+  .footer-block.grid__item.footer-block-logo + .footer-block {
+    min-width: 50%;    
   }
 }
