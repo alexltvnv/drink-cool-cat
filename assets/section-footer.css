@@ -214,9 +214,9 @@
   .footer-block__newsletter + .footer__list-social {
     margin-top: 12px;
   }
-  .footer__list-social.list-social {
+  /* .footer__list-social.list-social {
     margin-left: -1.3rem;
-  }
+  } */
 }
 
 .footer__localization {
