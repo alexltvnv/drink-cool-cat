@@ -2,7 +2,7 @@
   <div class="col-12">
     
     <div class="buttons">
-      {%- if section.settings.button_label_1 != blank -%}
+      {%- if section.settings.button_label_1 != blank and blog.next_article -%}
         <a href="{{ blog.next_article }}" class="button">{{ section.settings.button_label_1 | escape }}</a>
       {%- endif -%}
       {%- if section.settings.button_label_2 != blank -%}
