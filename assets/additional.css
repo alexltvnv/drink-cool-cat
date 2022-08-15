@@ -1037,5 +1037,6 @@ img:not([class]) {
 @media screen and (min-width: 990px) and (max-width: 1250px) {
   .footer-block.grid__item.footer-block-logo {
     min-width: 100%;
+    text-align: center;
   }
 }
