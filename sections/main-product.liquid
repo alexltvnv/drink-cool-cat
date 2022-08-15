@@ -23,13 +23,12 @@
 
     {% if product.title contains 'Elderflower/Mint/Lime' %}
       .product__title h1 {
-        font-size: 40px;
+        font-size: 40px !important;
         word-break: normal;
       }
     {% endif  %}
   {%- endstyle -%}
 
-<script>console.log({{ product | json }});</script>
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
   {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
