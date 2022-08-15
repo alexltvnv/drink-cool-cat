@@ -256,12 +256,40 @@
         "padding_bottom": 36
       }
     },
+    "16605862929faffc9a": {
+      "type": "image-with-text",
+      "blocks": {
+        "16605862919c892bc7-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>The Backyard Fun <\/strong><\/p><p>At any Cool Cat event, fun is a given, but make sure you have some activities for the crew so the chat doesn’t turn to pandemics or gas prices. <\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "16605862919c892bc7-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Screenshot_3.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "1659557679393dcfa7": {
       "type": "video",
       "settings": {
         "heading": "",
         "heading_size": "h1",
-        "cover_image": "shopify:\/\/shop_images\/Screen_Shot_2022-06-28_at_9.53_1.jpg",
+        "cover_image": "shopify:\/\/shop_images\/Cool_Cat_Wine_Spritzer_Sky-High_Freedom_-_YouTube_2022-07-28_16-50-14.webp",
         "video_url": "https:\/\/www.youtube.com\/watch?v=VMvPEhgWy04",
         "description": "",
         "full_width": false,
@@ -309,6 +337,7 @@
     "1660585593d3b3fc51",
     "16605857362193b65f",
     "1660586124317b30be",
+    "16605862929faffc9a",
     "1659557679393dcfa7",
     "16595577804ae9a968"
   ]
