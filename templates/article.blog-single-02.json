@@ -306,104 +306,6 @@
         "padding_bottom": 52
       }
     },
-    "1659557679393dcfa7": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "cover_image": "shopify:\/\/shop_images\/Cool_Cat_Wine_Spritzer_Sky-High_Freedom_-_YouTube_2022-07-28_16-50-14.webp",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=VMvPEhgWy04",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "1660588317f6356222": {
-      "type": "image-banner",
-      "blocks": {
-        "166058831716a99923-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "166058831716a99923-2"
-      ],
-      "settings": {
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "1660588419d8da7d56": {
-      "type": "page",
-      "settings": {
-        "page": "",
-        "heading_size": "h1",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "1660588449abbf8af9": {
-      "type": "image-with-text",
-      "blocks": {
-        "16605884498ad9b768-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "16605884498ad9b768-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "16605884498ad9b768-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "16605884498ad9b768-0",
-        "16605884498ad9b768-1",
-        "16605884498ad9b768-2"
-      ],
-      "settings": {
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "1660588545e0d5dc23": {
       "type": "custom-liquid",
       "settings": {
@@ -426,10 +328,6 @@
     "1660586124317b30be",
     "16605862929faffc9a",
     "166058674495f12f40",
-    "1659557679393dcfa7",
-    "1660588317f6356222",
-    "1660588419d8da7d56",
-    "1660588449abbf8af9",
     "1660588545e0d5dc23"
   ]
 }
