@@ -1044,8 +1044,8 @@ img:not([class]) {
     max-width: 160px;    
   }
   .footer-block.grid__item.footer-block-logo ~ .footer-block {
-    min-width: 50%;
-    width: 50%;
+    min-width: calc(50% - 3rem);
+    width: calc(50% - 3rem);
     order: 0;
   }
 }
