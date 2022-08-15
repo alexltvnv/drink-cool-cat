@@ -1049,3 +1049,6 @@ img:not([class]) {
     order: 0;
   }
 }
+.card__content h3 {
+  font-weight: 400;
+}
