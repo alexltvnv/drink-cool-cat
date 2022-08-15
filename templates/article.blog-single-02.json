@@ -314,6 +314,15 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "166058991065b0ea4d": {
+      "type": "buttons",
+      "settings": {
+        "button_label_1": "READ NEXT",
+        "button_link_1": "shopify:\/\/blogs\/blog\/live-proud",
+        "button_label_2": "SHOP ALL FLAVORS",
+        "button_link_2": "shopify:\/\/pages\/shop"
+      }
     }
   },
   "order": [
@@ -328,6 +337,7 @@
     "1660586124317b30be",
     "16605862929faffc9a",
     "166058674495f12f40",
-    "1660588545e0d5dc23"
+    "1660588545e0d5dc23",
+    "166058991065b0ea4d"
   ]
 }
