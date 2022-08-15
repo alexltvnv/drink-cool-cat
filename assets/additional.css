@@ -1049,6 +1049,9 @@ img:not([class]) {
     order: 0;
   }
 }
-.card__content h3 {
-  font-weight: 400;
+.main-blog h1 {
+  font-weight: 700;
 }
+/* .card__content h3 {
+  font-weight: 400;
+} */
