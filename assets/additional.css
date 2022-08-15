@@ -1070,3 +1070,7 @@ footer .list-social {
     width: 100%;
     height: 100%;
 }
+.section-buttons .button {
+    margin-left: 15px;
+    margin-right: 15px;
+}
