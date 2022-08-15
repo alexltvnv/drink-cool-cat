@@ -10,6 +10,11 @@
   }
 }
 
+.list-social__item:not(:last-child) {
+  margin-bottom: 1.3rem;
+  margin-right: 1.3rem;
+}
+
 .list-social__item .icon {
   height: 1.8rem;
   width: 1.8rem;
@@ -18,7 +23,7 @@
 .list-social__link {
   align-items: center;
   display: flex;
-  padding: 1.3rem;
+  /* padding: 1.3rem; */
   color: rgb(var(--color-foreground));
 }
 
