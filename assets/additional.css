@@ -1052,6 +1052,9 @@ img:not([class]) {
 .main-blog h1 {
   font-weight: 700;
 }
+.list-social {    
+    flex-wrap: nowrap;    
+}
 /* .card__content h3 {
   font-weight: 400;
 } */
