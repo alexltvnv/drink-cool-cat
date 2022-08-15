@@ -40,14 +40,14 @@
         "1659557892d483aab3-0": {
           "type": "heading",
           "settings": {
-            "heading": "Live Proud",
+            "heading": "The Cool Cat Twist on an American Summer Pastime",
             "heading_size": "h1"
           }
         },
         "1659557892d483aab3-1": {
           "type": "text",
           "settings": {
-            "text": "At Cool Cat, we have two words for our LGBTQ+ community this Pride Month: “LIVE PROUD.”",
+            "text": "We know how to take your poolside BBQ to the next level, and it doesn’t take a rocket scientist!",
             "text_style": "body"
           }
         }
@@ -57,7 +57,7 @@
         "1659557892d483aab3-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Gay_Pride_07461_1.jpg",
+        "image": "shopify:\/\/shop_images\/299200327_8167166766634639_3134719102421435823_n.jpg",
         "image_overlay_opacity": 30,
         "image_height": "medium",
         "adapt_height_first_image": false,
@@ -70,13 +70,43 @@
         "show_text_below": true
       }
     },
+    "1660585183f8074e4a": {
+      "type": "rich-text",
+      "blocks": {
+        "1660585183cbcc7bef-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "1660585183cbcc7bef-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Does the summertime heatwave have you in constant party mode? Or are you just ready to kick back outdoors with the crew after a crazy work week? We’ve all been there, we know how you feel, and we know exactly what you need…the perfect poolside BBQ. <\/p><p>So, let’s go! Round up your pack, get your playlist bumpin’, set up the volleyball net, pack the cooler, slap on the sunscreen, light the Tiki torches, and fire up the grill. We’re gonna show you how to do it the Cool Cat way.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1660585183cbcc7bef-0",
+        "1660585183cbcc7bef-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "1659556587c2842a18": {
       "type": "image-with-text",
       "blocks": {
         "1659556587e2366dc7-1": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>LIVE PROUD<\/strong>every day! Understand that being your authentic self and embracing your unique qualities is what makes you special. To celebrate this Pride Month, we want to help you celebrate with our limited edition Pride-themed, gluten-free, naturally-flavored California white wine seltzers. The rainbow-adorned cans and 4-packs are available for purchase at select venues and retailers in New York, California, and Florida and online at drinkcoolcat.com.<\/p>",
+            "text": "<p><strong>The Drinks<\/strong><\/p><p>Yeah, yeah, we know everyone will need to eat at some point, we can all agree that a poolside BBQ isn’t a BBQ without the right drinks. Make sure your cooler is packed with all of Cool Cat’s four flavors: Original Elderflower, Citrus, Grapefruit, and Berry. (Oh yeah, and don’t forget ice…plenty of it). <\/p><p>Your friends will most likely show up with the usual case of this or a bottle of that. But let’s face it, we don’t just want the usual. Take that bottle of wine or vodka and mix it with any of the four Cool Cat flavors for a perfect summer refresher that is clean, crisp, and anything but ordinary. <\/p>",
             "text_style": "body"
           }
         }
@@ -85,7 +115,7 @@
         "1659556587e2366dc7-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Gay_Pride_0819_1.jpg",
+        "image": "shopify:\/\/shop_images\/Cool-Cat-Wine-Spritzer-Citrus-Summer-Cocktail-Recipe.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -96,6 +126,48 @@
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "1660585342d03c70b7": {
+      "type": "rich-text",
+      "blocks": {
+        "1660585342a91a82e4-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Talk about your brand<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "1660585342a91a82e4-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "1660585342a91a82e4-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1660585342a91a82e4-0",
+        "1660585342a91a82e4-1",
+        "1660585342a91a82e4-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "1659556936f490b57f": {
@@ -172,7 +244,9 @@
   "order": [
     "main",
     "16595578920e90062c",
+    "1660585183f8074e4a",
     "1659556587c2842a18",
+    "1660585342d03c70b7",
     "1659556936f490b57f",
     "1659557679393dcfa7",
     "16595577804ae9a968"
