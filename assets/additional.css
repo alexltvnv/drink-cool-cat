@@ -1033,3 +1033,9 @@ img:not([class]) {
 .shopify-policy__container {
   max-width: 1050px;
 }
+
+@media screen and (min-width: 990px) and (max-width: 1250px) {
+  .footer-block.grid__item.footer-block-logo {
+    min-width: 100%;
+  }
+}
