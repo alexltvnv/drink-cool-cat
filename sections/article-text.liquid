@@ -2,9 +2,9 @@
 {% for block in section.blocks %}
     {% assign b = block.settings %}
     {{ b.title }} -
-    {{  b.article_handle }} -
+    {{  b.page_handle }} -
     {{ article.handle }}
-    {% if b.article_handle contains article.handle %}
+    {% if b.page_handle contains article.handle %}
         <section {{ block.shopify_attributes }}>
             {{ b.title }}
             <img src="{{ b.image | img_url }}">
