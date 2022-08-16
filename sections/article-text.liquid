@@ -3,6 +3,7 @@
     {% if b.page_handle contains page.handle %}
         <section {{ block.shopify_attributes }}>
             {{ b.title }}
+            <img src="{{ b.image | img_url }}">
         </section>
     {% break %}
     {% endif %}
