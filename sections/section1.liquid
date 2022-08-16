@@ -1,8 +1,10 @@
 {% for block in section.blocks %}
-  <h5>Section 1</h5>
+  
     {% assign b = block.settings %}
     {% if page.handle == b.page_handle %}
-        <section {{ block.shopify_attributes }}>
+        
+        <section class="text-center" {{ block.shopify_attributes }}>
+          <h5>Section 1</h5>
             <img src="{{b.image | img_url }}">
         </section>
     {% break %}
