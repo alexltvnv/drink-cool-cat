@@ -229,6 +229,29 @@
         ],
         "settings": {
         }
+      },
+      "section1": {
+        "type": "section1",
+        "blocks": {
+          "83ad09c1-4199-4349-b6c9-d7f99a4c2ceb": {
+            "type": "Hero",
+            "settings": {
+              "title": "Test 01",
+              "page_handle": "test-2",
+              "image": "shopify:\/\/shop_images\/Cool-Cat-Wine-Spritzer-Cool-Cat-Mojito-Cocktail-Recipe.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "83ad09c1-4199-4349-b6c9-d7f99a4c2ceb"
+        ],
+        "settings": {
+        }
+      },
+      "section2": {
+        "type": "section2",
+        "settings": {
+        }
       }
     },
     "content_for_index": [
