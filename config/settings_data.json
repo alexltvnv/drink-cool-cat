@@ -219,7 +219,7 @@
             "type": "Hero",
             "settings": {
               "title": "Test",
-              "page_handle": "test 2",
+              "page_handle": "",
               "image": "shopify:\/\/shop_images\/Cool-Cat-Wine-Spritzer-Citrus-Summer-Cocktail-Recipe.jpg"
             }
           }
