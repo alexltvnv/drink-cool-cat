@@ -1,12 +1,9 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
-{% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
+{% for block in section.blocks %}
+    {% assign b = block.settings %}
+    {% if page.handle == b.page_handle %}
+        <section {{ block.shopify_attributes }}>
+            {{ b.text }}
+        </section>
+    {% break %}
+    {% endif %}
+{% endfor %}
