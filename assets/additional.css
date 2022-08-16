@@ -1077,3 +1077,6 @@ footer .list-social {
 .card__content .article-card__info {
   margin-bottom: 15px;
 }
+.related-products {
+  justify-content: center;
+}
