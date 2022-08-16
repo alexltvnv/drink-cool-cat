@@ -27,7 +27,8 @@
 
 {%- liquid
   assign products_to_display = section.settings.collection.all_products_count
-
+  assign current_product_id = product.id
+  
   if section.settings.collection.all_products_count > section.settings.products_to_show
     assign products_to_display = section.settings.products_to_show
     assign more_in_collection = true
@@ -61,7 +62,7 @@
         {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
           <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}">
             {% if template.name == 'product' %}
-              <h5>Product = {{ product.id }} - {{ section.settings.show_vendor }}</h5>
+              <h5>Product = {{ product.id }} - {{ current_product_id }}</h5>
             {% endif %}
             {% render 'card-product',
               card_product: product,
