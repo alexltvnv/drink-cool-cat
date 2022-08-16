@@ -1,7 +1,7 @@
 <h3>Test</h3>
 {% for block in section.blocks %}
     {% assign b = block.settings %}
-    {{ b.title }}
+    {{ b.title }} -
     {{  b.article_handle }} -
     {{ article.handle }}
     {% if b.article_handle contains article.handle %}
