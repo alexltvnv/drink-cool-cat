@@ -196,6 +196,19 @@
       },
       "article-hero": {
         "type": "article-hero",
+        "blocks": {
+          "8cd04c8a-871a-4f2e-84c6-b42ac8d7881a": {
+            "type": "Hero",
+            "settings": {
+              "title": "Test 1",
+              "page_handle": "Text 2",
+              "image": "shopify:\/\/shop_images\/289689238_445636364055010_5072268579847329927_n.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "8cd04c8a-871a-4f2e-84c6-b42ac8d7881a"
+        ],
         "settings": {
         }
       },
