@@ -1,6 +1,6 @@
 {% for block in section.blocks %}
     {% assign b = block.settings %}
-    {% if page.handle == b.page_handle %}
+    {% if b.page_handle contains page.handle %}
         <section {{ block.shopify_attributes }}>
             <img src="{{b.image | img_url }}">
         </section>
