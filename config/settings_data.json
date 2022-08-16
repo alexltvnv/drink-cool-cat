@@ -250,6 +250,19 @@
       },
       "section2": {
         "type": "section2",
+        "blocks": {
+          "3a543824-ac20-434e-97dc-a550cd44bdc1": {
+            "type": "Hero",
+            "settings": {
+              "title": "Test 02",
+              "page_handle": "test,\ntest-2,",
+              "image": "shopify:\/\/shop_images\/Cool-Cat-Wine-Spritzer-Cool-Cat-Island-Cocktail-Recipe.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "3a543824-ac20-434e-97dc-a550cd44bdc1"
+        ],
         "settings": {
         }
       }
