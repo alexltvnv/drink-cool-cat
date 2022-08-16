@@ -193,6 +193,29 @@
         "settings": {
           "color_scheme": "background-1"
         }
+      },
+      "article-hero": {
+        "type": "article-hero",
+        "settings": {
+        }
+      },
+      "article-text": {
+        "type": "article-text",
+        "blocks": {
+          "528153cc-6d8b-44f2-b89a-eb3aa6e89774": {
+            "type": "Hero",
+            "settings": {
+              "title": "Test",
+              "page_handle": "test 2",
+              "image": "shopify:\/\/shop_images\/Cool-Cat-Wine-Spritzer-Citrus-Summer-Cocktail-Recipe.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "528153cc-6d8b-44f2-b89a-eb3aa6e89774"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
