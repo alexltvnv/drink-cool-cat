@@ -237,8 +237,8 @@
             "type": "Hero",
             "settings": {
               "title": "Test 01",
-              "page_handle": "test-2",
-              "image": "shopify:\/\/shop_images\/Cool-Cat-Wine-Spritzer-American-Spritz-Cocktail-Recipe.jpg"
+              "page_handle": "test",
+              "image": "shopify:\/\/shop_images\/Cool-Cat-Wine-Spritzer-Cool-Cat-Mojito-Cocktail-Recipe.jpg"
             }
           }
         },
