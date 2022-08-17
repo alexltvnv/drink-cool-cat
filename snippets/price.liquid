@@ -17,13 +17,8 @@
     assign target = product
   endif
 
-  if  product.type == "NODISCOUNT"
-    assign compare_at_price = target.compare_at_price
-    assign price = target.price | default: 1999     
-  else
-    assign compare_at_price = target.compare_at_price
-    assign price = target.price | times: 0.75
-  endif
+  assign compare_at_price = target.compare_at_price
+  assign price = target.price | default: 1999
   assign available = target.available | default: false
   assign money_price = price | money
   if settings.currency_code_enabled
@@ -51,6 +46,7 @@
       <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
       <span class="price-item price-item--regular">
         {{ money_price }}
+        {{ product.type }}
       </span>
     </div>
     <div class="price__sale">
