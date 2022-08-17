@@ -1080,3 +1080,9 @@ footer .list-social {
 .related-products {
   justify-content: center;
 }
+
+#cart-notification .icon-discount {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.7rem;
+}
