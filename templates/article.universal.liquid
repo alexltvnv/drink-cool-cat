@@ -13,32 +13,33 @@
 
 {% if image_01 %}
 
+	<section id="shopify-section-{{ article.id }}" class="shopify-section section">
 
-<section id="shopify-section-template--16361901752573__16595578920e90062c" class="shopify-section section">
+		{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 
-	<link href="//cdn.shopify.com/s/files/1/0493/9366/4160/t/14/assets/section-image-banner.css?v=102323259732254187221660202126" rel="stylesheet" type="text/css" media="all">
-	<style>
-		#Banner-{{ article.id }}::after {
-	    	opacity: 0.3;
-		}
-	</style>
-	
-	<div id="Banner-{{ article.id }}" class="banner banner--content-align-center banner--content-align-mobile-center banner--medium banner--mobile-bottom banner--desktop-transparent">
-		<div class="banner__media media">
-			<img src="{{ image_01 | image_url }}" alt="banner" srcset="">
-	    </div>
-	    <div class="banner__content banner__content--middle-center page-width">
-	    	<div class="banner__box content-container content-container--full-width-mobile color-background-1 gradient">
-	    		<h2 class="banner__heading h1">
-	            	<span>{{ title_01 }}</span>
-	            </h2>
-            	<div class="banner__text body">
-              		<span>{{ text_01 }}</span>
-	            </div>
-	        </div>
+		<style>
+			#Banner-{{ article.id }}::after {
+		    	opacity: 0.3;
+			}
+		</style>
+		
+		<div id="Banner-{{ article.id }}" class="banner banner--content-align-center banner--content-align-mobile-center banner--medium banner--mobile-bottom banner--desktop-transparent">
+			<div class="banner__media media">
+				<img src="{{ image_01 | image_url }}" alt="banner" srcset="">
+		    </div>
+		    <div class="banner__content banner__content--middle-center page-width">
+		    	<div class="banner__box content-container content-container--full-width-mobile color-background-1 gradient">
+		    		<h2 class="banner__heading h1">
+		            	<span>{{ title_01 }}</span>
+		            </h2>
+	            	<div class="banner__text body">
+	              		<span>{{ text_01 }}</span>
+		            </div>
+		        </div>
+			</div>
 		</div>
-	</div>
-</section>
+
+	</section>
 
 {% endif %}
 
