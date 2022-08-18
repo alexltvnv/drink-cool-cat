@@ -1,2 +1,20 @@
+{%- liquid
+  assign title_01 = article.metafields.custom.section_1_title
+  assign text_01 = article.metafields.custom.section_1_text
+  assign image_01 = article.metafields.custom.section_1_image
+  assign text_02 = article.metafields.custom.section_2_text
+  assign image_02 = article.metafields.custom.section_2_image
+  assign text_03 = article.metafields.custom.section_3_text
+  assign image_03 = article.metafields.custom.section_3_image
+  assign iframe_04 = article.metafields.custom.section_4_video_iframe_code
+  assign text_05 = article.metafields.custom.section_5_text
+  assign image_05 = article.metafields.custom.section_5_image
+-%}
+
+{% if title_01 %}
+	<h1>		
+		{{ title_01 }}
+	</h1>
+{% endif %}
 
 {% section 'buttons' %}
