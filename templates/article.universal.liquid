@@ -11,9 +11,19 @@
   assign image_05 = article.metafields.custom.section_5_image
 -%}
 
-{% if title_01 %}
+{% if image_01 %}
+
+
+<section id="shopify-section-template--16361901752573__16595578920e90062c" class="shopify-section section">
+
+	<link href="//cdn.shopify.com/s/files/1/0493/9366/4160/t/14/assets/section-image-banner.css?v=102323259732254187221660202126" rel="stylesheet" type="text/css" media="all">
+	<style>
+		#Banner-{{ article.id }}::after {
+	    	opacity: 0.3;
+		}
+	</style>
 	
-	<div id="Banner-template-{{ article.id }}" class="banner banner--content-align-center banner--content-align-mobile-center banner--medium banner--mobile-bottom banner--desktop-transparent">
+	<div id="Banner-{{ article.id }}" class="banner banner--content-align-center banner--content-align-mobile-center banner--medium banner--mobile-bottom banner--desktop-transparent">
 		<div class="banner__media media">
 			<img src="{{ image_01 | image_url }}" alt="banner" srcset="">
 	    </div>
@@ -26,8 +36,9 @@
               		<span>{{ text_01 }}</span>
 	            </div>
 	        </div>
-    	</div>
+		</div>
 	</div>
+</section>
 
 {% endif %}
 
