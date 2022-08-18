@@ -74,7 +74,7 @@
 				<div class="image-with-text__text-item grid__item">
 					<div id="ImageWithText-02-{{ article.id }}" class="image-with-text__content image-with-text__content--middle image-with-text__content--desktop-left image-with-text__content--mobile-left image-with-text__content--adapt gradient color-background-1 content-container">
 						<div class="image-with-text__text rte body">
-							<p>{{ text_02 }}<p>
+							{{ text_02 }}
 						</div>
 					</div>
 				</div>
@@ -84,6 +84,7 @@
 	</section>
 
 {% endif %}
+
 
 {% if image_03 or text_03 %}
 
@@ -110,7 +111,7 @@
 				<div class="image-with-text__text-item grid__item">
 					<div id="ImageWithText-03-{{ article.id }}" class="image-with-text__content image-with-text__content--middle image-with-text__content--desktop-left image-with-text__content--mobile-left image-with-text__content--adapt gradient color-background-1 content-container">
 						<div class="image-with-text__text rte body">
-							<p>{{ text_03 }}<p>
+							{{ text_03 }}
 						</div>
 					</div>
 				</div>
@@ -127,7 +128,11 @@
 {% endif %}
 
 
+{% if iframe_04 %}
 
+	{{ iframe_04 }}
+
+{% endif %}
 
 
 {% if image_05 or text_05 %}
@@ -160,7 +165,7 @@
 				<div class="image-with-text__text-item grid__item">
 					<div id="ImageWithText-05-{{ article.id }}" class="image-with-text__content image-with-text__content--middle image-with-text__content--desktop-left image-with-text__content--mobile-left image-with-text__content--adapt gradient color-background-1 content-container">
 						<div class="image-with-text__text rte body">
-							<p>{{ text_05 }}<p>
+							{{ text_05 }}
 						</div>
 					</div>
 				</div>
