@@ -42,7 +42,7 @@
             {%- endfor -%}
 
             <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
-              -{{ item.compare_at_price | minus: item.price | times: 100 | divided_by: item.compare_at_price }}% OFF
+              -{{ compare_at_price | minus: price | times: 100 | divided_by: compare_at_price }}% OFF
             </span>
             
             <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
