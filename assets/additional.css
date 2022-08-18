@@ -1094,3 +1094,7 @@ footer .list-social {
 .product__title + .subtitle {
   font-size: 1.5rem;
 }
+
+.section-buttons .button {
+    margin: 15px;    
+}
