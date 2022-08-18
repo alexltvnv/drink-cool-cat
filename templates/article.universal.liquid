@@ -1,2 +1,34 @@
-{% section 'article-hero' %}
-{% section 'article-text' %}
+{%- liquid
+  assign title_01 = article.metafields.custom.section_1_title
+  assign text_01 = article.metafields.custom.section_1_text
+  assign image_01 = article.metafields.custom.section_1_image
+  assign text_02 = article.metafields.custom.section_2_text
+  assign image_02 = article.metafields.custom.section_2_image
+  assign text_03 = article.metafields.custom.section_3_text
+  assign image_03 = article.metafields.custom.section_3_image
+  assign iframe_04 = article.metafields.custom.section_4_video_iframe_code
+  assign text_05 = article.metafields.custom.section_5_text
+  assign image_05 = article.metafields.custom.section_5_image
+-%}
+
+{% if title_01 %}
+	
+	<div id="Banner-{{ article.id }}" class="banner banner--content-align-center banner--content-align-mobile-center banner--medium banner--mobile-bottom banner--desktop-transparent">
+		<div class="banner__media media">
+			<img src="{{ image_01 | image_url }}" alt="banner" srcset="">
+	    </div>
+	    <div class="banner__content banner__content--middle-center page-width">
+	    	<div class="banner__box content-container content-container--full-width-mobile color-background-1 gradient">
+	    		<h2 class="banner__heading h1">
+	            	<span>{{ title_01 }}</span>
+	            </h2>
+            	<div class="banner__text body">
+              		<span>{{ text_01 }}</span>
+	            </div>
+	        </div>
+		</div>
+	</div>
+
+{% endif %}
+
+{% section 'buttons' %}
