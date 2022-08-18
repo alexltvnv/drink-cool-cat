@@ -1088,5 +1088,13 @@ footer .list-social {
 }
 
 .product-form__input input[value="24-Pack"]:checked+label {
-  opacity:.8;
+/*   opacity:.8; */
+}
+
+.product__title + .subtitle {
+  font-size: 1.5rem;
+}
+
+.section-buttons .button {
+    margin: 15px;    
 }
