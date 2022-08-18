@@ -265,6 +265,14 @@
         ],
         "settings": {
         }
+      },
+      "buttons": {
+        "type": "buttons",
+        "settings": {
+          "button_label_1": "Read Next",
+          "button_label_2": "SHOP ALL FLAVORS",
+          "button_link_2": "shopify:\/\/pages\/shop"
+        }
       }
     },
     "content_for_index": [
