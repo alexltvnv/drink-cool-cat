@@ -12,9 +12,23 @@
 -%}
 
 {% if title_01 %}
-	<h1>		
-		{{ title_01 }}
-	</h1>
+	
+	<div id="Banner-template-{{ article.id }}" class="banner banner--content-align-center banner--content-align-mobile-center banner--medium banner--mobile-bottom banner--desktop-transparent">
+		<div class="banner__media media">
+			<img src="{{ image_01 | image_url }}" alt="banner" srcset="">
+	    </div>
+	    <div class="banner__content banner__content--middle-center page-width">
+	    	<div class="banner__box content-container content-container--full-width-mobile color-background-1 gradient">
+	    		<h2 class="banner__heading h1">
+	            	<span>{{ title_01 }}</span>
+	            </h2>
+            	<div class="banner__text body">
+              		<span>{{ text_01 }}</span>
+	            </div>
+	        </div>
+    	</div>
+	</div>
+
 {% endif %}
 
 {% section 'buttons' %}
