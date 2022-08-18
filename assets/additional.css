@@ -1088,5 +1088,5 @@ footer .list-social {
 }
 
 .product-form__input input[value="24-Pack"]:checked+label {
-  opacity:.8;
+/*   opacity:.8; */
 }
