@@ -110,9 +110,7 @@
             {%- if card_product.available == false -%}
               <span id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}" class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}">{{ 'products.product.sold_out' | t }}</span>
             {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
-              <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
-      -{{ card_product.compare_at_price | minus: card_product.price | times: 100 | divided_by: card_product.compare_at_price }}% OFF
-    </span>
+              <span id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}" class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}">{{ 'products.product.on_sale' | t }}</span>
             {%- endif -%}
           </div>
         </div>
@@ -164,9 +162,6 @@
             {%- endif -%}
           </div>
           {%- if show_rating and card_product.metafields.reviews.rating.value == blank -%}
-            <!-- TrustBox script -->
-            <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
-            <!-- End TrustBox script -->
             <!-- TrustBox widget - Product Reviews Carousel -->
             <div class="trustpilot-widget clip-rating-num" data-locale="en-US" data-template-id="60f537b5b0f1639de1fe048c" data-businessunit-id="608191716c05e7000118e9b8" data-style-height="20px" data-style-width="185px" data-theme="light" data-stars="1" data-sku="{{ current_variant_sku }}" data-review-languages="en" data-reviewnumber="0" data-no-reviews="hide">
             </div>
