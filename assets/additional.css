@@ -1098,3 +1098,12 @@ footer .list-social {
 .section-buttons .button {
     margin: 15px;    
 }
+
+.logo-images-section img {
+  transition: transform 0.2s ease;
+  max-height: 71px;
+  max-width: 100%;
+}
+.logo-images-section img:hover {
+  transform: scale(1.3);
+}
