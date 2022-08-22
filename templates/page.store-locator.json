@@ -20,16 +20,16 @@
     "16611888121b1054de": {
       "type": "logo-images",
       "blocks": {
-        "166118881277391a5b-0": {
-          "type": "item",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/BevMo_Logo.png"
-          }
-        },
         "166118881277391a5b-1": {
           "type": "item",
           "settings": {
             "logo": "shopify:\/\/shop_images\/gopuff-logo.png"
+          }
+        },
+        "166118881277391a5b-0": {
+          "type": "item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/BevMo_Logo.png"
           }
         },
         "166118881277391a5b-2": {
@@ -58,8 +58,8 @@
         }
       },
       "block_order": [
-        "166118881277391a5b-0",
         "166118881277391a5b-1",
+        "166118881277391a5b-0",
         "166118881277391a5b-2",
         "60964a33-cb42-44df-bd3b-43120509f44f",
         "e82a76a6-73da-459b-9299-fccacdf3be98",
