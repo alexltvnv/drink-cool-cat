@@ -1107,3 +1107,13 @@ footer .list-social {
 .logo-images-section img:hover {
   transform: scale(1.3);
 }
+.logo-images-section .col-2 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media (max-width: 575px) {
+    .logo-images-section .col-2 {
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+}
