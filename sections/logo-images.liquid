@@ -18,10 +18,8 @@
       <div class="row row-centered">
         {%- for block in section.blocks -%}
           {%- if block.settings.logo != blank -%}
-            <div class="col-2">
-              <div class="logo-img-wrap">                
-                <img class="logo-img" src="{{ block.settings.logo | image_url }}">
-              </div>
+            <div class="col-2 text-center">
+              <img class="logo-img" src="{{ block.settings.logo | image_url }}">            
             </div>
           {%- endif -%}
         {%- endfor -%}

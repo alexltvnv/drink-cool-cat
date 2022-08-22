@@ -17,15 +17,63 @@
         "padding_bottom": 52
       }
     },
-    "1659991132dc7c5f77": {
-      "type": "awards",
+    "16611888121b1054de": {
+      "type": "logo-images",
+      "blocks": {
+        "166118881277391a5b-0": {
+          "type": "item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/BevMo_Logo.png"
+          }
+        },
+        "166118881277391a5b-1": {
+          "type": "item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/gopuff-logo.png"
+          }
+        },
+        "166118881277391a5b-2": {
+          "type": "item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Drizly.jpg"
+          }
+        },
+        "60964a33-cb42-44df-bd3b-43120509f44f": {
+          "type": "item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/harris-teeter-logo-vector.png"
+          }
+        },
+        "e82a76a6-73da-459b-9299-fccacdf3be98": {
+          "type": "item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo-1.png"
+          }
+        },
+        "987b2fee-cd05-4dd1-b0d8-29dc696022ba": {
+          "type": "item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/g7495.png"
+          }
+        }
+      },
+      "block_order": [
+        "166118881277391a5b-0",
+        "166118881277391a5b-1",
+        "166118881277391a5b-2",
+        "60964a33-cb42-44df-bd3b-43120509f44f",
+        "e82a76a6-73da-459b-9299-fccacdf3be98",
+        "987b2fee-cd05-4dd1-b0d8-29dc696022ba"
+      ],
       "settings": {
+        "padding_top": 48,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
     "main",
     "1658945819ff94b090",
-    "1659991132dc7c5f77"
+    "16611888121b1054de"
   ]
 }
