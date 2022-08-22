@@ -1111,7 +1111,8 @@ footer .list-social {
     padding-left: 15px;
     padding-right: 15px;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    align-items: center;  
 }
 @media (max-width: 575px) {
     .logo-images-section .col-2 {
