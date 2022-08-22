@@ -1110,6 +1110,8 @@ footer .list-social {
 .logo-images-section .col-2 {
     padding-left: 15px;
     padding-right: 15px;
+    display: flex;
+    align-items: center;
 }
 @media (max-width: 575px) {
     .logo-images-section .col-2 {
