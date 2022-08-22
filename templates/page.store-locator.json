@@ -42,12 +42,19 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/Drizly.jpg"
           }
+        },
+        "60964a33-cb42-44df-bd3b-43120509f44f": {
+          "type": "item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/harris-teeter-logo-vector.png"
+          }
         }
       },
       "block_order": [
         "166118881277391a5b-0",
         "166118881277391a5b-1",
-        "166118881277391a5b-2"
+        "166118881277391a5b-2",
+        "60964a33-cb42-44df-bd3b-43120509f44f"
       ],
       "settings": {
         "padding_top": 36,
