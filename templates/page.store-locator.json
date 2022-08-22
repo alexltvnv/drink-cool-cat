@@ -54,6 +54,12 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/logo-1.png"
           }
+        },
+        "987b2fee-cd05-4dd1-b0d8-29dc696022ba": {
+          "type": "item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/TWM_nonspirits_vector_stacked_black-svg.png"
+          }
         }
       },
       "block_order": [
@@ -61,7 +67,8 @@
         "166118881277391a5b-1",
         "166118881277391a5b-2",
         "60964a33-cb42-44df-bd3b-43120509f44f",
-        "e82a76a6-73da-459b-9299-fccacdf3be98"
+        "e82a76a6-73da-459b-9299-fccacdf3be98",
+        "987b2fee-cd05-4dd1-b0d8-29dc696022ba"
       ],
       "settings": {
         "padding_top": 36,
