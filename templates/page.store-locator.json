@@ -21,11 +21,44 @@
       "type": "awards",
       "settings": {
       }
+    },
+    "16611888121b1054de": {
+      "type": "logo-images",
+      "blocks": {
+        "166118881277391a5b-0": {
+          "type": "item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/New_York_Mets_1_55a7a49e-11aa-4d0a-af07-a07fa9a52fcc.png"
+          }
+        },
+        "166118881277391a5b-1": {
+          "type": "item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/New_York_Mets_1_55a7a49e-11aa-4d0a-af07-a07fa9a52fcc.png"
+          }
+        },
+        "166118881277391a5b-2": {
+          "type": "item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/New_York_Mets_1_55a7a49e-11aa-4d0a-af07-a07fa9a52fcc.png"
+          }
+        }
+      },
+      "block_order": [
+        "166118881277391a5b-0",
+        "166118881277391a5b-1",
+        "166118881277391a5b-2"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "1658945819ff94b090",
-    "1659991132dc7c5f77"
+    "1659991132dc7c5f77",
+    "16611888121b1054de"
   ]
 }
