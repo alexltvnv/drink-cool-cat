@@ -1124,3 +1124,12 @@ footer .list-social {
         padding-right: 2vw;
     }
 }
+
+h1, .h1, h1 span, .h1 span {
+  font-size: 80px;
+}
+@media screen and (max-width: 768px) {
+  h1, .h1, h1 span, .h1 span {
+    font-size: 44px;
+  }
+}
