@@ -27,7 +27,7 @@
             {%- when 'heading' -%}
               <h{% if block.settings.heading_size == hxl %}1{% else %}2{% endif %} class="rich-text__heading rte {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
                 {{ block.settings.heading | replace: 'p>', 'span>' }}
-              </h{% if block.settings.heading_size == hxl %}1{% else %}2{% endif %}>
+              </h{% if block.settings.heading_size == 'hxl' %}1{% else %}2{% endif %}>
             {%- when 'caption' -%}
               <p class="rich-text__caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }}" {{ block.shopify_attributes }}>
                 {{ block.settings.caption | escape }}
