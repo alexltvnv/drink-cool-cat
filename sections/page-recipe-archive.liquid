@@ -6,9 +6,9 @@
 {% if recipes %}
   <div class="row full row-recipes-archive">
     <div class="col-12">
-      <h2 class="hxl text-center">
+      <h1 class="hxl text-center">
         {{ page.title }}
-      </h2>
+      </h1>
     </div>
     {% for recipe in recipes %}
       {% assign recipe_img = recipe.metafields.custom.image %}
