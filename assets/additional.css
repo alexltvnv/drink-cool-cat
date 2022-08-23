@@ -1105,7 +1105,7 @@ footer .list-social {
 }
 .logo-images-section img {
   transition: transform 0.2s ease;
-  max-height: 90px;
+/*   max-height: 90px; */
 /*   max-width: 100%; */
 }
 .logo-images-section img:hover {
