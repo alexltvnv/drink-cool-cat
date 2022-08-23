@@ -1127,6 +1127,7 @@ footer .list-social {
 
 h1, .h1, h1 span, .h1 span, .hxl, .hxl span {
   font-size: 80px;
+  font-weight: 700;
 }
 @media screen and (max-width: 768px) {
   h1, .h1, h1 span, .h1 span, .hxl, .hxl span {
