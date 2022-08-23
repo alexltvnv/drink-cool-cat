@@ -1124,6 +1124,9 @@ footer .list-social {
         padding-right: 2vw;
     }
 }
+.rich-text__wrapper {
+  width: 100%;
+}
 
 h1, .h1, h1 span, .h1 span, .hxl, .hxl span {
   font-size: 80px;
