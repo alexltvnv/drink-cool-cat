@@ -1099,6 +1099,9 @@ footer .list-social {
     margin: 15px;    
 }
 
+.logo-images-section .row {
+   max-width: 1000px; 
+}
 .logo-images-section img {
   transition: transform 0.2s ease;
   max-height: 90px;
@@ -1110,9 +1113,9 @@ footer .list-social {
 .logo-images-section .col-2 {
     padding-left: 15px;
     padding-right: 15px;
-    display: flex;
+/*     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;   */
 }
 @media (max-width: 575px) {
     .logo-images-section .col-2 {
