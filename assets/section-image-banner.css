@@ -38,17 +38,7 @@
   }
 }
 
-@media screen and (max-width: 749px) {
-  .banner__media::after {
-    background-color: rgba(0, 0, 0, 0.5);
-    content: '';
-    display: block;
-    height: 100%;
-    left: 0;
-    top: 0;
-    width: 100%;
-  }
-  
+@media screen and (max-width: 749px) { 
   .banner--small.banner--mobile-bottom:not(.banner--adapt) .banner__media,
   .banner--small.banner--stacked:not(.banner--mobile-bottom):not(.banner--adapt) > .banner__media {
     height: 28rem;
@@ -157,11 +147,7 @@
 }
 
 .banner__media {
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
+  position: relative;
 }
 
 .banner__media-half {
