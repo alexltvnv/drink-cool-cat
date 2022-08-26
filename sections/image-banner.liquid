@@ -45,7 +45,7 @@
           assign sizes = "100vw"
         endif
       -%}
-      {{ section.settings.image | image_url: master | image_tag:
+      {{ section.settings.image | image_url: width: 3000 | image_tag:
         loading: 'lazy',
         width: section.settings.image.width,
         height: image_height,
