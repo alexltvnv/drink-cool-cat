@@ -74,6 +74,10 @@
     flex-direction: row;
   }
 
+  .banner__box {
+    max-width: 100% !important;
+  }
+
   .banner--small:not(.banner--adapt) {
     min-height: 42rem;
   }
