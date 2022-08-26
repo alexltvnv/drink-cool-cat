@@ -146,7 +146,8 @@
   }
 }
 
-.banner__media {
+.banner__media,
+.banner__media img {
   position: relative;
 }
 
