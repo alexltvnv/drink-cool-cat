@@ -148,7 +148,7 @@
 
 .banner__media,
 .banner__media img {
-  position: relative;
+  position: relative !important;
 }
 
 .banner__media-half {
