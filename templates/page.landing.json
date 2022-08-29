@@ -32,6 +32,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Cool-Cat-Wine-Spritzer-Miami-Hurricanes-Football_1.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/Cool-Cat-Wine-Spritzer-Miami-Hurricanes-Football-mobile.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": false,
