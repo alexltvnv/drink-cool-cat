@@ -79,13 +79,12 @@
         alt: section.settings.image.alt | escape
       }}
       {%- if section.settings.image_mobile != blank -%}
-        {{ section.settings.image_mobile | image_url: width: 425 | image_tag:
+        {{ section.settings.image_mobile | image_url: width: 850 | image_tag:
           loading: 'lazy',
           width: section.settings.image_mobile.width,
           height: image_height,
           class: 'banner__media-mobile',
           sizes: sizes,
-          widths: '500, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
           alt: section.settings.image_mobile.alt | escape
         }}
       {%- endif -%}
