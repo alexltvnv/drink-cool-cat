@@ -962,10 +962,10 @@
       "name": "Image banner",
       "settings": {
         "image": {
-          "label": "First image"
+          "label": "Desktop image"
         },
-        "image_2": {
-          "label": "Second image"
+        "image_mobile": {
+          "label": "Mobile image"
         },
         "image_overlay_opacity": {
           "label": "Image overlay opacity"
