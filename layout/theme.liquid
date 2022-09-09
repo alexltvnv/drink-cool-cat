@@ -245,7 +245,8 @@
     </ul>
 
     <button class="button" id="show-popup-spin-to-win">Spin to Win</button>
-
+    
+    <script src="{{ 'lazyload.min.js' | asset_url }}" defer="defer"></script>
     <script>
       window.shopUrl = '{{ request.origin }}';
       window.routes = {
@@ -273,11 +274,12 @@
         pauseSlideshow: `{{ 'sections.slideshow.pause_slideshow' | t }}`,
         playSlideshow: `{{ 'sections.slideshow.play_slideshow' | t }}`,
       }
+
+      lazyload();
     </script>
 
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
-    {%- endif -%}
-    <script src="{{ 'lazyload.min.js' | asset_url }}" defer="defer"></script>
+    {%- endif -%}    
   </body>
 </html>
