@@ -9,7 +9,7 @@
 
                 <div class="bg-mobile-wrap">                  
                   {%- if block.settings.image != blank and block.settings.bg_type == 'bg_img' -%}
-                    <img class="bg-img bg-position lazyload" src="{{ block.settings.image | image_url }}">
+                    <img class="bg-img bg-position lazyload" data-src="{{ block.settings.image | image_url }}">
                   {%- endif -%}
 
                   {%- if block.settings.video_url and block.settings.bg_type == 'bg_video' -%}
