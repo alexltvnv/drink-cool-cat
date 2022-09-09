@@ -246,7 +246,7 @@
 
     <button class="button" id="show-popup-spin-to-win">Spin to Win</button>
 
-    {{ 'lazyload.js' | asset_url | script_tag }}
+    {{ 'lazyload.min.js' | asset_url | script_tag }}
     <script>
       window.shopUrl = '{{ request.origin }}';
       window.routes = {
