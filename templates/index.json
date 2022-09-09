@@ -201,7 +201,7 @@
     "16627434920f537619": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "",
+        "custom_liquid": "<div class=\"video-section row isolate page-width\">\n\t<div class=\"col-12\">\n\t\t<div class=\"video-iframe\">\n\t\t\t<iframe \n\t\t\t\tsrc=\"https:\/\/www.youtube.com\/embed\/VMvPEhgWy04\"\n\n\t\t\t\tsrcdoc=\"\n\t\t\t\t\t<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px\/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}<\/style>\n\n\t\t\t\t\t<a href=https:\/\/www.youtube.com\/embed\/VMvPEhgWy04?autoplay=1>\n\t\t\t\t\t<img src=https:\/\/cdn.shopify.com\/s\/files\/1\/0625\/6259\/9061\/files\/Cool_Cat_Wine_Spritzer_Sky-High_Freedom_-_YouTube_2022-07-28_16-50-14.webp?v=1659545045&width=1920 alt='Video'><span>▶<\/span><\/a>\"\n\n\t\t\t\ttitle=\"YouTube video player\" \n\t\t\t\tframeborder=\"0\" \n\t\t\t\tallow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" \n\t\t\t\tallowfullscreen \n\t\t\t\tloading=\"lazy\"\n\t\t\t>\t\t\t\n\t\t\t<\/iframe>\n\t\t<\/div>\n\t<\/div>\n<\/div>",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
