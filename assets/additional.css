@@ -1192,3 +1192,8 @@ h1, .h1, h1 span, .h1 span, .hxl, .hxl span {
 .header__inline-menu > .list-menu > li > header-menu > details > .list-menu--disclosure {
     left: -1px;
 }
+
+.section-product-faq {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}

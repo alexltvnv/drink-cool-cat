@@ -7,6 +7,8 @@
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
   {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+  {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
+  {{ 'collapsible-content.css' | asset_url | stylesheet_tag }}
 
   {%- style -%}
     .section-{{ section.id }}-padding {
@@ -541,11 +543,11 @@
         <div class="collapsible-content-wrapper-narrow">
 
           <div class="collapsible-content__header">
-            <h2 class="h2 collapsible-content__heading center uppercase">
+            <h2 class="h1 collapsible-content__heading center uppercase">
               {% if alt_title %}
                 {{ alt_title }}
               {% else %}
-                FAQ TEST
+                FAQ
               {% endif %}
             </h2>
           </div>
@@ -581,7 +583,7 @@
 
             </div>
           </div>
-            
+
         </div>
       </div>
     </div>
