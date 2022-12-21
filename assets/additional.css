@@ -1137,3 +1137,58 @@ h1, .h1, h1 span, .h1 span, .hxl, .hxl span {
     font-size: 44px;
   }
 }
+@media screen and (min-width: 990px) and (max-width: 1150px) {
+    header.header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+.header__menu-item[href*="/pages/shop"] .header__active-menu-item,
+.header__menu-item[href*="/pages/shop"] {
+    background-color: #000;
+    color: #fff;
+}
+.header__menu-item[href*="/pages/shop"] span {
+    transform: translateZ(0);
+}
+.header__menu-item[href*="/pages/shop"] span:before {
+    background-color: #fff;
+}
+.header__menu-item[href*="/pages/shop"] span:after {
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: -17px;
+    bottom: -30px;
+    left: -17px;
+    background-color: #000;
+    z-index: -1;
+}
+
+.header .menu-drawer__menu .list-menu__item.menu-drawer__menu-item[href*="/pages/shop"] {
+    background-color: #000;
+    color: #fff;
+}
+.header .menu-drawer__menu .list-menu__item.menu-drawer__menu-item[href*="/pages/shop"]:hover,
+.header .menu-drawer__menu .list-menu__item.menu-drawer__menu-item[href*="/pages/shop"]:focus {
+    background-color: #222;
+}
+
+.header .header__submenu li {
+    margin: 0;
+}
+.header .header__submenu li:hover,
+.header .header__submenu li:focus {
+    background-color: rgba(var(--color-foreground), 0.04);
+}
+.header .header__submenu .list-menu__item--active {
+    text-decoration-thickness: 0.2rem;
+}
+.header__inline-menu > .list-menu > li > header-menu > details > summary.header__menu-item {
+    text-decoration: none;
+}
+.header__inline-menu > .list-menu > li > header-menu > details > .list-menu--disclosure {
+    left: -1px;
+}
