@@ -3776,7 +3776,7 @@ h2.h2 span {
 }
 .running-line-section {
   margin-top: 60px;
-  margin-bottom: 60px;
+/*  margin-bottom: 60px;*/
   overflow: hidden;
 }
 .running-line-section .inner-wrap {
@@ -6828,6 +6828,15 @@ video {
   filter: invert(1);
 }
 
+@media screen and (max-width: 749px) {
+  .hide-for-mobile {
+    display: none
+  }
+  .section-product-faq [class^="collapsible-content"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 @media screen and (min-width: 750px) {
   .product .product--thumbnail .product__media-gallery {
     display: flex;
@@ -6847,4 +6856,13 @@ video {
   .product .product--thumbnail .product__media-gallery .thumbnail-list .thumbnail-list__item {
     margin-bottom: 20px;
   }
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+.product-media-modal__content img {
+  max-height: 90vh;
+  max-width: 90%;
+  object-fit: contain;
 }
