@@ -1,4 +1,7 @@
-<div class="testimonials video-bg-wrap section-{{ section.id }}-padding">
+ <!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+<div class="testimonials video-bg-wrap section-{{ section.id }} section-{{ section.id }}-padding">
   {%- if section.settings.video_url -%}
     <video class="video-bg" loop autoplay preload="none" muted playsinline>
       <source src="{{ section.settings.video_url }}" type="video/mp4">
@@ -13,20 +16,151 @@
         <h2 class="h1 section-title">
           {{ section.settings.title | escape }}   
         </h2>
+        
+        <div class="text-center">
+            <div class="review-total">
+              <div class="stars">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+              </div>
+              <span class="review-info">
+                <span id="average-stars" class="average-stars"></span>/5 (<span id="review-count" class="review-count"></span> Reviews)
+              </span>
+            </div>
+        </div>   
       </div>
     {%- endif -%}
-    {%- if section.settings.title != blank -%}
-      <!-- TrustBox script -->
-      <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
-      <!-- End TrustBox script -->
-      <div class="col-12">
-        {{ section.settings.widget_code }}   
-      </div>
-    {%- endif -%}
+    
+    {% comment %}
+      {%- if section.settings.title != blank -%}
+        <!-- TrustBox script -->
+        <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+        <!-- End TrustBox script -->
+        <div class="col-12">
+          {{ section.settings.widget_code }}   
+        </div>
+      {%- endif -%}
+    {% endcomment %}
+    
   </div>
+  
+  <div id="review-slider" class="review-slider">
+    <div id="swiper-wrapper" class="swiper-wrapper">
+    </div>        
+  </div> 
+      
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script>    
+// Add trustpilot review slider
+document.addEventListener('DOMContentLoaded', function () {
+  const businessUnitId = '608191716c05e7000118e9b8';
+  const apiKey = 'Mt5Q5AKOQnw9IyOgnLHjTsfDoVLqCM1e';
+  const reviewSlider = document.getElementById('swiper-wrapper');
+  const averageStarsPlace = document.getElementById('average-stars');
+  const reviewCountPlace = document.getElementById('review-count');
+  let totalStars = 0;
+  let reviewCount = '';
+      
+  fetch('https://api.trustpilot.com/v1/product-reviews/business-units/' + businessUnitId + '/reviews?sku=82530,88034,82529,88033&perPage=100', {
+    method: 'GET',
+    headers: {
+      'ApiKey': apiKey,
+      'Content-type': 'application/json; charset=UTF-8',
+    }
+  }).then(function(response) {
+    return response.json();
+  }).then(function(data) {
+    // console.log(data);
+    data.productReviews.forEach(function (item, index) {
+      let reviewItem = document.createElement('div');
+      reviewItem.className = "review-item swiper-slide";
+      
+      let itemStars = item.stars;      
+      let stars = document.createElement('div');
+      stars.className = "stars";
+      for (var i = 0; i < itemStars; i++){
+        let star = document.createElement('span');
+        star.className = "star";
+        stars.append(star);
+      }
+
+      totalStars += itemStars; 
+
+      let testimonial = document.createElement('p');
+      let content = item.content;
+      if (content.length > 60) {
+        content = content.substring(0, 60) + '...';
+      }
+      testimonial.className = "testimonial";
+      testimonial.innerText = content;
+      
+
+      let name = document.createElement('p');
+      name.className = "name";
+      name.innerText = item.consumer.displayName;
+
+      let verified = document.createElement('p');
+      verified.className = "verified";
+      verified.innerText = 'Verified, collected via Trustpilot';
+      
+      reviewItem.append(
+        stars,
+        testimonial,
+        name,
+        verified
+      );
+      
+      reviewSlider.append(reviewItem);
+    });
+
+    reviewCount = data.productReviews.length;
+
+    averageStarsPlace.innerText = parseFloat((totalStars/reviewCount).toFixed(1));
+    reviewCountPlace.innerText = reviewCount;
+    
+  });  
+  
+  let swiper = new Swiper(".review-slider", {
+    slidesPerView: 6,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: true
+    },
+    freeMode: true,
+    speed: 1500,
+    breakpoints: {
+      400: {
+        speed: 3000
+      },
+      640: {
+        speed: 4000
+      },
+      768: {
+        speed: 5000
+      },
+      1024: {
+        speed: 6000
+      },
+    }
+  });
+
+}, false);
+
+  
+</script>
+
 {%- style -%}
+  .section-{{ section.id }} .swiper-wrapper {
+    transition-timing-function: linear !important; 
+  }
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
