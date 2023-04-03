@@ -1,0 +1,58 @@
+<div class="modal modal-age fade" id="modal-age" tabindex="-1" role="dialog" aria-label="Age Verification" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal-age-logo">
+          <img src="{{ 'logo-copyright.svg' | asset_url }}" alt="logo" itemprop="logo" />
+        </div>
+        <div class="modal-age-title">Must be 21+ to Chill</div>
+        <button class="modal-age-button button" id="modal-age-close">Enter</button>
+        {% comment %}
+        <div class="modal-age-checkbox-group">
+          <input type="checkbox" id="modal-age-disable">
+          <label for="modal-age-disable">
+            <span class="check"></span>
+            <span class="box"></span>
+            Don’t Show this Pop-up Again
+          </label>
+        </div>
+        {% endcomment %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+    const modalAge = {
+      init: function() {
+        try {
+          if ($.cookie('modalAge') != 'disable') {
+            this.buttonEvent();
+            // this.checkboxEvent();
+            $('#modal-age').fadeIn();
+          }
+        }
+        catch (error) {} // ignore errors reading cookies
+      },
+      buttonEvent: function() {
+        $('#modal-age-close').click(function() {
+          $.cookie('modalAge', 'disable', { expires: 365, path: '/' });
+          $('#modal-age').fadeOut();
+        });
+      },
+      /*checkboxEvent: function() {
+        $('#modal-age-disable').change(function() {
+          if ($(this).is(':checked')) {
+            const date = new Date();
+            date.setTime(date.getTime() + (60 * 1000));
+            $.cookie('modalAge', 'disable', { expires: date, path: '/' });
+          }
+        });
+      }*/
+    };
+    $(document).ready(function() {
+      modalAge.init();
+    });
+  });
+</script>
