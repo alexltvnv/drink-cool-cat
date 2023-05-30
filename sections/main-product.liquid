@@ -576,15 +576,21 @@
           {{ 'products.product.view_full_details' | t }}
           {% render 'icon-arrow' %}
         </a>         
-        <!-- TrustBox script -->
+        <!-- TrustBox script
         <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
-        <!-- End TrustBox script -->
+        <!-- End TrustBox script
         {% assign current_variant = product.selected_or_first_available_variant %}
-        <!-- TrustBox widget - Product Reviews -->
+        <!-- TrustBox widget - Product Reviews
         <div class="trustpilot-widget" data-locale="en-US" data-template-id="544a426205dc0a09088833c6" data-businessunit-id="608191716c05e7000118e9b8" data-style-height="700px" data-style-width="100%" data-theme="light" data-sku="{{ current_variant.sku }}" data-review-languages="en" data-no-reviews="hide">
           <a href="https://www.trustpilot.com/review/drinkcoolcat.com" target="_blank" rel="noopener">Trustpilot</a>
         </div>
         <!-- End TrustBox widget --> 
+
+        {% include 'bv-summary' %}
+        {% include 'bv-ratings-reviews' %}
+        {% include 'bv-questions-answers' %}
+        {% include 'bv-inline-ratings' %}
+
       </div>
     </div>
   </div>
