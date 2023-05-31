@@ -6866,3 +6866,22 @@ video {
   max-width: 90%;
   object-fit: contain;
 }
+
+.sticky-button {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  background: #fff;
+  border-top-width: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: 500;
+  transform: rotate(-90deg) translateX(-50%);
+  transform-origin: top left;
+  z-index: 999999;
+}
+.sticky-button:hover,
+.sticky-button:focus {
+  background-color: #000;
+  color: #fff;
+}

@@ -8,6 +8,26 @@
     "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
+    "name": "Sticky Button",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Sticky Button"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text",
+        "default": "Button Text"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button Link"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.colors.name",
     "settings": [
       {

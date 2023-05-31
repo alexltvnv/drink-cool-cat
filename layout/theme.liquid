@@ -280,6 +280,13 @@
 
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
-    {%- endif -%}    
+    {%- endif -%}   
+
+    {% if settings.button_link and settings.button_text %}
+      <a class="button sticky-button" href="{{ settings.button_link }}" target="_blank">
+        {{ settings.button_text }}
+      </a>
+    {% endif %} 
+
   </body>
 </html>
