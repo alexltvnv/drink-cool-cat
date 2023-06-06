@@ -6885,3 +6885,46 @@ video {
   background-color: #000;
   color: #fff;
 }
+
+.playlist-item {
+  background-color: rgba(0, 0, 0, .2);
+}
+.playlist-item .playlist-title {
+  color: #fff;
+  line-height: 1;
+  margin: 0;
+}
+.playlist-item .playlist-subtitle {
+  color: #fff;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1;
+  margin: 0;
+  font-family: "Neutra", sans-serif;
+}
+.playlist-item .button {
+  background-color: #fff;
+  padding-left: 35px;
+  padding-right: 35px;
+  height: auto;
+  min-width: 35px;
+}
+
+@media (max-width: 790px) {
+  .playlist-item {
+    text-align: center;
+  }
+  .playlist-item .playlist-subtitle {
+      font-size: 30px;
+  }
+  .playlist-item .content-wrap {
+      margin-bottom: 40px;
+  }
+}
+@media (min-width: 791px) {
+  .playlist-item .btn-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
