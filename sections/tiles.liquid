@@ -33,7 +33,7 @@
                   {%- endif -%}
 
                   {%- if block.settings.btn_title != blank and block.settings.btn_url != blank -%}
-                    <a{% if block.settings.btn_url == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.btn_url }}"{% endif %} class="button">
+                    <a{% if block.settings.btn_url == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.btn_url }}"{% endif %}{% if block.settings.btn_target %} target="_blank"{% endif %} class="button">
                       {{ block.settings.btn_title | escape }}
                     </a>
                   {%- endif -%}
@@ -92,6 +92,12 @@
           "type": "url",
           "id": "btn_url",
           "label": "Button URL"
+        },
+        {
+          "type": "checkbox",
+          "id": "btn_target",
+          "label": "Open Button Link in a new window",                  
+          "default": false
         },
         {
           "type": "select",
